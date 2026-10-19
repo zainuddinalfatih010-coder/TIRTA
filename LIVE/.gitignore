@@ -1,0 +1,29 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.playwright-cli/
+tmp/
+.wrangler/
+.design/
+qa/
+*.log
+.env*
+!.env.example
+
+# Generated browser/QA evidence is disposable. Keep only canonical test fixtures.
+evidence/*
+!evidence/uiux-candidate/
+evidence/uiux-candidate/*
+!evidence/uiux-candidate/fixtures/
+!evidence/uiux-candidate/fixtures/**
+
+# Surface Assist research artifacts are reproducible but never app/source inputs.
+ml/surface-assist/.venv/
+ml/surface-assist/data/
+ml/surface-assist/runs/
+ml/surface-assist/checkpoints/
+ml/surface-assist/__pycache__/
+ml/surface-assist/tests/__pycache__/
+*.py[cod]

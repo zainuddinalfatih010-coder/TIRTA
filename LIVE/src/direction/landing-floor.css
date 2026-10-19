@@ -1,0 +1,29 @@
+/* Landing-only viewport floor. Keeps tablet/mobile landing attached to the viewport bottom without changing workspaces. */
+@media(max-width:1100px){
+  html:has(.project-landing),
+  body:has(.project-landing),
+  #root:has(.project-landing),
+  .bidang-air:has(.project-landing){background:#0a5375;}
+}
+
+@media(min-width:761px) and (max-width:1100px){
+  .bidang-air .view-project{
+    min-height:calc(100dvh - 136px);
+    background:#0a5375;
+  }
+  .project-landing{
+    min-height:calc(100dvh - 136px);
+    display:flex;
+    flex-direction:column;
+    background:#0a5375;
+  }
+  .landing-hero{
+    flex:1 0 auto;
+    width:100%;
+  }
+  .landing-journey{
+    flex:0 0 auto;
+    width:100%;
+    margin-top:auto;
+  }
+}

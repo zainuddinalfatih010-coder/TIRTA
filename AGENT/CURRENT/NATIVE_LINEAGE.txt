@@ -1,0 +1,4 @@
+NATIVE workspace lineage
+========================
+Base from LIVE commit 6515c63 before APK-only/native consolidation.
+Current NATIVE repository is an independent local snapshot so APK-only patches cannot leak into LIVE.

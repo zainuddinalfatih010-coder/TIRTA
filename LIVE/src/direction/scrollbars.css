@@ -1,0 +1,153 @@
+/* TIRTA scrollbar skin: native scrolling, custom visual treatment only. */
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(132, 160, 175, .84) transparent;
+}
+
+/* Chrome/Edge now support the standardized scrollbar properties too. When those
+   are non-auto they can force the native Windows scrollbar UI back on top of
+   ::-webkit-scrollbar styling (white gutter + arrow buttons). Reset them only
+   where WebKit scrollbar pseudo-elements exist, so our custom skin has full control. */
+@supports selector(::-webkit-scrollbar) {
+  :root,
+  html,
+  body,
+  .bidang-air,
+  .bidang-air * {
+    scrollbar-width: auto !important;
+    scrollbar-color: auto !important;
+  }
+}
+
+html,
+.bidang-air,
+.bidang-air * {
+  scroll-behavior: smooth;
+}
+
+/* Base size. The surrounding gutter remains visually transparent. */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.bidang-air::-webkit-scrollbar,
+.bidang-air *::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent !important;
+}
+
+/* No visible track anywhere in TIRTA. */
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.bidang-air::-webkit-scrollbar-track,
+.bidang-air *::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-track-piece,
+.bidang-air::-webkit-scrollbar-track-piece,
+.bidang-air *::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Glass-like thumb: visible, calm, and fully rounded. */
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.bidang-air::-webkit-scrollbar-thumb,
+.bidang-air *::-webkit-scrollbar-thumb {
+  min-height: 44px;
+  border: 1px solid rgba(255, 255, 255, .56);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(229, 241, 247, .86), rgba(121, 153, 169, .82)) padding-box;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .78),
+    inset 0 -1px 0 rgba(79, 117, 136, .16),
+    0 0 0 1px rgba(67, 128, 155, .20),
+    0 0 11px rgba(55, 181, 219, .24);
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+.bidang-air::-webkit-scrollbar-thumb:hover,
+.bidang-air *::-webkit-scrollbar-thumb:hover {
+  background:
+    linear-gradient(180deg, rgba(220, 237, 245, .94), rgba(98, 137, 156, .91)) padding-box;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .88),
+    inset 0 -1px 0 rgba(67, 105, 123, .20),
+    0 0 0 1px rgba(52, 116, 145, .28),
+    0 0 14px rgba(43, 188, 230, .30);
+}
+
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active,
+.bidang-air::-webkit-scrollbar-thumb:active,
+.bidang-air *::-webkit-scrollbar-thumb:active {
+  background:
+    linear-gradient(180deg, rgba(199, 220, 230, .98), rgba(82, 122, 142, .95)) padding-box;
+}
+
+/* Remove native up/down or left/right arrow controls in Chromium/Edge. */
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+.bidang-air::-webkit-scrollbar-button,
+.bidang-air *::-webkit-scrollbar-button,
+html::-webkit-scrollbar-button:single-button,
+body::-webkit-scrollbar-button:single-button,
+.bidang-air::-webkit-scrollbar-button:single-button,
+.bidang-air *::-webkit-scrollbar-button:single-button,
+html::-webkit-scrollbar-button:vertical:start:decrement,
+html::-webkit-scrollbar-button:vertical:end:increment,
+body::-webkit-scrollbar-button:vertical:start:decrement,
+body::-webkit-scrollbar-button:vertical:end:increment,
+.bidang-air::-webkit-scrollbar-button:vertical:start:decrement,
+.bidang-air::-webkit-scrollbar-button:vertical:end:increment,
+.bidang-air *::-webkit-scrollbar-button:vertical:start:decrement,
+.bidang-air *::-webkit-scrollbar-button:vertical:end:increment {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner,
+.bidang-air::-webkit-scrollbar-corner,
+.bidang-air *::-webkit-scrollbar-corner {
+  background: transparent !important;
+}
+
+/* Internal TIRTA scrollers remain visible at all times. */
+.bidang-air,
+.bidang-air * {
+  scrollbar-color: rgba(132, 160, 175, .84) transparent;
+}
+
+/* Main page scrollbar auto-hides after inactivity. */
+html:not(.page-scrollbar-active) {
+  scrollbar-color: transparent transparent;
+}
+
+html:not(.page-scrollbar-active)::-webkit-scrollbar-thumb,
+html:not(.page-scrollbar-active) body::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+html.page-scrollbar-active {
+  scrollbar-color: rgba(132, 160, 175, .84) transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  .bidang-air,
+  .bidang-air * {
+    scroll-behavior: auto;
+  }
+}

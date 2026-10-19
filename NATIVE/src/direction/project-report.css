@@ -1,0 +1,43 @@
+.bidang-air dialog.context-dialog.project-report-dialog { width:min(760px,calc(100vw - 32px)); max-width:760px; height:min(570px,calc(100dvh - 32px)); }
+.bidang-air .project-report-dialog .context-dialog-body { padding:0; display:block; min-height:0; overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; }
+.project-report-dialog .report-controls { padding:16px 24px 12px; background:#f5fbfd; border-bottom:1px solid #d7eaf0; flex-shrink:0; }
+.project-report-dialog .report-detail-segments { display:grid; grid-template-columns:1fr 1fr; padding:4px; background:#e8eff3; border-radius:12px; margin-bottom:14px; }
+.project-report-dialog .report-detail-segments button { background:transparent; border:0; color:#234d63; border-radius:9px; min-height:42px; font-size:15px; }
+.project-report-dialog .report-detail-segments button[aria-pressed=true] { background:#bfeefa; color:#103d58; font-weight:750; box-shadow:0 1px 3px #123f5912; }
+.project-report-dialog .report-scope-controls { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:end; gap:20px; }
+.project-report-dialog .report-package-label { display:grid; gap:5px; color:#234d63; font-size:12px; font-weight:650; min-width:0; }
+.bidang-air .project-report-dialog select { width:100%; min-width:0; min-height:40px; padding:8px 32px 8px 10px; margin:0; font-size:13px; }
+.project-report-dialog .report-source-switch { display:flex; flex-direction:row; align-items:center; gap:12px; min-height:40px; color:#234d63; font-size:13px; cursor:pointer; }
+.project-report-dialog .report-source-switch input { appearance:none; width:42px; height:24px; margin:0; padding:0; border:1px solid #89a6b4; border-radius:20px; background:#c2d1d9; cursor:pointer; transition:background 120ms; flex-shrink:0; }
+.project-report-dialog .report-source-switch input:before { content:''; display:block; width:18px; height:18px; margin:2px; border-radius:50%; background:white; box-shadow:0 1px 2px #123f5930; transition:transform 120ms; }
+.project-report-dialog .report-source-switch input:checked { background:#057d99; border-color:#057d99; }
+.project-report-dialog .report-source-switch input:checked:before { transform:translateX(18px); }
+.project-report-dialog .report-comparator-label { display:flex; flex-direction:row; align-items:center; gap:6px; margin-top:12px; color:#315b70; font-size:12px; }
+.project-report-dialog .report-comparator-label span { color:#496b7c; }
+.project-report-dialog .report-comparator-label select { flex:1; margin-left:8px; }
+.project-report-dialog .report-export-note { display:flex; align-items:start; gap:7px; margin:10px 0 0; color:#315b70; font-size:12px; }
+.project-report-dialog .report-export-note svg { flex-shrink:0; margin-top:1px; }
+.project-report-dialog .report-content-note { font-size:11px; color:#496b7c; margin:10px 0 0; line-height:1.4; }
+.project-report-dialog .report-export-choice-note { margin:14px 24px 18px; padding:14px 16px; border:1px solid #d7eaf0; border-radius:14px; background:#f8fdff; display:flex; align-items:center; justify-content:space-between; gap:12px; color:#315b70; }
+.project-report-dialog .report-export-choice-note strong { color:#123f59; font-size:14px; }
+.project-report-dialog .report-export-choice-note span { font-size:12px; text-align:right; }
+.report-preview-layout { display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:auto minmax(0,1fr); min-height:0; flex:1; }
+.report-preview-layout > nav { display:flex; overflow-x:auto; gap:6px; padding:10px 20px; background:#edf8fc; border-bottom:1px solid #d7eaf0; }
+.report-preview-layout > nav button { flex-shrink:0; width:auto; white-space:nowrap; background:transparent; border:0; padding:9px 12px; font-size:12px; margin:0; color:#234d63; border-radius:8px; }
+.report-preview-layout > nav button[aria-current] { background:#c9eaf4; color:#103d58; font-weight:700; }
+.report-preview-layout > .tirta-report { min-width:0; overflow-y:auto; overscroll-behavior:contain; width:100%; margin:0; padding:24px 30px; }
+.report-preview-layout .tirta-report section { margin-top:18px; padding-top:18px; }
+.report-preview-layout .tirta-report .report-result { margin:16px 0; }
+.report-preview-layout .tirta-report h1 { font-size:27px; }
+.report-export-actions { display:flex; gap:10px; flex-wrap:wrap; width:100%; }
+.report-export-actions button { min-height:44px; }
+.bidang-air .project-report-dialog .report-export-actions .primary { width:auto; min-width:180px; }
+.project-report-dialog .report-html-action { margin-left:auto; }
+.report-export-error { color:#9a3434; padding:10px 20px; margin:0; font-size:13px; }
+.report-preview-footnote { display:flex; align-items:start; gap:8px; font-size:11px; color:#496b7c; margin-top:24px !important; }
+.report-preview-footnote svg { flex-shrink:0; margin-top:2px; }
+@media(max-width:760px) { .bidang-air dialog.context-dialog.project-report-dialog { width:calc(100vw - 16px); height:calc(100dvh - 16px); } .project-report-dialog .report-controls { padding:12px; } .project-report-dialog .report-scope-controls { grid-template-columns:minmax(0,1fr); gap:7px; } .project-report-dialog .report-source-switch { justify-content:space-between; min-height:28px; } .project-report-dialog .report-comparator-label { flex-wrap:wrap; } .project-report-dialog .report-comparator-label select { flex-basis:100%; margin-left:0; } .report-preview-layout > nav { padding:8px; } .report-preview-layout > .tirta-report { padding:18px; } .report-export-actions { gap:6px; } .report-export-actions button { font-size:12px; padding:8px 10px; } .bidang-air .project-report-dialog .report-export-actions .primary { min-width:0; } .project-report-dialog .report-html-action { margin-left:0; } .report-preview-layout .tirta-report h1 { font-size:23px; } }
+@media(prefers-reduced-motion:reduce) { .project-report-dialog .report-source-switch input,.project-report-dialog .report-source-switch input:before { transition:none; } }
+
+.report-scope-status{font-size:12px;color:#234d63;margin:0 0 12px;line-height:1.5}
+@media(max-width:760px){.bidang-air .project-report-dialog .context-dialog-body{overflow-y:auto;overscroll-behavior:contain;display:block}.project-report-dialog .report-preview-layout{min-height:260px;display:block}.project-report-dialog .report-preview-layout>.tirta-report{overflow:visible}.project-report-dialog>header,.project-report-dialog>.context-dialog-footer{flex-shrink:0}}

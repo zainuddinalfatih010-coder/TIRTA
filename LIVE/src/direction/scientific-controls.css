@@ -1,0 +1,26 @@
+.scientific-task-switch { display: flex; flex-wrap: wrap; gap: .5rem; margin-block: 1rem; }
+.scientific-task-switch button[aria-pressed="true"] { font-weight: 700; text-decoration: underline; text-underline-offset: .3em; }
+.scientific-number { min-width: 0; margin-block: 1rem; padding: .8rem; border: 1px solid var(--line, #d9e2e4); }
+.scientific-number legend { font-weight: 600; }
+.scientific-references { padding-inline-start: 1.2rem; }
+.scientific-references li { margin-block: 1.2rem; overflow-wrap: anywhere; }
+.scientific-references small { display: block; line-height: 1.5; margin-block: .35rem; }
+.field-evaluation { margin-block: 1.5rem; border-top: 1px solid var(--line, #d9e2e4); padding-top: 1rem; }
+.field-observation-row { border-bottom: 1px solid var(--line, #d9e2e4); padding-block: .75rem; }
+.field-photo { display: block; max-width: 100%; max-height: 250px; object-fit: contain; }
+
+.scientific-claim-links { display: flex; flex-wrap: wrap; gap: .5rem 1rem; }
+.comparison-row > .text-button, .comparison-row > .quiet { display: block; margin-top: .35rem; }
+
+/* Keep intervention review focused; implementation notes stay available on demand. */
+.context-dialog.intervention-review .science-section { border: 0; background: transparent; padding: 0; display: grid; gap: 16px; }
+.intervention-review .review-details, .intervention-review .review-issues { border-block: 1px solid var(--hairline); margin-block: 8px; }
+.intervention-review .review-details > summary, .intervention-review .review-issues > summary { color: var(--annotation); }
+.intervention-review .review-details > div, .intervention-review .review-measurement { display: grid; gap: 14px; padding-bottom: 14px; }
+.intervention-review .review-measurement[hidden], .intervention-review .science-section div[hidden] { display: none; }
+.context-dialog.intervention-review .review-direct-soil { padding: 0; margin: 0; border: 0; background: transparent; }
+.intervention-review .review-direct-soil[hidden] { display: none; }
+.intervention-review .review-capacity { margin: 0; }
+.intervention-review .review-soil-reference { padding: 14px; border-radius: 10px; background: var(--working-plane); }
+.intervention-review .review-soil-reference p { margin-block: 6px; font-size: 14px; }
+.intervention-review .review-details li, .intervention-review .review-issues li { margin-block: 8px; }

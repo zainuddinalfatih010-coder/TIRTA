@@ -1,0 +1,95 @@
+.treatment-composer { background:#f7fcff; border-radius:24px 24px 28px 28px; overflow:hidden; color:#143e56; }
+.treatment-heading { display:flex; align-items:flex-start; gap:12px; padding:20px 20px 12px; }
+.treatment-heading > svg { width:42px; height:42px; flex-shrink:0; }
+.treatment-heading > div { min-width:0; }
+.treatment-heading h2 { font-size:23px; margin:0 0 6px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.treatment-heading p { margin:0; font-size:13px; line-height:1.6; overflow-wrap:anywhere; }
+.treatment-stages { display:flex; gap:4px; padding:0 16px 12px; border-bottom:1px solid #c9e1eb; }
+.treatment-stages button { display:flex; flex:1; align-items:center; gap:5px; padding:10px 3px; border:0; border-radius:8px; background:none; font-size:12px; color:#466d82; min-width:0; }
+.treatment-stages button span { display:grid; place-items:center; width:21px; height:21px; flex-shrink:0; border:1px solid #91b9cb; border-radius:50%; }
+.treatment-stages [aria-current] { background:#d5f0fc; color:#006e9b; }
+.treatment-stages [aria-current] span { background:#007ea9; color:white; border-color:#007ea9; }
+.treatment-composer form { padding:16px 20px 0; margin:0; }
+.composer-stage,.science-section { border:0; padding:0; margin:0; min-width:0; }
+.composer-stage[hidden],.science-section[hidden] { display:none !important; }
+.composer-stage:not([hidden]) { display:flex; flex-direction:column; gap:13px; }
+.composer-stage legend { font-size:17px; font-weight:650; line-height:1.4; padding:0 0 16px; }
+.composer-stage label { font-size:13px; }
+.composer-stage p,.composer-stage small { font-size:12px; line-height:1.6; margin:0; }
+.composer-stage input,.composer-stage select { width:100%; min-height:42px; }
+.composer-stage .check-line input { width:auto; min-height:0; }
+.treatment-source-chips { display:flex; flex-wrap:wrap; gap:6px; }
+.treatment-source-chips > span { display:flex; align-items:center; gap:5px; max-width:100%; background:#d8f1fb; padding:6px 8px; border-radius:9px; }
+.treatment-source-chips > span > span { font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; max-width:235px; }
+.treatment-source-chips button { display:grid; place-items:center; width:28px; height:28px; padding:0; background:none; border:0; flex-shrink:0; }
+.role-choice { display:flex; align-items:center; gap:8px; text-align:left; width:100%; min-height:44px; padding:10px 12px; background:#eef9fc; overflow-wrap:anywhere; }
+.role-choice svg { flex-shrink:0; }
+.role-label { font-size:12px; color:#4b7086; }
+.shared-source-warning,.soil-reference { background:#fff5de; padding:12px; border-radius:12px; display:flex; flex-direction:column; gap:12px; font-size:12px; }
+.soil-reference { background:#e5f5ee; }
+.biopori-dimensions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.composer-actions { display:flex; justify-content:space-between; gap:8px; position:static; padding:16px 0; background:#f7fcff; }
+.composer-actions button { min-height:44px; padding:9px 12px; font-size:13px; }
+.composer-readiness { display:flex; flex-direction:column; padding:0 20px 12px; gap:4px; font-size:11px; color:#537185; }
+.composer-saved { font-size:12px; padding:0 20px; }
+.composer-details { border-top:1px solid #c9e1eb; padding:12px 20px 18px; display:flex; gap:12px; flex-wrap:wrap; }
+.composer-details button { font-size:12px; }
+.role-zone-list { max-height:45dvh; overflow-y:auto; display:flex; flex-direction:column; }
+.role-zone-list button { display:flex; align-items:center; gap:12px; justify-content:space-between; border:0; border-bottom:1px solid #c9e1eb; border-radius:0; background:none; padding:12px 4px; text-align:left; min-height:48px; }
+.role-zone-list button span { min-width:0; overflow-wrap:anywhere; flex:1; }
+.role-zone-list small,.role-zone-list svg { flex-shrink:0; }
+.role-search { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.role-search input { flex-basis:100%; }
+.selection-role-cue { background:#edfaff; padding:12px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; border-left:3px solid #008bbb; }
+.selection-role-cue strong { flex:1; }
+.selected-zone-action { display:flex; flex-wrap:wrap; gap:8px; padding:8px 0; }
+.selected-zone-action span { flex-basis:100%; font-size:13px; }
+.event-only-note { padding:12px 0; color:#466d82; font-size:13px; }
+.field-followups { display:flex; flex-wrap:wrap; gap:8px; }
+@media(min-width:1200px) { .bidang-air .intervention-top-composition { grid-template-columns:minmax(220px,.8fr) minmax(350px,1.6fr) minmax(320px,1fr); align-items:start; } .treatment-composer { max-height:none; overflow:visible; } }
+@media(max-width:700px) { .bidang-air .intervention-top-composition { display:grid; grid-template-columns:minmax(0,1fr); gap:16px; } .intervention-preview { grid-row:1; } .intervention-dock { grid-row:2; } .active-intervention-editor { grid-row:3; } .treatment-composer { max-height:none; border-radius:20px; } .composer-actions { bottom:env(safe-area-inset-bottom,0px); } .treatment-heading { padding:16px; } .treatment-composer form { padding-inline:16px; } .treatment-stages { padding-inline:12px; } .role-zone-list { max-height:45dvh; } }
+
+.treatment-composer .sourced-control { display:block; margin:0; }
+.treatment-composer .sourced-control > label { display:grid; grid-template-columns:minmax(0,1fr); gap:7px; }
+.bidang-air .intervention-palette .biopori-entry { grid-column:auto; }
+.bidang-air .intervention-palette .biopori-entry small { margin-left:auto; font-size:11px; }
+.bidang-air .palette-heading { display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
+.context-methods { display:grid; gap:8px; }
+.context-methods button { display:flex; align-items:center; gap:12px; text-align:left; min-height:52px; }
+.context-methods button svg:first-child { width:36px; height:36px; }
+.context-methods button svg:last-child { margin-left:auto; }
+
+.treatment-composer .check-line { display:flex; flex-direction:row; align-items:flex-start; gap:8px; min-height:44px; padding-block:6px; line-height:1.5; }
+.treatment-composer .check-line input { flex-shrink:0; margin:2px 0 0; width:18px; height:18px; }
+.treatment-stages { position:sticky; top:0; background:#f7fcff; z-index:3; padding-top:8px; }
+@media(max-width:700px) { .active-intervention-editor .treatment-composer { max-height:none; overflow:visible; } }
+
+.deferred-treatments { margin-top:12px; font-size:12px; border-top:1px solid #c9e1eb; padding-top:10px; }
+.deferred-treatments > div { max-height:200px; overflow:auto; }
+.deferred-treatments button { display:flex; gap:8px; width:100%; justify-content:space-between; font-size:12px; padding:10px 4px; border:0; background:none; }
+.deferred-treatments button span { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; text-align:left; }
+
+.bidang-air .intervention-palette .biopori-entry > svg:last-child { margin-left:auto; width:17px; height:17px; }
+.active-intervention-editor > [hidden] { display:none !important; }
+.marker-selection-edge { pointer-events:none; }
+
+.marker-selection-edge .intervention-illustration { width:58px; height:48px; }
+
+.bidang-air .intervention-instance-list .intervention-option { display:grid; grid-template-columns:minmax(0,1fr) 44px; align-items:center; gap:4px; }
+.bidang-air .intervention-instance-list .instance-select { grid-column:1; min-width:0; width:100%; }
+.bidang-air .instance-menu-trigger { grid-column:2; width:44px; min-width:44px; height:44px; padding:0; border:0; background:none; font-size:25px; border-radius:10px; }
+.instance-select strong,.instance-select small { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.instance-action-dialog { width:min(420px,calc(100vw - 32px)); }
+.instance-action-options { display:grid; gap:4px; }
+.instance-action-options button { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:48px; border:0; background:#eef9fc; border-radius:12px; padding:12px 16px; text-align:left; }
+.instance-action-options button:last-child { justify-content:flex-start; color:#a53932; background:#fff3ef; }
+.resource-draft { padding:12px; background:#e9f6fa; border-radius:14px; display:grid; gap:12px; }
+.resource-draft > div { display:grid; grid-template-columns:1fr auto; gap:3px 8px; font-size:12px; }
+.resource-draft small,.resource-draft .resource-meter-track { grid-column:1/-1; }
+.resource-draft .resource-meter-track { width:100%; height:7px; overflow:hidden; border-radius:999px; background:#d7e8ed; }
+.resource-draft .resource-meter-track>span { display:block; width:0; height:100%; border-radius:inherit; background:#008d9c; }
+.resource-draft .exceeds,.resource-draft p { color:#9f4b15; }
+.resource-draft .exceeds .resource-meter-track>span { background:#bd611b; }
+.capacity-note summary { cursor:pointer; min-height:36px; font-size:12px; }
+.bidang-air .context-dialog > header > button, .bidang-air .studio-inspector .studio-editor-heading > button { min-width:44px; min-height:44px; }
+.bidang-air .help-entry, .bidang-air .compare-detail-link, .bidang-air .compare-candidate-detail { min-width:44px; min-height:44px; }

@@ -1,0 +1,42 @@
+/* Decorative layers only. Fade artwork rather than masking the form or its controls. */
+@media screen {
+  .direction-app.bidang-air:has(#workspace.view-studio) { background-color:#def5ff; }
+  .direction-app.bidang-air:has(#workspace:is(.view-rain,.view-alternatives)) { background-color:#e3f7ff; }
+  /* Intervensi uses the skyline only as the upper horizon. The workplane below
+     is a quiet water/shore layer so the same cityscape never repeats. */
+  .direction-app.bidang-air .app-body #workspace.view-interventions {
+    --page-art:none;
+    background-color:#dff5fc;
+    background-image:
+      url("/atmosphere/closing-water.svg"),
+      radial-gradient(ellipse at 5% 100%,rgba(95,177,154,.14) 0,rgba(95,177,154,0) 38%),
+      radial-gradient(ellipse at 93% 88%,rgba(82,177,205,.10) 0,rgba(82,177,205,0) 34%),
+      linear-gradient(180deg,#e3f8fe 0%,#d5f2fa 54%,#ecf9fc 100%);
+    background-repeat:no-repeat,no-repeat,no-repeat,no-repeat;
+    background-size:100% clamp(120px,18vh,220px),min(52vw,760px) 42%,min(46vw,680px) 36%,100% 100%;
+    background-position:center bottom,left bottom,right bottom,center;
+  }
+  .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-task-surface {
+    --intake-art-width:min(56%,370px);
+    position:relative; isolation:isolate;
+    background-color:#f8fdff;
+    background-image:linear-gradient(180deg,transparent 30%,#f8fdff 100%),radial-gradient(ellipse at 4% 2%,#dcf6ff 0%,#eefbff 48%,#f8fdff 80%);
+    background-size:100% 100%,100% 100%; background-position:0 0; background-repeat:no-repeat;
+  }
+  .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-task-surface::before {
+    content:""; position:absolute; top:0; right:0; width:var(--intake-art-width); height:100%;
+    z-index:-1; pointer-events:none; border-radius:inherit;
+    background-image:var(--treatment-art); background-position:right top; background-repeat:no-repeat; background-size:100% auto;
+    mask-image:linear-gradient(to right,transparent,#000 18%,#000 90%,transparent),linear-gradient(to bottom,#000 65%,transparent 100%);
+    mask-composite:intersect;
+  }
+  .direction-app.bidang-air #workspace.view-studio::after {
+    mask-image:linear-gradient(to bottom,transparent,#000 40%);
+  }
+  @media (min-width:1200px) {
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-task-surface { --intake-art-width:min(72%,580px); }
+  }
+  @media (max-width:960px) {
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-task-surface { --intake-art-width:min(50%,230px); }
+  }
+}

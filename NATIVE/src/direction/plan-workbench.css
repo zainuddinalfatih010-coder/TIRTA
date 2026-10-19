@@ -1,0 +1,352 @@
+/* Image-first Rencana v2. Presentation only; all numbers come from the canonical ledger. */
+.bidang-air .view-impact .plan-hero-outcome { display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 18px; margin-top:9px; font-size:13px; color:#315d73; }
+.bidang-air .view-impact .plan-hero-outcome > strong { font-size:25px; color:#0e4965; }
+.bidang-air .view-impact .plan-hero-outcome > span:last-child { font-size:12px; }
+.bidang-air .plan-declared-paths { max-height:150px; overflow:auto; scrollbar-width:thin; padding:8px 10px; margin:2px 0 6px; background:#edf8fc; border-radius:8px; font-size:12px; }
+.bidang-air .plan-declared-paths > div+div { border-top:1px solid #cfE6ef; padding-top:6px; margin-top:6px; }
+.bidang-air .plan-declared-paths p { margin:0 0 4px; line-height:1.5; }
+.bidang-air .plan-declared-paths small { color:#506b78; }
+.bidang-air .plan-result-meaning h4 { margin:11px 0 4px; font-size:13px; }
+.bidang-air .plan-user-note { overflow-wrap:anywhere; white-space:pre-wrap; }
+.bidang-air .plan-installation-checks,.bidang-air .plan-closure { grid-column:1/-1; background:#f8fdff; padding:16px 22px; border-radius:14px; min-width:0; }
+.bidang-air .plan-installation-checks > header { display:flex; flex-wrap:wrap; align-items:center; gap:6px 16px; margin-bottom:6px; }
+.bidang-air .plan-installation-checks h3,.bidang-air .plan-closure h3 { margin:0; font-size:18px; }
+.bidang-air .plan-installation-checks header span,.bidang-air .plan-installation-checks > small { color:#496d7f; font-size:12px; }
+.bidang-air .plan-installation-checks ol { list-style:none; padding:0; margin:0 0 8px; }
+.bidang-air .plan-installation-checks li { display:flex; gap:12px; align-items:center; border-top:1px solid #d2e7ef; padding:8px 0; }
+.bidang-air .plan-installation-checks li > div { flex:1; min-width:0; }
+.bidang-air .plan-installation-checks li strong { font-size:13px; }
+.bidang-air .plan-installation-checks li p { margin:3px 0 0; line-height:1.45; color:#426478; font-size:12px; }
+.bidang-air .plan-installation-checks .text-button { display:flex; align-items:center; gap:7px; font-size:12px; min-height:44px; flex-shrink:0; }
+.bidang-air .plan-closure { display:flex; flex-wrap:wrap; align-items:center; gap:14px 26px; border-top:2px solid #7ac9d7; }
+.bidang-air .plan-closure > div:first-child { flex:1 1 280px; }
+.bidang-air .plan-closure p { margin:5px 0 0; font-size:13px; color:#426478; line-height:1.5; }
+.bidang-air .plan-closure-actions { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; }
+.bidang-air .plan-closure-actions button { display:flex; align-items:center; gap:7px; font-size:13px; }
+@media(max-width:700px) { .bidang-air .plan-installation-checks,.bidang-air .plan-closure { padding:14px; } .bidang-air .plan-installation-checks li { flex-wrap:wrap; } .bidang-air .plan-installation-checks li > div { flex-basis:100%; } .bidang-air .plan-closure-actions { width:100%; } .bidang-air .plan-closure-actions .primary { flex-wrap:wrap; width:100%; } }
+.bidang-air .view-impact { max-width:none; padding:24px 24px 18px; background:#dcf4fc; background-image:linear-gradient(#d5f2fd,#edf9ff); }
+.bidang-air .view-impact .page-heading { margin-bottom:12px; }
+.bidang-air .view-impact .page-heading h1 { font-size:32px; }
+.bidang-air .view-impact .plan-masthead { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:start; gap:14px 28px; margin:0 0 10px; padding:0; border:0; background:none; }
+.bidang-air .view-impact .plan-masthead > div { min-width:0; }
+.bidang-air .view-impact .plan-masthead h2 { font-size:19px; line-height:1.2; margin:2px 0 4px; overflow-wrap:anywhere; }
+.bidang-air .view-impact .selected-plan-label { display:inline-flex; align-items:center; gap:5px; margin-bottom:2px; color:#3d6e84; font-size:11px; font-weight:750; letter-spacing:.04em; text-transform:uppercase; }
+.bidang-air .view-impact .plan-parcel-meta { display:block; font-size:12px; color:#527489; margin-top:2px; }
+.bidang-air .view-impact .plan-masthead > div:last-child { display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:8px; }
+.bidang-air .view-impact .plan-masthead .scenario-switch { padding:0; gap:6px; max-width:470px; max-height:none; overflow:visible; }
+.bidang-air .view-impact .plan-masthead button { min-height:40px; padding:7px 13px; font-size:13px; }
+.bidang-air .view-impact .plan-masthead .plan-change-choice { min-height:38px; padding-inline:6px; border:0; background:transparent; box-shadow:none; }
+.bidang-air .view-impact .plan-masthead .plan-change-choice:hover { background:#e9f7fc; }
+.bidang-air .plan-view-tabs { display:flex; border-bottom:1px solid #b9dbea; gap:10px; margin:0 0 14px; }
+.bidang-air .plan-view-tabs button { min-height:46px; padding:8px 18px; border:0; border-bottom:3px solid transparent; background:none; border-radius:0; color:#204f6a; font-size:16px; }
+.bidang-air .plan-view-tabs button[aria-selected="true"] { color:#0076b0; border-bottom-color:#008dce; background:none; font-weight:700; }
+.bidang-air .plan-view-tabs button:last-child { margin:5px 0 7px auto; min-height:38px; padding:7px 16px; border:1px solid #8bd2e8; border-radius:12px; background:#e4f7fc; color:#006b92; font-weight:800; }
+.bidang-air .plan-view-tabs button:last-child[aria-selected="true"] { border-color:#087fb4; background:#087fb4; color:#fff; box-shadow:0 7px 18px #087fb426; }
+
+
+/* Recommendation tab: visible without a continuously repainted animation. */
+.bidang-air .plan-view-tabs button:last-child {
+  position:relative;
+  isolation:isolate;
+  overflow:visible;
+}
+.bidang-air .plan-view-tabs button:last-child::after {
+  content:"";
+  position:absolute;
+  inset:-3px;
+  border:2px dashed rgba(77,190,226,.72);
+  border-radius:14px;
+  pointer-events:none;
+  opacity:.85;
+}
+.bidang-air .view-impact .plan-summary { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr); gap:14px; padding:0; background:none; border-radius:0; }
+.bidang-air .view-impact .plan-first-check { grid-column:1/-1; display:flex; align-items:center; flex-wrap:wrap; gap:4px 16px; color:#315b70; font-size:13px; }
+.bidang-air .view-impact .plan-first-check p { margin:0; flex:1 1 240px; line-height:1.5; }
+.bidang-air .view-impact .plan-first-check button { min-height:44px; padding:8px 0; }
+.bidang-air .view-impact .plan-choice-name { display:block; color:#426c81; font-size:12px; margin-bottom:4px; }
+.bidang-air .view-impact .plan-baseline-choice { font-size:13px; line-height:1.5; margin:0 0 12px; color:#315b70; }
+.bidang-air .plan-result-visual,.bidang-air .view-impact .plan-summary .plan-composition { background:#f8fdff; border:0; border-radius:14px; padding:18px; min-width:0; }
+.bidang-air .plan-result-visual { display:flex; flex-direction:column; }
+.bidang-air .plan-flow-insight { flex:1 1 auto; min-height:112px; display:flex; flex-direction:column; justify-content:center; gap:5px; margin-top:14px; padding:14px 16px; border:1px solid #c7e5ef; border-radius:12px; background:#edf9fc; }
+.bidang-air .plan-flow-insight strong { color:#0c5876; font-size:13px; letter-spacing:.02em; }
+.bidang-air .plan-flow-insight p { margin:0; color:#315d72; font-size:13px; line-height:1.55; max-width:76ch; }
+.bidang-air .view-impact .plan-summary .plan-composition { display:flex; flex-direction:column; gap:0; max-height:none; }
+.bidang-air .plan-composition > header { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:6px; }
+.bidang-air .plan-composition h3,.bidang-air .plan-water-flow h3 { margin:0; font-size:23px; line-height:1.3; }
+.bidang-air .plan-composition > header .text-button { display:flex; gap:8px; align-items:center; padding:0; font-size:13px; min-height:32px; }
+.bidang-air .view-impact .plan-composition .parcel-svg { height:clamp(200px,28dvh,285px); max-height:none; width:100%; background:none; }
+.bidang-air .view-impact .plan-composition .canvas-paper,.bidang-air .view-impact .plan-composition .canvas-grid { display:none; }
+.bidang-air .view-impact .plan-map-caption { font-size:12px; color:#48687b; margin:0 0 6px; line-height:1.5; }
+.bidang-air .plan-options { min-height:0; max-height:244px; overflow:auto; overscroll-behavior:contain; scrollbar-width:thin; }
+.bidang-air .view-impact .plan-option { display:flex; align-items:center; gap:12px; width:100%; text-align:left; border:0; border-radius:8px; margin:4px 0; padding:9px 12px; background:#edf8fc; min-height:54px; }
+.bidang-air .plan-option > svg { flex-shrink:0; color:#258777; }
+.bidang-air .plan-option > svg:last-child { margin-left:auto; color:#2c5974; }
+.bidang-air .plan-option > span { min-width:0; flex:1; }
+.bidang-air .plan-option strong { display:block; color:#123a54; font-size:15px; line-height:1.3; }
+.bidang-air .plan-option small { display:block; color:#456779; font-size:12px; margin-top:3px; line-height:1.4; overflow-wrap:anywhere; }
+.bidang-air .plan-water-flow { margin:0; padding:0; }
+.bidang-air .plan-water-flow .volume-chart { background:none; padding:0; margin:0; }
+.bidang-air .plan-flow-stage { display:grid; grid-template-columns:minmax(0,1fr) 170px; align-items:stretch; margin:12px 0; }
+.bidang-air .plan-flow-art { position:relative; width:100%; min-width:0; aspect-ratio:650 / 205; min-height:0; container-type:inline-size; }
+.bidang-air .plan-flow-origin { position:absolute; z-index:1; left:2.9231%; top:21.4634%; width:24.6154%; height:55.6098%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:clamp(2px,.7cqw,6px); padding:6px; background:linear-gradient(110deg,#205b8a,#1c4f7c); border-radius:8px; box-shadow:0 0 0 1px #d8eaf4; color:#fff; font-family:Arial,sans-serif; text-align:center; }
+.bidang-air .plan-flow-origin span { font-size:clamp(10px,2.18cqw,18px); font-weight:600; line-height:1.2; }
+.bidang-air .plan-flow-origin span:last-child { font-weight:400; }
+.bidang-air .plan-flow-origin strong { font-size:clamp(17px,4.02cqw,34px); line-height:1.2; white-space:nowrap; }
+.bidang-air .plan-flow-origin small { font-size:1em; color:inherit; }
+.bidang-air .plan-flow-art > svg { display:block; width:100%; height:100%; }
+.bidang-air .plan-flow-labels { display:grid; grid-template-columns:minmax(0,1fr); grid-auto-rows:minmax(64px,1fr); min-height:0; gap:0; margin:0; padding:0; }
+.bidang-air .plan-flow-labels button { display:flex; align-items:center; justify-content:flex-start; gap:9px; min-width:0; width:100%; border:0; background:transparent; padding:8px; text-align:left; border-radius:9px; color:#163e56; }
+.bidang-air .plan-flow-labels button[aria-pressed="true"],.bidang-air .plan-flow-labels button:hover { background:#e7f4fb; }
+.bidang-air .plan-flow-labels button > svg { flex-shrink:0; }
+.bidang-air .plan-flow-labels button > span { min-width:0; }
+.bidang-air .plan-flow-labels button > span > span { display:block; font-size:13px; font-weight:600; line-height:1.3; }
+.bidang-air .plan-flow-labels strong { display:block; font-size:22px; line-height:1.2; margin:3px 0; }
+.bidang-air .plan-flow-labels strong small { font-size:.6em; }
+.bidang-air .plan-flow-labels span > small { font-size:12px; color:#4a6c80; }
+.bidang-air .plan-water-flow .chart-reading { margin:0 0 8px; padding:10px 12px; background:#e4f4fb; font-size:14px; line-height:1.5; }
+.bidang-air .plan-water-flow .equation-note { margin:10px 0; font-size:13px; line-height:1.5; }
+.bidang-air .plan-summary .equation-note { display:none; }
+.bidang-air .plan-water-flow .calculation-source { margin:0; font-size:12px; }
+.bidang-air .plan-impact-strip { display:flex; align-items:center; gap:12px; padding:14px 16px; margin-top:10px; background:#dcf3fc; border-radius:10px; color:#0f3b55; }
+.bidang-air .plan-impact-strip > svg { flex:0 0 auto; color:#048dcc; }
+.bidang-air .plan-impact-strip > div { flex:1; min-width:0; }
+.bidang-air .plan-impact-strip > div:first-of-type { display:flex; align-items:center; gap:10px; }
+.bidang-air .plan-impact-strip > div:first-of-type strong { font-size:clamp(25px,2.8vw,44px); line-height:1; white-space:nowrap; }
+.bidang-air .plan-impact-strip span { font-size:14px; line-height:1.3; display:block; }
+.bidang-air .plan-impact-strip > div+div { padding-left:14px; border-left:1px solid #b8d9e8; }
+.bidang-air .plan-impact-strip > div+div strong { display:block; font-size:25px; line-height:1.2; }
+.bidang-air .plan-impact-strip strong small { font-size:.7em; }
+.bidang-air .plan-impact-strip > p { max-width:150px; margin:0; font-size:12px; line-height:1.5; color:#456a7e; }
+.bidang-air .plan-summary-bottom { grid-column:1 / -1; display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1.15fr); gap:22px; padding:18px 22px; border-radius:14px; background:#f8fdff; }
+.bidang-air .plan-summary-bottom > section { min-width:0; }
+.bidang-air .plan-summary-bottom > section+section { border-left:1px solid #c9e1ed; padding-left:22px; }
+.bidang-air .plan-summary-bottom h3 { font-size:16px; line-height:1.3; margin:0 0 10px; }
+.bidang-air .plan-summary-bottom .constraint-meters { display:grid; grid-template-columns:minmax(0,1fr); gap:12px; margin:0; padding:0; background:none; border:0; }
+.bidang-air .plan-summary-bottom .constraint-meter > div:first-child { display:flex; align-items:baseline; justify-content:space-between; gap:8px; }
+.bidang-air .plan-summary-bottom .constraint-meter { font-size:13px; }
+.bidang-air .plan-summary-bottom .constraint-meter strong { font-size:14px; }
+.bidang-air .plan-summary-bottom .meter-track { height:10px; margin:5px 0; }
+.bidang-air .plan-summary-bottom .constraint-meter:first-child .meter-track span:not(.over-limit) { background:#139faa; }
+.bidang-air .plan-summary-bottom .constraint-meter:last-child .meter-track span:not(.over-limit) { background:#54ad83; }
+.bidang-air .plan-summary-bottom .constraint-meter > small { font-size:12px; }
+.bidang-air .plan-review-label { display:inline-flex; gap:7px; align-items:center; padding:4px 8px; border:1px solid #e4b567; border-radius:16px; background:#fff5df; color:#805214; font-size:12px; }
+.bidang-air .plan-result-meaning > p { font-size:13px; line-height:1.5; margin:7px 0; }
+.bidang-air .plan-result-meaning .text-button { display:flex; align-items:center; gap:8px; padding:0; min-height:30px; font-size:13px; }
+.bidang-air .plan-scenario-compact > div { max-height:144px; overflow:auto; scrollbar-width:thin; }
+.bidang-air .plan-scenario-compact button { display:grid; grid-template-columns:minmax(50px,.5fr) minmax(0,1fr) minmax(55px,.7fr); align-items:center; gap:8px; width:100%; border:0; background:none; border-radius:5px; padding:7px 4px; text-align:left; font-size:12px; }
+.bidang-air .plan-scenario-compact button[aria-pressed="true"] { background:#edf7fb; }
+.bidang-air .plan-scenario-compact button > span { overflow-wrap:anywhere; }
+.bidang-air .plan-scenario-compact strong { font-size:12px; }
+.bidang-air .plan-scenario-compact button > small { grid-column:2 / -1; color:#526a79; line-height:1.4; }
+.bidang-air .plan-scenario-compact i { height:9px; border-radius:6px; background:#e2edf3; overflow:hidden; }
+.bidang-air .plan-scenario-compact i b { display:block; height:100%; background:#087bc1; border-radius:6px; }
+.bidang-air .plan-explanation-topics { display:flex; flex-wrap:wrap; gap:6px; padding:6px; border-radius:10px; background:#f6fcff; margin-bottom:14px; }
+.bidang-air .plan-explanation-topics[hidden] { display:none; }
+.bidang-air .plan-explanation-topics button { display:flex; align-items:center; gap:8px; padding:8px 14px; min-height:44px; background:none; border:0; font-size:14px; }
+.bidang-air .plan-explanation-topics button[aria-pressed="true"] { background:#d9f2fc; color:#006b9f; }
+.bidang-air .plan-detail-body > :is(.plan-explanation-flow,.plan-package-visual,.decision-meaning,.decision-support,.scenario-chart,.robustness,.decision-provenance,.decision-footnotes,.plan-feasibility-review,.plan-field-work,.plan-recommendation-work) { display:none; }
+.bidang-air .plan-detail-body[data-view="evidence"] > .plan-summary,.bidang-air .plan-detail-body[data-view="recommendation"] > .plan-summary { display:none; }
+.bidang-air .plan-detail-body[data-view="recommendation"] > .plan-recommendation-work { display:block; }
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="water"] { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(280px,1fr); gap:14px; align-items:start; }
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="water"] > .plan-explanation-flow { display:block; grid-column:1; padding:20px; background:#f8fdff; border-radius:14px; }
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="water"] > .decision-meaning { display:block; grid-column:1; padding:20px; background:#f8fdff; border-radius:14px; margin:0; }
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="water"] > .scenario-chart { display:block; grid-column:2; grid-row:1 / span 2; margin:0; padding:20px; border-radius:14px; background:#f8fdff; min-width:0; }
+.bidang-air .view-impact .decision-water-line { display:flex; flex-wrap:wrap; gap:14px; margin:18px 0; }
+.bidang-air .view-impact .decision-water-line > span { flex:1; min-width:130px; display:flex; flex-direction:column; gap:8px; }
+.bidang-air .view-impact .decision-water-line strong { font-size:25px; }
+.bidang-air .view-impact .decision-meaning p { font-size:14px; line-height:1.6; }
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="package"] > :is(.plan-package-visual,.decision-support),
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="data"] > :is(.plan-data-provenance,.decision-footnotes),
+.bidang-air .plan-detail-body[data-view="evidence"][data-topic="checks"] > :is(.plan-check-provenance,.plan-feasibility-review) { display:block; }
+.bidang-air .plan-targets { padding:20px; background:#f8fdff; border-radius:14px; }
+.bidang-air .plan-targets h3 { font-size:23px; margin:0 0 8px; }
+.bidang-air .plan-targets > p { margin:0 0 12px; color:#42697e; font-size:14px; line-height:1.5; }
+.bidang-air .plan-target-rows { max-height:300px; overflow:auto; }
+.bidang-air .plan-target-rows > div { display:grid; grid-template-columns:minmax(0,1fr) 20px 28px minmax(0,1fr); align-items:center; gap:12px; padding:12px 8px; border-top:1px solid #d3e7f0; font-size:14px; }
+.bidang-air .plan-target-rows > div > span,.bidang-air .plan-target-rows strong { overflow-wrap:anywhere; }
+.bidang-air .view-impact .decision-support,.bidang-air .view-impact .decision-provenance,.bidang-air .view-impact .decision-footnotes { margin:14px 0 0; padding:20px; background:#f8fdff; border-radius:14px; overflow-wrap:anywhere; }
+.bidang-air .view-impact .decision-conclusion > ul { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:10px 28px; margin:16px 0; padding-left:20px; }
+.bidang-air .view-impact .decision-provenance > summary { font-size:20px; padding-bottom:12px; }
+.bidang-air .view-impact .decision-provenance ul { max-height:280px; overflow:auto; padding:10px 10px 10px 28px; background:#eef8fc; border-radius:8px; }
+.bidang-air .view-impact .decision-provenance li { padding:7px 0; border-bottom:1px solid #d3e7f0; font-size:14px; line-height:1.6; }
+.bidang-air .view-impact .decision-export { display:none; }
+.bidang-air .view-impact .plan-feasibility-review { padding:18px 20px; margin-top:14px; background:#f8fdff; border-radius:14px; }
+.bidang-air .plan-component-values { display:grid; grid-template-columns:1fr 1.4fr; gap:12px; }
+.bidang-air .plan-component-values dt { color:#44687b; }
+.bidang-air .plan-component-values dd { margin:0; font-weight:600; overflow-wrap:anywhere; }
+.bidang-air .plan-empty { max-width:650px; margin:28px auto; padding:28px; background:#f8fdff; border-radius:16px; }
+.bidang-air .plan-recommendation { display:grid; gap:16px; }
+.bidang-air .plan-recommendation-hero { padding:24px 26px; border-radius:18px; border-left:5px solid #087fb4; background:#eaf8fd; }
+.bidang-air .plan-recommendation-hero > span { display:block; margin-bottom:8px; color:#087294; font-size:11px; font-weight:800; letter-spacing:.08em; }
+.bidang-air .plan-recommendation-hero h3 { margin:0; max-width:980px; color:#0b3652; font-size:30px; line-height:1.2; }
+.bidang-air .plan-recommendation-hero p { margin:10px 0 0; max-width:980px; color:#41677b; line-height:1.55; }
+.bidang-air .plan-recommendation-reason { display:flex; gap:18px; align-items:flex-start; padding:14px 18px; border-radius:14px; background:#f5fbfd; }
+.bidang-air .plan-recommendation-reason strong { min-width:150px; color:#174c68; }
+.bidang-air .plan-recommendation-reason p { margin:0; line-height:1.55; }
+.bidang-air .plan-recommendation-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.bidang-air .plan-recommendation-grid > section { min-width:0; padding:20px; border-radius:16px; background:#f8fdff; border:1px solid #d8eaf2; }
+.bidang-air .plan-recommendation-grid h4 { display:flex; align-items:center; gap:9px; margin:0 0 14px; color:#123f59; font-size:18px; }
+.bidang-air .plan-recommendation-grid h4 svg { flex:0 0 auto; color:#0b87a8; }
+.bidang-air .plan-recommendation-grid ul,.bidang-air .plan-recommendation-grid ol { display:grid; gap:10px; margin:0; padding-left:20px; }
+.bidang-air .plan-recommendation-grid li { color:#294f64; line-height:1.55; }
+.bidang-air .plan-recommendation-grid ol li strong,.bidang-air .plan-recommendation-grid ol li span { display:block; }
+.bidang-air .plan-recommendation-grid ol li strong { margin-bottom:3px; color:#123f59; }
+.bidang-air .plan-recommendation-grid p { margin:0; color:#42677a; line-height:1.55; }
+.bidang-air .plan-recommendation-secondary > section:first-child { background:#f2fbfa; }
+@media(max-width:1200px) {
+ .bidang-air .view-impact .plan-summary { grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr); }
+ .bidang-air .plan-flow-stage { grid-template-columns:minmax(0,1fr); }
+ .bidang-air .plan-flow-labels { grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+ .bidang-air .plan-flow-leader { display:none; }
+ .bidang-air .plan-flow-labels strong { font-size:23px; }
+ .bidang-air .plan-impact-strip > p { display:none; }
+ .bidang-air .plan-summary-bottom { gap:14px; padding:16px; }
+ .bidang-air .plan-summary-bottom > section+section { padding-left:14px; }
+}
+@media(max-width:760px) {
+ .bidang-air .view-impact { padding:18px 14px; }
+ .bidang-air .view-impact:has(.plan-summary) > .page-heading { position:absolute; width:1px; height:1px; margin:0; overflow:hidden; clip-path:inset(50%); }
+ .bidang-air .view-impact .page-heading h1 { font-size:28px; }
+ .bidang-air .view-impact .plan-masthead { grid-template-columns:minmax(0,1fr); gap:10px; }
+ .bidang-air .view-impact .plan-masthead > div:last-child { width:100%; justify-content:flex-start; }
+ .bidang-air .view-impact .plan-masthead .scenario-switch { width:100%; max-width:none; }
+ .bidang-air .view-impact .plan-masthead .primary { flex:1; }
+ .bidang-air .plan-view-tabs { position:static; gap:0; }
+ .bidang-air .plan-view-tabs button { flex:1; padding:8px 4px; font-size:13px; min-height:48px; }
+ .bidang-air .plan-view-tabs button:last-child { margin:5px 0 7px; min-height:40px; padding:6px 5px; border-radius:10px; }
+ .bidang-air .plan-recommendation-hero { padding:18px; }
+ .bidang-air .plan-recommendation-hero h3 { font-size:23px; }
+ .bidang-air .plan-recommendation-reason { display:block; padding:14px; }
+ .bidang-air .plan-recommendation-reason strong { display:block; margin-bottom:6px; }
+ .bidang-air .plan-recommendation-grid { grid-template-columns:minmax(0,1fr); }
+ .bidang-air .plan-recommendation-grid > section { padding:16px; }
+ .bidang-air .view-impact .plan-summary { grid-template-columns:minmax(0,1fr); }
+ .bidang-air .plan-result-visual,.bidang-air .view-impact .plan-summary .plan-composition { padding:14px; }
+ .bidang-air .plan-flow-stage { grid-template-columns:minmax(0,1fr); }
+ .bidang-air .plan-flow-art { min-height:0; }
+ .bidang-air .plan-flow-leader { display:none; }
+ .bidang-air .plan-flow-labels { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .bidang-air .plan-flow-labels button { padding:7px 5px; }
+ .bidang-air .plan-flow-labels strong { font-size:22px; }
+ .bidang-air .plan-flow-labels button > span > span { font-size:12px; }
+ .bidang-air .plan-impact-strip { gap:10px; padding:12px; flex-wrap:wrap; }
+ .bidang-air .plan-impact-strip > svg { display:none; }
+ .bidang-air .plan-impact-strip > div:first-of-type strong { font-size:28px; }
+ .bidang-air .plan-impact-strip span { font-size:12px; }
+ .bidang-air .plan-impact-strip > p { display:block; width:100%; max-width:none; }
+ .bidang-air .plan-water-flow h3,.bidang-air .plan-composition h3 { font-size:20px; }
+ .bidang-air .plan-summary-bottom { grid-template-columns:minmax(0,1fr); gap:18px; }
+ .bidang-air .plan-summary-bottom > section+section { border-left:0; border-top:1px solid #c9e1ed; padding:16px 0 0; }
+ .bidang-air .plan-detail-body[data-view="evidence"][data-topic="water"] { display:block; }
+ .bidang-air .plan-detail-body[data-view="evidence"][data-topic="water"] > :is(.plan-explanation-flow,.decision-meaning,.scenario-chart) { padding:14px; margin:0 0 14px; }
+ .bidang-air .plan-explanation-topics { display:grid; grid-template-columns:1fr 1fr; }
+ .bidang-air .plan-explanation-topics button { font-size:12px; padding:8px; gap:6px; }
+ .bidang-air .view-impact .decision-support,.bidang-air .view-impact .decision-provenance,.bidang-air .view-impact .decision-footnotes { padding:16px; }
+}
+
+.bidang-air .view-impact .plan-masthead > div:last-child > button.primary { color:white; background:#0076b0; border:1px solid #0076b0; }
+
+@media(min-width:1366px) {
+ .bidang-air .view-impact:has(.plan-workbench) { display:grid; grid-template-columns:minmax(0,1fr); align-items:start; }
+ .bidang-air .view-impact:has(.plan-summary) > .page-heading { position:absolute; width:1px; height:1px; margin:0; overflow:hidden; clip-path:inset(50%); }
+ .bidang-air .view-impact:has(.plan-workbench) > .page-heading .current-result { display:none; }
+ .bidang-air .view-impact:has(.plan-workbench) > .plan-masthead { grid-column:1; grid-row:1; width:100%; margin:0 0 12px; align-self:start; }
+ .bidang-air .view-impact:has(.plan-workbench) > .plan-masthead > div:first-child { min-width:0; }
+ .bidang-air .view-impact:has(.plan-workbench) > .plan-masthead > div:last-child { justify-content:flex-end; align-items:flex-start; min-width:0; }
+ .bidang-air .view-impact:has(.plan-workbench) > .plan-workbench { grid-column:1; }
+}
+
+.bidang-air .plan-reading-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; list-style:none; margin:16px 0 0; padding:0; }
+.bidang-air .plan-reading-steps > li { display:flex; align-items:flex-start; gap:10px; min-width:0; }
+.bidang-air .plan-reading-steps > li > span { display:flex; align-items:center; justify-content:center; border-radius:50%; width:30px; height:30px; flex:0 0 auto; background:#bceafa; color:#0b5c82; }
+.bidang-air .plan-reading-steps > li:nth-child(2) > span { background:#b7e5dc; color:#1a685a; }
+.bidang-air .plan-reading-steps > li:nth-child(3) > span { background:#d4e1eb; color:#2d526e; }
+.bidang-air .plan-reading-steps h4 { margin:0 0 6px; font-size:15px; }
+.bidang-air .plan-reading-steps strong { font-size:23px; }
+.bidang-air .view-impact .decision-meaning .plan-reading-steps p { margin-top:8px; font-size:13px; line-height:1.6; }
+@media(max-width:960px) { .bidang-air .plan-reading-steps { grid-template-columns:minmax(0,1fr); } }
+
+/* The actual selection leads the populated decision screen. */
+.bidang-air .view-impact:has(.plan-summary) .page-heading h1 { font-size:24px; }
+.bidang-air .view-impact:has(.plan-summary) .plan-masthead h2 { font-size:28px; }
+.bidang-air .view-impact .plan-hero-outcome > span > button { min-height:32px; padding:3px 0; font-size:12px; background:none; border:0; color:#006b98; text-decoration:underline; text-underline-offset:3px; }
+
+
+/* Page 5 reference composition: compact summary strip, aligned tabs, visual meaning, single action rail. */
+.bidang-air .view-impact:has(.plan-summary) > .page-heading{position:static!important;width:auto!important;height:auto!important;overflow:visible!important;clip-path:none!important;margin:0 0 12px!important;align-self:stretch!important}
+.bidang-air .view-impact:has(.plan-summary) > .page-heading h1{font-size:28px!important;line-height:1.1;margin:0 0 4px!important}
+.bidang-air .view-impact:has(.plan-summary) > .page-heading p{margin:0;color:#456b80;font-size:13px}
+.bidang-air .view-impact .plan-masthead{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(170px,.72fr) minmax(240px,1fr) minmax(220px,.9fr)!important;gap:0!important;align-items:stretch!important;width:100%!important;margin:0 0 8px!important;padding:16px 18px!important;background:#f8fdff!important;border-radius:16px!important;box-shadow:0 1px 0 #cfe7f1!important}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:13px!important;min-width:0;padding:0 20px;border-right:1px solid #c9e1ed}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell:first-child{padding-left:4px}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell>svg{flex:0 0 auto;color:#0788c3}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell>div{display:flex;flex-direction:column;align-items:flex-start!important;gap:2px!important;min-width:0}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell strong{font-size:18px;line-height:1.2;color:#123c57;white-space:normal}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell span{font-size:12px;color:#426b81}
+.bidang-air .view-impact .plan-masthead .plan-mast-cell small{font-size:11px;line-height:1.35;color:#527489;overflow-wrap:anywhere}
+.bidang-air .view-impact .plan-masthead .plan-mast-rain strong{font-size:18px}
+.bidang-air .view-impact .plan-masthead .plan-mast-runoff strong{font-size:20px}
+.bidang-air .view-impact .plan-mast-status{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:7px!important;padding-left:22px;min-width:0}
+.bidang-air .view-impact .plan-mast-status span{display:flex;align-items:center;gap:8px;font-size:12px;line-height:1.3;color:#345e74}
+.bidang-air .view-impact .plan-mast-status .is-ok svg{width:17px;height:17px;padding:2px;border-radius:50%;background:#0b9b9b;color:#fff}
+.bidang-air .view-impact .plan-mast-status .is-pending i{width:17px;height:17px;border:1.5px solid #65859a;border-radius:50%;flex:0 0 auto}
+.bidang-air .plan-view-tabs{gap:0!important;margin:0 0 14px!important;padding:0!important}
+.bidang-air .plan-view-tabs button,.bidang-air .plan-view-tabs button:last-child{margin:0!important;min-height:44px!important;padding:8px 22px!important;border:0!important;border-bottom:3px solid transparent!important;border-radius:0!important;background:none!important;color:#204f6a!important;box-shadow:none!important;font-size:14px!important;font-weight:650!important}
+.bidang-air .plan-view-tabs button[aria-selected="true"],.bidang-air .plan-view-tabs button:last-child[aria-selected="true"]{color:#0076b0!important;border-bottom-color:#008dce!important;background:none!important;font-weight:800!important}
+.bidang-air .view-impact .plan-summary{grid-template-columns:minmax(0,1.42fr) minmax(340px,1fr)!important;gap:12px!important}
+.bidang-air .plan-summary-bottom{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr) minmax(0,.95fr)!important;gap:12px!important;padding:0!important;background:none!important;border-radius:0!important}
+.bidang-air .plan-summary-bottom>section{padding:16px 18px!important;background:#f8fdff!important;border-radius:14px!important;border-left:0!important}
+.bidang-air .plan-summary-bottom>section+section{padding-left:18px!important}
+.bidang-air .plan-meaning-metrics{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:6px 0 12px}
+.bidang-air .plan-meaning-metrics>div{display:flex;align-items:center;gap:10px;min-width:0;padding:4px 14px 4px 0}
+.bidang-air .plan-meaning-metrics>div+div{padding-left:14px;border-left:1px solid #c9e1ed}
+.bidang-air .plan-meaning-metrics svg{flex:0 0 auto;color:#078dcc}
+.bidang-air .plan-meaning-metrics .is-residual svg{color:#93adbe}
+.bidang-air .plan-meaning-metrics strong{display:block;font-size:24px;line-height:1.05;color:#123c57;white-space:nowrap}
+.bidang-air .plan-meaning-metrics strong small{font-size:.6em}
+.bidang-air .plan-meaning-metrics span{display:block;margin-top:3px;font-size:12px;color:#456a7e}
+.bidang-air .plan-reason-row{display:flex;align-items:end;justify-content:space-between;gap:12px;padding-top:8px;border-top:1px solid #d7e9f1}
+.bidang-air .plan-reason-row h4{margin:0 0 3px;font-size:12px}
+.bidang-air .plan-reason-row p{margin:0!important;font-size:12px!important}
+.bidang-air .plan-reason-row .btn-secondary{flex:0 0 auto;min-height:36px;padding:7px 12px;font-size:12px}
+.bidang-air .plan-action-strip{grid-column:1/-1;display:grid;grid-template-columns:minmax(280px,1.35fr) repeat(3,minmax(160px,.7fr)) minmax(210px,.9fr);align-items:center;gap:0;padding:14px 18px;background:#f8fdff;border-radius:14px}
+.bidang-air .plan-action-intro{min-width:0;padding-right:18px}
+.bidang-air .plan-action-intro h3{margin:0 0 4px;font-size:16px}
+.bidang-air .plan-action-intro p{margin:0;font-size:12px;line-height:1.45;color:#456a7e}
+.bidang-air .plan-action-item{display:grid;grid-template-columns:28px minmax(0,1fr);align-items:center;justify-content:stretch;gap:10px;width:100%;min-width:0;min-height:50px;padding:6px 16px;border:0;border-left:1px solid #c9e1ed;border-radius:0;background:none;text-align:left;color:#0e4f72}
+.bidang-air .plan-action-item:hover:not(:disabled){background:#edf8fc}
+.bidang-air .plan-action-item>svg{justify-self:center;width:24px;height:24px;color:#078dcc}
+.bidang-air .plan-action-item span{min-width:0;width:100%}
+.bidang-air .plan-action-item strong,.bidang-air .plan-action-item small{display:block}
+.bidang-air .plan-action-item strong{font-size:12px;line-height:1.25}
+.bidang-air .plan-action-item small{margin-top:2px;color:#557487;font-size:10px;line-height:1.25}
+.bidang-air .plan-action-primary{min-height:44px;margin-left:10px;padding:9px 14px;white-space:nowrap}
+@media(max-width:1100px){.bidang-air .view-impact .plan-masthead{grid-template-columns:1fr 1fr!important}.bidang-air .view-impact .plan-masthead .plan-mast-cell{padding:10px 14px;border-right:0;border-bottom:1px solid #d7e9f1}.bidang-air .view-impact .plan-mast-status{padding:10px 14px}.bidang-air .plan-action-strip{grid-template-columns:1fr 1fr}.bidang-air .plan-action-intro{grid-column:1/-1;padding:0 0 10px}.bidang-air .plan-action-item{border-left:0;border-top:1px solid #d7e9f1}.bidang-air .plan-action-primary{margin:8px 0 0}}
+@media(max-width:760px){.bidang-air .view-impact .plan-masthead{grid-template-columns:1fr!important;padding:10px 14px!important}.bidang-air .view-impact .plan-masthead .plan-mast-cell{padding:10px 0!important}.bidang-air .view-impact .plan-mast-status{padding:10px 0!important}.bidang-air .plan-view-tabs button,.bidang-air .plan-view-tabs button:last-child{flex:1;padding:8px 5px!important;font-size:12px!important}.bidang-air .view-impact .plan-summary{grid-template-columns:1fr!important}.bidang-air .plan-summary-bottom{grid-template-columns:1fr!important}.bidang-air .plan-meaning-metrics{grid-template-columns:1fr 1fr}.bidang-air .plan-action-strip{grid-template-columns:1fr!important;padding:12px 14px}.bidang-air .plan-action-item{border-left:0;border-top:1px solid #d7e9f1;padding:9px 0}.bidang-air .plan-action-primary{width:100%}}
+
+.bidang-air .plan-summary .plan-impact-strip{display:none!important}
+
+@media(min-width:1366px){
+ .bidang-air .view-impact:has(.plan-workbench)>.page-heading{grid-column:1;grid-row:1!important}
+ .bidang-air .view-impact:has(.plan-workbench)>.plan-masthead{grid-column:1;grid-row:2!important}
+ .bidang-air .view-impact:has(.plan-workbench)>.plan-workbench{grid-column:1;grid-row:3!important}
+}
+
+/* Empty Rencana viewport fill 2026-10-16: empty plan keeps the illustrated workplane continuous to the viewport floor. */
+.bidang-air:has(.view-impact > .plan-empty){
+  min-height:100dvh;
+  display:flex;
+  flex-direction:column;
+}
+.bidang-air:has(.view-impact > .plan-empty) > .app-body{
+  flex:1 1 auto;
+  display:flex;
+  min-height:0;
+  width:100%;
+}
+.bidang-air .view-impact:has(> .plan-empty){
+  flex:1 1 auto;
+  width:100%;
+  min-height:0;
+  margin:0 auto;
+}

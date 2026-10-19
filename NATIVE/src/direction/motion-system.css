@@ -1,0 +1,113 @@
+/* TIRTA motion + rhythm system — light, compositor-first interaction polish. */
+.bidang-air{
+  --tirta-gap:16px;
+  --tirta-gap-tight:8px;
+  --tirta-motion-fast:150ms;
+  --tirta-motion:240ms;
+  --tirta-motion-expand:360ms;
+  --tirta-ease:cubic-bezier(.22,1,.36,1);
+}
+
+/* Never use transition:all. Keep the global layer to cheap visual properties. */
+.bidang-air :where(button,a,summary,[role="button"]){
+  transition:color var(--tirta-motion-fast) ease,background-color var(--tirta-motion-fast) ease,border-color var(--tirta-motion-fast) ease,box-shadow var(--tirta-motion) var(--tirta-ease),opacity var(--tirta-motion-fast) ease,transform var(--tirta-motion) var(--tirta-ease);
+}
+.bidang-air :where(input,select,textarea){
+  transition:color var(--tirta-motion-fast) ease,background-color var(--tirta-motion-fast) ease,border-color var(--tirta-motion-fast) ease,box-shadow var(--tirta-motion) var(--tirta-ease),opacity var(--tirta-motion-fast) ease;
+}
+.bidang-air :where(button,[role="button"]):active:not(:disabled){transform:translateY(1px) scale(.99);}
+
+/* Selected/highlighted controls should glide instead of blinking. */
+.bidang-air :where(.scenario-switch,.scenario-strip,.compare-mobile-view,.compare-mobile-switch) button{
+  transition:color 180ms ease,background-color 220ms var(--tirta-ease),border-color 220ms var(--tirta-ease),box-shadow 220ms var(--tirta-ease),transform 220ms var(--tirta-ease);
+}
+.bidang-air :where(.scenario-switch,.scenario-strip) button:is([aria-pressed="true"],.selected){
+  transform:translateY(-1px);
+  box-shadow:0 5px 14px rgba(19,126,170,.10);
+}
+
+/* Small data graphics interpolate their geometry instead of blinking between values. */
+.bidang-air :where(
+  .contribution-track,
+  .compare-meter,
+  .meter-track,
+  .composition-rail,
+  .assistant-volume-bar,
+  .landing-volume-bar,
+  .resource-meter-track,
+  .pixel-share,
+  .plan-scenario-compact i
+)>span,
+.bidang-air .pixel-share>i,
+.bidang-air .plan-scenario-compact i>b{
+  transform-origin:left center;
+  transition:width 420ms var(--tirta-ease),background-color 220ms ease,opacity 180ms ease;
+}
+/* Parcel coverage uses flex-grow rather than width, so animate the actual geometry property. */
+.bidang-air .surface-composition>span{
+  transform-origin:left center;
+  transition:flex-grow 420ms var(--tirta-ease),background-color 220ms ease,opacity 180ms ease;
+}
+.bidang-air .volume-outcomes button{
+  transition:height 320ms var(--tirta-ease),background-color 220ms ease,color 180ms ease,opacity 180ms ease;
+}
+.bidang-air :where(.zone-row,.compare-candidate,.intervention-option,.alternative,.comparison-row){
+  transition:background-color 220ms ease,border-color 220ms ease,box-shadow 220ms var(--tirta-ease),opacity 180ms ease,transform 220ms var(--tirta-ease);
+}
+
+/* Major sibling rhythm follows Bandingkan's 16 px cadence. */
+@media (min-width:761px){
+  .bidang-air :where(.rain-top-composition,.intervention-top-composition,.comparison-top){gap:var(--tirta-gap);}
+  .bidang-air .view-interventions{column-gap:var(--tirta-gap);}
+  .bidang-air :where(.rain-atlas,.intervention-atlas,.comparison-workbench,.plan-workbench){row-gap:var(--tirta-gap);}
+}
+@media (min-width:961px){
+  .bidang-air .studio-layout{row-gap:var(--tirta-gap);}
+  .bidang-air .studio-layout .zone-register{margin-top:0!important;}
+  /* Active inspector fills row one so its visible bottom keeps the same 16px gap to the register.
+     The empty/folded state stays naturally short. */
+  .bidang-air .studio-layout.has-active-zone .studio-inspector{align-self:stretch;}
+  .bidang-air .studio-layout.has-active-zone .studio-inspector>.property-bench{height:100%;}
+}
+@media (max-width:760px){
+  .bidang-air{--tirta-gap:10px;}
+  .bidang-air :where(.rain-top-composition,.intervention-top-composition,.comparison-top){gap:var(--tirta-gap);}
+}
+
+@keyframes tirta-data-settle{
+  from{opacity:.70;transform:translateY(5px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes tirta-route-enter{
+  from{opacity:.76;transform:translateY(7px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.bidang-air .workspace.tirta-motion-enter > :not(.sr-only){
+  animation:tirta-route-enter 260ms var(--tirta-ease) both;
+}
+.bidang-air .workspace.tirta-motion-data :is(.rain-analysis,.rain-parcel-context,.rain-contribution-region,.intervention-results,.comparison-top,.compare-matrix-section,.plan-workbench,.plan-summary),
+.bidang-air .rain-atlas.is-data-settling :is(.rain-analysis,.rain-parcel-context,.rain-contribution-region){
+  animation:tirta-data-settle 220ms var(--tirta-ease) both;
+}
+.bidang-air .rain-atlas.is-data-settling .rain-parcel-context{animation-delay:18ms;}
+.bidang-air .rain-atlas.is-data-settling .rain-contribution-region{animation-delay:36ms;}
+
+@media (prefers-reduced-motion:reduce){
+  .bidang-air *, .bidang-air *::before, .bidang-air *::after{
+    scroll-behavior:auto!important;
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+  }
+}
+
+
+/* Modal motion: short, calm, and compositor-friendly. */
+@keyframes tirta-dialog-in{from{opacity:0;transform:translateY(8px) scale(.975)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes tirta-dialog-out{from{opacity:1;transform:translateY(0) scale(1)}to{opacity:0;transform:translateY(5px) scale(.985)}}
+@keyframes tirta-backdrop-in{from{background-color:rgba(13,46,61,0);backdrop-filter:blur(0)}to{background-color:rgba(13,46,61,.4);backdrop-filter:blur(5px)}}
+@keyframes tirta-backdrop-out{from{opacity:1}to{opacity:0}}
+.bidang-air dialog.context-dialog[open]:not(.inline-editor):not([data-closing]){transform-origin:50% 48%;animation:tirta-dialog-in 205ms var(--tirta-ease) both}
+.bidang-air dialog.context-dialog[open]:not(.inline-editor):not([data-closing])::backdrop{animation:tirta-backdrop-in 180ms ease-out both}
+.bidang-air dialog.context-dialog[open][data-closing]:not(.inline-editor){pointer-events:none;animation:tirta-dialog-out 175ms cubic-bezier(.4,0,1,1) both}
+.bidang-air dialog.context-dialog[open][data-closing]:not(.inline-editor)::backdrop{animation:tirta-backdrop-out 175ms ease-in both}

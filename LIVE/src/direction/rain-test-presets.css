@@ -1,0 +1,4 @@
+.fresh-rain-presets { display:flex; align-items:center; flex-wrap:wrap; gap:6px; padding:10px 0; }
+.fresh-rain-presets > span,.fresh-rain-presets > small { flex-basis:100%; font-size:12px; color:#466b80; }
+.fresh-rain-presets button { min-height:40px; padding:8px 14px; border:1px solid #b4ddea; border-radius:12px; background:#eefaff; color:#075d7f; font-weight:600; }
+.fresh-rain-presets button:hover { background:#d7f0fa; }

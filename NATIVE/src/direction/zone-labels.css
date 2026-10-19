@@ -1,0 +1,25 @@
+.zone-mark-paper {
+  fill: #fffffff2;
+  stroke: #acbab7;
+  stroke-width: 1;
+  filter: drop-shadow(0 1px 2px #20372e16);
+}
+.zone-mark-number { font-family: inherit; font-size: 12px; font-weight: 700; fill: white; }
+.zone-mark-name { font-family: inherit; font-size: 12px; font-weight: 650; fill: #24343b; }
+.zone-mark.is-active .zone-mark-paper { fill: white; stroke: #345cbe; stroke-width: 1.5; }
+.is-authoring .zone-mark { opacity: .2; }
+.drawing-error { flex-basis: 100%; display: grid; gap: 5px; padding: 12px 14px; border-left: 3px solid #aa3535; background: #fff4f2; color: #842828; font-size: 14px; line-height: 1.5; }
+.drawing-error strong { font-size: 15px; }
+.drawing-error small { font-size: 13px; color: #654343; }
+.zone-draft.draft-rejected { stroke: #aa3535; fill: #aa35351a; }
+.map-zone-readout { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; min-height: 44px; }
+.map-zone-readout > span { min-width: 0; }
+.map-zone-readout strong { display: block; font-size: 15px; line-height: 1.4; overflow-wrap: anywhere; }
+.map-zone-readout small { display: block; font-size: 13px; line-height: 1.5; color: #52616a; overflow-wrap: anywhere; }
+.readout-index { display: grid; place-items: center; flex: 0 0 28px; height: 28px; border: 1px solid; border-left-width: 4px; border-radius: 4px; font-size: 13px; }
+.map-bottomline .zoom-controls { flex-shrink: 0; }
+@media (max-width: 600px) {
+  .approved-parcel .map-bottomline { flex-wrap: wrap; }
+  .map-zone-readout { flex-basis: 100%; }
+  .map-bottomline .zoom-controls { margin-left: auto; }
+}

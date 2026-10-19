@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="210" viewBox="0 0 1100 210" fill="none">
+  <defs>
+    <linearGradient id="wash" x1="450" y1="140" x2="1070" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#edf9fc" stop-opacity="0"/>
+      <stop offset=".65" stop-color="#e8f5fc"/>
+      <stop offset="1" stop-color="#dceffb"/>
+    </linearGradient>
+    <linearGradient id="crest" x1="640" y1="0" x2="1100" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#deeffb" stop-opacity="0"/>
+      <stop offset="1" stop-color="#bddff5" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="740" y1="65" x2="1100" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e0f5f5" stop-opacity="0"/>
+      <stop offset="1" stop-color="#c8edf0" stop-opacity=".7"/>
+    </linearGradient>
+  </defs>
+  <path d="M270 0H1100V188C940 185 914 115 758 133C593 152 512 49 270 0Z" fill="url(#wash)"/>
+  <path d="M470 0H1100V62C998 125 935 100 847 58C737 5 659 71 470 0Z" fill="url(#crest)"/>
+  <path d="M752 0H1100V130C1013 111 1009 49 902 56C842 60 795 41 752 0Z" fill="url(#sea)"/>
+  <g stroke="#72b4d2" stroke-opacity=".27" stroke-width="2" stroke-linecap="round">
+    <path d="M675 112l-3 9M705 129l-3 9M743 110l-3 9M777 137l-3 9M813 120l-3 9M844 145l-3 9M882 135l-3 9M920 155l-3 9M956 143l-3 9M994 166l-3 9M1033 151l-3 9M1069 173l-3 9"/>
+  </g>
+</svg>

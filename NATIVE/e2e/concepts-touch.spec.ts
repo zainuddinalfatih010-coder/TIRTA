@@ -1,0 +1,20 @@
+import {test,expect} from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+for(const id of ['atelier','lintasan','spektrum'])test(`${id}: touch manipulation and mobile accessibility`,async({browser})=>{
+  const context=await browser.newContext({viewport:{width:390,height:844},hasTouch:true,isMobile:true});const page=await context.newPage();
+  await page.goto(`http://127.0.0.1:4173/concepts.html?studio=${id}`);await page.evaluate(()=>document.fonts.ready);
+  if(id!=='atelier')await page.getByRole('button',{name:'Ubah sketsa',exact:true}).tap();
+  await page.getByRole('button',{name:'Geser zona',exact:true}).tap();
+  const zone=page.locator('[data-zone="z3"] .zone-body');await zone.scrollIntoViewIfNeeded();const box=await zone.boundingBox();expect(box).not.toBeNull();const before=await zone.getAttribute('points');
+  const session=await context.newCDPSession(page);const x=box!.x+box!.width/2,y=box!.y+box!.height/2;
+  await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
+  await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+10,y:y+6}]});
+  await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  await expect(zone).not.toHaveAttribute('points',before!);
+  await page.getByRole('button',{name:'Urungkan perubahan sketsa'}).tap();await expect(zone).toHaveAttribute('points',before!);
+  await page.getByRole('button',{name:/Gunakan asumsi demo/}).tap();
+  if(id==='atelier')await page.getByRole('button',{name:'Bandingkan',exact:true}).first().tap();
+  if(id==='lintasan')await page.getByRole('navigation',{name:'Langkah perencanaan'}).getByRole('button',{name:/Bandingkan/}).tap();
+  const scan=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();expect(scan.violations,JSON.stringify(scan.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})))).toEqual([]);
+  await context.close();
+});

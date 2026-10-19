@@ -1,0 +1,5 @@
+import {useId} from 'react';
+export function TirtaOrb({state='idle',compact=false}:{state?:'idle'|'receiving'|'planning'|'field-gap'|'ready';compact?:boolean}){
+ const id=useId().replace(/:/g,'');
+ return <span className={`navigator-orb ${compact?'compact':''}`} data-state={state} aria-hidden="true"><svg viewBox="0 0 80 80"><defs><radialGradient id={id} cx="32%" cy="22%" r="85%"><stop stopColor="#ffffff"/><stop offset=".38" stopColor="#b8eff7"/><stop offset=".78" stopColor="#34a8b8"/><stop offset="1" stopColor="#147387"/></radialGradient><clipPath id={`${id}-clip`}><circle cx="40" cy="40" r="35"/></clipPath></defs><circle cx="40" cy="40" r="35" fill={`url(#${id})`} stroke="#8acbd7"/><g clipPath={`url(#${id}-clip)`} className="orb-water"><path d="M0 44Q20 21 42 41T85 33V80H0Z" fill="#00859e" opacity=".22"/><path d="M0 51Q35 23 80 50" fill="none" stroke="white" strokeWidth="1.5" opacity=".8"/></g><ellipse cx="27" cy="20" rx="13" ry="7" fill="white" opacity=".42" transform="rotate(-27 27 20)"/></svg></span>;
+}

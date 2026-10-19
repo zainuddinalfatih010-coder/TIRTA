@@ -1,0 +1,26 @@
+import {useState} from 'react';
+import {ArrowRight,MapPin,NotebookPen} from 'lucide-react';
+import type {ProjectV2} from '../domain/projectV2';
+import type {NavigatorFact} from '../domain/navigatorFacts';
+import type {NavigatorTask} from '../domain/navigatorPlanner';
+import {readInput,writeParameter} from '../domain/planningAuthoring';
+import {projectV2Schema} from '../domain/projectV2';
+import type {ReferenceV2} from '../domain/v2-primitives';
+import {navigatorFactRegistry} from '../domain/navigatorFacts';
+import {RupiahInput} from './RupiahInput';
+import {rupiahCanonical,rupiahText} from './planningNumbers';
+function reference(project:ProjectV2,fact:NavigatorFact):ReferenceV2|undefined {
+ const c=project.components.find(c=>c.id===fact.objectId);
+ return fact.key==='cost'?c?.totalCost:fact.key==='area'?c?.occupiedArea:fact.key==='budget'?project.constraints.budget:fact.key==='land'?project.constraints.usableArea:undefined;
+}
+const moneyFact=(fact:NavigatorFact)=>fact.key==='cost'||fact.key==='budget';
+const initialNumberText=(project:ProjectV2,fact:NavigatorFact)=>{const text=readInput(project,reference(project,fact)).text;return moneyFact(fact)?rupiahText(text):text;};
+export function NavigatorTaskRenderer({task,facts,project,onTool,onProject,onDefer,preferredFamily}:{task:NavigatorTask;facts:NavigatorFact[];project:ProjectV2;onTool:(fact:NavigatorFact)=>void;onProject:(project:ProjectV2)=>void;onDefer:()=>void;preferredFamily?:'tank'|'resapan'|'garden'|'permeable'|'biopori'|'undecided'}){
+ const numeric=facts.length>0&&facts.every(f=>!!reference(project,f));
+ const [values,setValues]=useState<Record<string,string>>(()=>Object.fromEntries(facts.map(f=>[f.id,initialNumberText(project,f)]))),[basis,setBasis]=useState(''),[source,setSource]=useState(''),[error,setError]=useState('');
+ const submit=()=>{try{const next=structuredClone(project);for(const f of facts){const ref=reference(next,f)!,display=values[f.id]??'',text=moneyFact(f)?rupiahCanonical(display):display;if(text==='invalid-rupiah')throw new Error('Periksa format rupiah.');writeParameter(next,ref.id,ref.unit,{text,source:basis==='assumption'?'Asumsi pengguna':source,evidence:basis==='assumption'?'ASSUMPTION':'USER_INPUT'});}onProject(projectV2Schema.parse(next));}catch(e){setError(e instanceof Error?e.message:'Periksa isian.');}};
+ return <div className="navigator-task-fields" data-task-kind={task.kind}>
+ {task.kind==='field-mission'&&<p className="navigator-field-note"><MapPin size={18}/>Kumpulkan data pada lokasi ini. Angka yang belum diperiksa tetap kosong.</p>}
+ {facts[0]?.key==='options'&&preferredFamily&&preferredFamily!=='undecided'?<><p>Uji {({tank:'Tangki',resapan:'Sumur / area resapan',garden:'Rain garden',permeable:'Permukaan berpori',biopori:'Biopori'} as const)[preferredFamily]} tanpa menambahkannya otomatis ke proyek.</p><div className="navigator-task-actions"><button className="primary" onClick={()=>onTool(facts[0]!)}>Jelajahi penanganan<ArrowRight size={18}/></button><button onClick={onDefer}>Belum tahu</button></div></>:facts.some(f=>f.key.startsWith('roof'))?<><p>Atur bentuk, arah turun, dan outlet langsung pada atap. Sudut tepat boleh tetap belum diketahui.</p><div className="navigator-task-actions"><button className="primary" onClick={()=>onTool(facts.find(f=>f.key==='roofDrainage')??facts[0]!)}>Atur aliran atap<ArrowRight size={18}/></button><button onClick={onDefer}>Belum tahu</button></div></>:numeric?<form onSubmit={e=>{e.preventDefault();submit();}}><div className="navigator-number-bundle">{facts.map(f=>{const label=f.label??navigatorFactRegistry[f.key].label,value=values[f.id]??'';return <label key={f.id} className="navigator-answer-field"><span className="navigator-answer-label">{label}</span>{moneyFact(f)?<RupiahInput aria-label={label} value={value} onChange={next=>setValues({...values,[f.id]:next})} placeholder="Belum diketahui"/>:<span className="navigator-number-input"><input aria-label={label} inputMode="decimal" value={value} onChange={e=>setValues({...values,[f.id]:e.target.value})} placeholder="Belum diketahui"/><span>m²</span></span>}</label>})}</div><label>Dasar angka<select value={basis} onChange={e=>setBasis(e.target.value)}><option value="">Pilih dasar angka</option><option value="assumption">Perkiraan saya</option><option value="source">Sumber lain</option></select></label>{basis==='source'&&<label>Sumber<input value={source} onChange={e=>setSource(e.target.value)} placeholder="Nama sumber atau catatan"/></label>}{error&&<p role="alert">{error}</p>}<div className="navigator-task-actions"><button className="primary" type="submit">Terapkan angka<ArrowRight size={18}/></button><button type="button" onClick={onDefer}>Belum tahu</button></div></form>:<><ul className="navigator-required-list">{facts.map(f=><li key={f.id}><NotebookPen size={18}/><div><strong>{f.label??navigatorFactRegistry[f.key].label}</strong><span>{f.valueLabel}</span></div></li>)}</ul><div className="navigator-task-actions"><button className="primary" onClick={()=>onTool(facts[0]!)}> {task.returnDestination==='studio'?'Buka Studio Persil':task.returnDestination==='rain'?'Isi hujan':task.returnDestination==='alternatives'?'Tinjau alternatif':'Isi di editor penanganan'}<ArrowRight size={18}/></button><button onClick={onDefer}>Belum tahu</button></div></>}
+ </div>;
+}

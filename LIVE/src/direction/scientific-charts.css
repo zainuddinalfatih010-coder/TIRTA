@@ -1,0 +1,84 @@
+/* Live analytical marks share the Bidang Air workplane; no chart images. */
+.bidang-air .scientific-chart { width:100%; min-width:0; }
+.scientific-chart svg { display:block; width:100%; height:auto; overflow:visible; }
+.scientific-chart .plot-label { font-size:14px; font-weight:600; fill:#234c62; }
+.scientific-chart .plot-value { font-size:16px; font-weight:700; fill:#123e56; }
+.scientific-chart .plot-tick { font-size:13px; fill:#395e72; }
+.plot-grid { stroke:#b5d6e5; stroke-width:1; }
+.plot-guide { stroke:#a8cbdc; stroke-dasharray:3 5; }
+.volume-reference { fill:#dfedf2; }
+.plot-point { cursor:pointer; outline:none; }
+.plot-point .point-mark { fill:#f5fcff; stroke:#007eaa; stroke-width:2; }
+.plot-point.active .point-mark { fill:#007eaa; stroke:#f5fcff; stroke-width:3; }
+.plot-point:focus-visible > circle:first-child { fill:#006ea81c; stroke:#103750; stroke-width:2; }
+.chart-legend { display:flex; flex-wrap:wrap; gap:6px; min-width:0; }
+.chart-legend button { display:flex; align-items:center; gap:8px; text-align:left; min-height:44px; padding:8px 12px; border:1px solid transparent; background:transparent; color:#264e65; font-size:14px; overflow-wrap:anywhere; }
+.chart-legend button[aria-pressed="true"] { background:#d5eef9; border-color:#7db8d3; color:#103750; }
+.chart-legend i { width:10px; height:10px; flex-shrink:0; border-radius:2px; }
+.volume-legend { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.volume-legend button { display:grid; grid-template-columns:10px minmax(0,1fr) auto; border-bottom-color:#c0ddea; border-radius:5px; }
+.volume-legend strong { color:#123e56; white-space:nowrap; font-size:14px; }
+.chart-reading { display:flex; flex-direction:column; gap:4px; min-height:75px; border-left:3px solid #83bdd5; padding:10px 15px; margin:14px 0 0; font-size:14px; line-height:1.6; color:#355b70; overflow-wrap:anywhere; }
+.chart-reading strong { color:#123e56; }
+.analysis-region { background:#dff3fc; border-radius:18px 42px 18px 18px; padding:28px; margin:22px 0 30px; min-width:0; }
+.analysis-heading { display:flex; justify-content:space-between; gap:16px; align-items:center; margin-bottom:16px; }
+.analysis-heading > span { font-size:14px; color:#476a7b; flex-shrink:0; }
+.analysis-heading h2 { color:#103750; font-size:26px; line-height:1.25; margin:8px 0 0; letter-spacing:-.6px; }
+.analysis-eyebrow { font-size:14px; font-weight:600; color:#42687d; }
+.candidate-legend { max-height:150px; overflow-y:auto; scrollbar-width:thin; margin-block:14px; padding:2px; }
+.chart-number { display:inline-grid; place-items:center; flex-shrink:0; min-width:23px; height:23px; border:1px solid #91bdd2; background:#f6fcff; border-radius:50%; font-size:13px; font-weight:700; }
+.tradeoff-reading { display:flex; flex-wrap:wrap; align-items:center; gap:18px 28px; padding-top:20px; margin-top:14px; border-top:1px solid #a8cdda; font-size:15px; }
+.tradeoff-reading > strong { flex:1 1 180px; overflow-wrap:anywhere; }
+.tradeoff-reading dl { display:flex; flex-wrap:wrap; gap:18px; margin:0; }
+.tradeoff-reading dt { font-size:13px; color:#476a7b; }
+.tradeoff-reading dd { margin:4px 0 0; font-size:18px; font-weight:650; color:#103750; }
+.tradeoff-reading > button { color:#00668f; border:0; padding:10px 0; background:none; font-size:14px; font-weight:600; }
+.scenario-key { display:flex; flex-wrap:wrap; gap:12px 24px; margin:12px 0; font-size:14px; color:#274e64; }
+.scenario-key > span { display:flex; align-items:center; gap:8px; overflow-wrap:anywhere; min-width:0; }
+.scenario-key i { width:24px; flex-shrink:0; }
+.baseline-key { border-top:2px dashed #839ca8; }
+.plan-key { border-top:3px solid #007eaa; }
+.scenario-readings { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr)); gap:0 20px; max-height:290px; overflow:auto; scrollbar-width:thin; padding:2px; }
+.scenario-readings button { min-width:0; display:grid; grid-template-columns:23px minmax(0,1fr) auto; align-items:center; gap:10px; border:0; border-bottom:1px solid #b6d7e6; background:transparent; text-align:left; padding:12px 8px; color:#173e56; min-height:52px; }
+.scenario-readings button[aria-pressed="true"] { background:#effaff; }
+.scenario-readings button > span:not(.chart-number) { font-size:14px; overflow-wrap:anywhere; }
+.scenario-readings small { display:block; margin-top:4px; color:#476a7b; font-size:13px; }
+.scenario-readings strong { font-size:14px; max-width:105px; }
+.chart-footnote { font-size:13px; line-height:1.6; color:#45697c; margin-bottom:0; }
+.bidang-air .rain-split { display:block; margin:18px 0 8px; }
+.bidang-air .rain-split .volume-chart { padding:0; }
+.bidang-air .contribution-heading { display:flex; flex-wrap:wrap; align-items:center; gap:8px 20px; }
+.bidang-air .contribution-scale { display:flex; justify-content:space-between; font-size:13px; color:#45697c; padding:5px 0 9px; }
+.bidang-air .contribution-list { max-height:500px; overflow-y:auto; scrollbar-width:thin; padding-right:4px; }
+.bidang-air .contribution-name { overflow-wrap:anywhere; }
+.bidang-air .contribution-list button { min-height:76px; }
+.bidang-air .contribution-track { height:12px; background:#dcebf2; }
+.bidang-air .contribution-track > span { height:12px; border-radius:0 6px 6px 0; }
+.bidang-air .alternative:focus { outline:3px solid #007eaa; outline-offset:-3px; }
+.bidang-air .water-partition { min-width:0; }
+.bidang-air .partition-caption { margin-bottom:20px; }
+.bidang-air .intervention-preview .volume-chart { border-top:1px solid #9ec8db; padding-top:20px; }
+.bidang-air .decision-canvas { grid-template-columns:minmax(0,1.35fr) minmax(0,1fr); }
+.bidang-air .scenario-comparison { max-height:650px; overflow:auto; scrollbar-width:thin; }
+@media (max-width:1120px) {
+ .bidang-air .rain-layout { grid-template-columns:300px minmax(0,1fr); gap:24px; }
+ .volume-legend { grid-template-columns:1fr; }
+ .bidang-air .decision-canvas { grid-template-columns:1fr; }
+}
+@media (max-width:760px) {
+ .bidang-air .rain-layout, .bidang-air .intervention-layout { grid-template-columns:1fr; gap:24px; }
+ .bidang-air .rain-input { padding:20px; }
+ .bidang-air .rain-equation { padding:18px; }
+ .bidang-air .rain-split { padding:18px; }
+ .analysis-region { padding:20px 14px; margin:20px 0; border-radius:16px 30px 16px 16px; }
+ .analysis-heading { align-items:flex-start; flex-wrap:wrap; gap:8px; }
+ .analysis-heading h2 { font-size:23px; }
+ .chart-legend button { padding:8px; }
+ .chart-reading { min-height:90px; }
+ .bidang-air .contribution-heading h2 { font-size:23px; }
+ .bidang-air .contribution-list button { grid-template-columns:24px minmax(0,1fr) auto; gap:10px; padding:14px 4px; }
+ .bidang-air .contribution-track { grid-column:2 / -1; width:100%; }
+ .bidang-air .contribution-list button > strong { grid-column:3; grid-row:1; }
+ .bidang-air .scenario-comparison { grid-template-columns:1fr; max-height:700px; }
+}
+.scenario-data-inline > summary { display:none; }

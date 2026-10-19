@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="210" preserveAspectRatio="none" viewBox="0 0 1100 210" fill="none">
+  <defs>
+    <linearGradient id="wash" x1="450" y1="140" x2="1070" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#edf9fc" stop-opacity="0"/>
+      <stop offset=".65" stop-color="#e8f5fc"/>
+      <stop offset="1" stop-color="#dceffb"/>
+    </linearGradient>
+    <linearGradient id="crest" x1="640" y1="0" x2="1100" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#deeffb" stop-opacity="0"/>
+      <stop offset="1" stop-color="#bddff5" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="740" y1="65" x2="1100" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e0f5f5" stop-opacity="0"/>
+      <stop offset="1" stop-color="#c8edf0" stop-opacity=".7"/>
+    </linearGradient>
+  </defs>
+  <path d="M270 0H1100V188C940 185 914 115 758 133C593 152 512 49 270 0Z" fill="url(#wash)"/>
+  <path d="M470 0H1100V62C998 125 935 100 847 58C737 5 659 71 470 0Z" fill="url(#crest)"/>
+  <path d="M752 0H1100V130C1013 111 1009 49 902 56C842 60 795 41 752 0Z" fill="url(#sea)"/>
+</svg>

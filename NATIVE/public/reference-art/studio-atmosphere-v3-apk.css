@@ -1,0 +1,90 @@
+/* Presentation only: preserve the canvas viewport, controls and source data. */
+@media screen {
+  .direction-app.bidang-air #workspace.view-studio .studio-layout .parcel-svg,
+  .direction-app.bidang-air #workspace.view-studio .studio-layout .parcel-frame {
+    background:transparent; border-color:transparent; box-shadow:none; border-radius:0;
+  }
+  .direction-app.bidang-air #workspace.view-studio .studio-layout .parcel-svg .canvas-paper { fill:transparent; }
+  .direction-app.bidang-air #workspace.view-studio .selected-zone-copy { min-width:0; overflow-wrap:anywhere; }
+  .direction-app.bidang-air #workspace.view-studio::before {
+    width:min(74vw,1240px); opacity:1; filter:saturate(1.1);
+    mask-image:linear-gradient(to right,transparent,#000 24%),linear-gradient(to bottom,#000 60%,transparent);
+    mask-composite:intersect;
+  }
+  .direction-app.bidang-air #workspace.view-studio::after {
+    position:absolute; bottom:0; aspect-ratio:1692/160; opacity:.86;
+    mask-image:linear-gradient(to bottom,transparent,#000 45%);
+  }
+  .direction-app.bidang-air #workspace.view-rain::before {
+    position:absolute; bottom:0;
+    width:clamp(380px,44vw,700px); aspect-ratio:620/644;
+    background-image:url("/reference-art/rain-water-page.webp");
+    background-size:247.741935% 159.006211%; background-position:left bottom;
+    mask-image:linear-gradient(to bottom,transparent,#000 22%),linear-gradient(to right,#000 58%,transparent);
+    mask-composite:intersect;
+  }
+  .direction-app.bidang-air #workspace.view-rain::after {
+    left:auto; right:7%; top:8px; width:clamp(320px,29vw,530px);
+    filter:saturate(1.15) contrast(1.04);
+    mask-image:radial-gradient(ellipse at 50% 55%,#000 56%,transparent 84%);
+  }
+  .direction-app.bidang-air #workspace.view-rain .rain-equation { position:relative; isolation:isolate; }
+  .direction-app.bidang-air #workspace.view-rain .rain-equation::after {
+    content:""; position:absolute; right:8px; top:10px; width:90px; height:110px; z-index:-1; pointer-events:none;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'%3E%3Cg fill='%2366bfe7' opacity='.65'%3E%3Cpath d='M33 17 24 38q-4 11 2 12 6 1 8-9Z M68 5 59 27q-4 11 2 12 6 1 8-9Z M104 16 95 38q-4 11 2 12 6 1 8-9Z M43 69 34 90q-4 11 2 12 6 1 8-9Z M80 58 71 79q-4 11 2 12 6 1 8-9Z M118 71 109 92q-4 11 2 12 6 1 8-9Z M55 113 49 129q-3 8 1 9 5 1 6-7Z M93 105 87 121q-3 8 1 9 5 1 6-7Z'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;
+  }
+  .direction-app.bidang-air #workspace.view-interventions { position:relative; isolation:isolate; }
+  .direction-app.bidang-air #workspace.view-interventions::before {
+    content:""; position:absolute; top:0; right:0; width:min(72vw,1100px); aspect-ratio:700/180;
+    pointer-events:none; z-index:-1; background-repeat:no-repeat;
+    background-image:url("/reference-art/water-landscape.webp");
+    background-size:219.428571% 568.888889%; background-position:99.282297% 62.796209%;
+    mask-image:linear-gradient(to right,transparent,#000 24%),linear-gradient(to bottom,#000 48%,transparent);
+    mask-composite:intersect;
+  }
+  @media (min-width:961px) {
+    .direction-app.bidang-air #workspace.view-studio .studio-layout.has-active-zone .studio-inspector { height:auto; max-height:none; align-self:start; }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout.has-active-zone .studio-inspector > .property-bench { height:auto; max-height:none; min-height:0; padding-bottom:26px; }
+  }
+  @media (min-width:1200px) {
+    .direction-app.bidang-air #workspace.view-studio { min-height:calc(100dvh - 86px); }
+    .direction-app.bidang-air #workspace.view-studio:has(.parcel-start)::after { position:fixed; bottom:0; }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout:not(:has(.parcel-start)) .map-bottomline { align-self:start; margin-top:400px; }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout .coverage-legend { grid-column:3; grid-row:3; align-self:start; margin:4px 12px 0; padding:0; font-size:13px; line-height:1.5; }
+  }
+  @media (min-width:961px) and (max-width:1199px) {
+    .direction-app.bidang-air #workspace.view-studio { min-height:calc(100dvh - 72px); }
+  }
+  @media (max-width:960px) {
+    .direction-app.bidang-air #workspace.view-studio::before { width:90%; opacity:.7; }
+    .direction-app.bidang-air #workspace.view-studio::after { aspect-ratio:1692/200; }
+    .direction-app.bidang-air #workspace.view-rain::before { width:min(100%,500px); }
+    .direction-app.bidang-air #workspace.view-rain::after { width:min(75%,340px); right:0; opacity:.55; }
+    .direction-app.bidang-air #workspace.view-rain .rain-equation::after { content:none; }
+    .direction-app.bidang-air #workspace.view-interventions::before { width:95%; opacity:.65; }
+  }
+}
+
+
+/* Keep the shoreline decoration anchored to the viewport while the pre-parcel
+   Studio workspace is intentionally compact; restore normal absolute behavior
+   automatically once .parcel-start disappears. */
+@media screen and (min-width:961px) {
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start)::after {
+    position:fixed;
+    bottom:0;
+  }
+}
+
+/* APK/mobile pre-parcel background continuity: fill only the remaining viewport,
+   without restoring hidden lower UI or creating extra scroll. */
+@media screen and (max-width:960px) {
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) {
+    min-height: calc(100dvh - 60px) !important;
+  }
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start)::after {
+    position: fixed !important;
+    bottom: 0 !important;
+    top: auto !important;
+  }
+}

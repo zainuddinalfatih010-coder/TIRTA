@@ -1,0 +1,634 @@
+[
+  {
+    "doi": "10.1016/j.watres.2017.02.056",
+    "type": "journal-article",
+    "title": "Urban rainwater harvesting systems: Research, implementation and future perspectives",
+    "authors": [
+      "Alberto Campisano",
+      "David Butler",
+      "Sarah Ward",
+      "Matthew J. Burns",
+      "Eran Friedler",
+      "Kathy DeBusk",
+      "Lloyd N. Fisher-Jeffes",
+      "Enedir Ghisi",
+      "Ataur Rahman",
+      "Hiroaki Furumai",
+      "Mooyoung Han"
+    ],
+    "year": 2017,
+    "journal": "Water Research",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.watres.2017.02.056",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0043135417301483?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0043135417301483?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/(ASCE)1084-0699(2008)13:2(90)",
+    "type": "journal-article",
+    "title": "Field Performance of Bioretention: Hydrology Impacts",
+    "authors": [
+      "Allen P. Davis"
+    ],
+    "year": 2008,
+    "journal": "Journal of Hydrologic Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/(asce)1084-0699(2008)13:2(90)",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%291084-0699%282008%2913%3A2%2890%29",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.jhydrol.2018.04.068",
+    "type": "journal-article",
+    "title": "Multiobjective optimization of low impact development stormwater controls",
+    "authors": [
+      "Kyle Eckart",
+      "Zach McPhee",
+      "Tirupati Bolisetti"
+    ],
+    "year": 2018,
+    "journal": "Journal of Hydrology",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.jhydrol.2018.04.068",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022169418303214?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022169418303214?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.envc.2026.101525",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.3390/su16229999",
+    "type": "journal-article",
+    "title": "Assessing Rainwater Risks and Rainwater Harvesting Opportunities for the New Capital City of Indonesia",
+    "authors": [
+      "Walter Timo de Vries",
+      "Jialan Shi"
+    ],
+    "year": 2024,
+    "journal": "Sustainability",
+    "abstract": "<jats:p>In the context of planning and construction of the new capital city of Indonesia, referred to as Ibu Kota Negara (IKN), this article addresses the spatial risks and opportunities of rainwater resources in the area where IKN is planned. The article relies on an inventory of various physical data, which were used to derive a flood susceptibility map, as well as rainfall data derived from public and open sources. The geospatial study drew on geospatial software (ArcGIS Pro, 2.1.) and the Google Earth Engine platform (GEE). After this analysis, we followed a management design, which took IPCC climate change scenarios into account. The results demonstrated that the southern coast has higher precipitation than the northern coast in the IKN area. To enhance the efficacy of rainwater management planning, a grid is proposed to mitigate the flood risk and to harvest rainwater. Although rainwater varies throughout the IKN area, and may vary even more with different climate change predictions, it is possible to capture rainwater and create a system to reduce reliance on traditional water sources, alleviate stormwater runoff and mitigate the impact of urban flooding. While IKN will be developed by both regulated planning and other population-driven developments, monitoring and reflecting on existing plans will still be necessary to make IKN sufficiently resilient and sustainable.</jats:p>",
+    "url": "https://doi.org/10.3390/su16229999",
+    "links": [
+      {
+        "URL": "https://www.mdpi.com/2071-1050/16/22/9999/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.2489/jswc.61.3.117",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1016/j.ecoleng.2009.12.014",
+    "type": "journal-article",
+    "title": "Green roof performance towards management of runoff water quantity and quality: A review",
+    "authors": [
+      "Justyna Czemiel Berndtsson"
+    ],
+    "year": 2010,
+    "journal": "Ecological Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.ecoleng.2009.12.014",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0925857410000029?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0925857410000029?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.jhydrol.2011.11.035",
+    "type": "journal-article",
+    "title": "An event-based approach to understanding the hydrological impacts of different land uses in semi-arid catchments",
+    "authors": [
+      "Shengping Wang",
+      "Zhiqiang Zhang",
+      "Tim R. McVicar",
+      "Jianjun Zhang",
+      "Jinzhao Zhu",
+      "Junting Guo"
+    ],
+    "year": 2012,
+    "journal": "Journal of Hydrology",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.jhydrol.2011.11.035",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022169411008201?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022169411008201?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.landurbplan.2005.02.010",
+    "type": "journal-article",
+    "title": "Green roofs as a tool for solving the rainwater runoff problem in the urbanized 21st century?",
+    "authors": [
+      "Jeroen Mentens",
+      "Dirk Raes",
+      "Martin Hermy"
+    ],
+    "year": 2006,
+    "journal": "Landscape and Urban Planning",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.landurbplan.2005.02.010",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169204605000496?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169204605000496?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1007/s11270-007-9484-z",
+    "type": "journal-article",
+    "title": "Low Impact Development Practices: A Review of Current Research and Recommendations for Future Directions",
+    "authors": [
+      "Michael E. Dietz"
+    ],
+    "year": 2007,
+    "journal": "Water, Air, and Soil Pollution",
+    "abstract": null,
+    "url": "https://doi.org/10.1007/s11270-007-9484-z",
+    "links": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11270-007-9484-z.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s11270-007-9484-z/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11270-007-9484-z",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/(ASCE)0733-9372(2009)135:3(109)",
+    "type": "journal-article",
+    "title": "Bioretention Technology: Overview of Current Practice and Future Needs",
+    "authors": [
+      "Allen P. Davis",
+      "William F. Hunt",
+      "Robert G. Traver",
+      "Michael Clar"
+    ],
+    "year": 2009,
+    "journal": "Journal of Environmental Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/(asce)0733-9372(2009)135:3(109)",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%290733-9372%282009%29135%3A3%28109%29",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1007/s11270-012-1189-2",
+    "type": "journal-article",
+    "title": "Effectiveness of Low Impact Development Practices: Literature Review and Suggestions for Future Research",
+    "authors": [
+      "Laurent M. Ahiablame",
+      "Bernard A. Engel",
+      "Indrajeet Chaubey"
+    ],
+    "year": 2012,
+    "journal": "Water, Air, &amp; Soil Pollution",
+    "abstract": null,
+    "url": "https://doi.org/10.1007/s11270-012-1189-2",
+    "links": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11270-012-1189-2.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1007/s11270-012-1189-2/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1007/s11270-012-1189-2",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.2166/wqrjc.2013.055",
+    "type": "journal-article",
+    "title": "Review of environmental performance of permeable pavement systems: state of the knowledge",
+    "authors": [
+      "Jennifer A. P. Drake",
+      "Andrea Bradford",
+      "Jiri Marsalek"
+    ],
+    "year": 2013,
+    "journal": "Water Quality Research Journal",
+    "abstract": "<jats:p>Permeable pavement (PP) systems provide opportunities to mitigate the impacts of urbanization on receiving water systems by providing at source treatment and management of stormwater. However, they do not receive mainstream use throughout much of Canada and the USA because of a lack of local guidance documents, demonstration projects and performance data. Studies have repeatedly shown that PPs attenuate stormwater flows by reducing volume and frequency of stormwater flows, reducing and delaying peak flow rates, and increasing flow durations. PP systems have been shown to improve stormwater quality by reducing stormwater temperature, pollutant concentrations and pollutant loadings of suspended solids, heavy metals, polyaromatic hydrocarbons, and some nutrients. This review is intended as a comprehensive summary of the current state of knowledge of the environmental performance of PP systems. Published research is synthesized to examine the hydrologic performance, impacts to water quality, longevity and functionality and maintenance needs of PP systems. Where appropriate, the limitations of current knowledge are discussed and emerging and future research needs are presented. The intent of this review is to provide stakeholders in stormwater management with the critical information that is needed to foster acceptance of PPs as a viable alternative to traditional systems.</jats:p>",
+    "url": "https://doi.org/10.2166/wqrjc.2013.055",
+    "links": [
+      {
+        "URL": "http://iwaponline.com/wqrj/article-pdf/48/3/203/379932/203.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://iwaponline.com/wqrj/article-pdf/48/3/203/379932/203.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/(ASCE)0733-9437(2007)133:3(249)",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1016/S0043-1354(03)00410-X",
+    "type": "journal-article",
+    "title": "Long-term stormwater quantity and quality performance of permeable pavement systems",
+    "authors": [
+      "Benjamin O. Brattebo",
+      "Derek B. Booth"
+    ],
+    "year": 2003,
+    "journal": "Water Research",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/s0043-1354(03)00410-x",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S004313540300410X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S004313540300410X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.3390/w10060684",
+    "type": "journal-article",
+    "title": "An Interval Quadratic Fuzzy Dependent-Chance Programming Model for Optimal Irrigation Water Allocation under Uncertainty",
+    "authors": [
+      "Hang Wang",
+      "Chenglong Zhang",
+      "Ping Guo"
+    ],
+    "year": 2018,
+    "journal": "Water",
+    "abstract": "<jats:p>In this study, an interval quadratic fuzzy dependent-chance programming (IQFDCP) model is proposed for irrigation water management under uncertainty. This model can deal with the interval and fuzzy uncertainties encountered in optimal irrigation water resources allocation problems. It takes optimal credibility level of system revenue as the objective function for addressing the conflict between maximum system revenue and the credibility level of the system revenue. By providing three scenarios of precipitation, the optimal solutions are obtained. The developed model is applied to a case study for irrigation water allocation in Minqin Oasis, Wuwei city, northwest China. This study can help determine how much irrigation water should be allocated to different crops under the maximum credibility level of the system revenue. The optimal solutions can provide a certain credibility level of system revenue corresponding to different scenarios and mitigate the system-failure risk level of water shortages in arid areas. Moreover, because the IQFDCP can objectively reflect the interrelationship among crop irrigation water amount, system revenue, and system-failure risk level, the results are able to provide advices to decision makers for efficiently managing water resources in different scenarios.</jats:p>",
+    "url": "https://doi.org/10.3390/w10060684",
+    "links": [
+      {
+        "URL": "https://www.mdpi.com/2073-4441/10/6/684/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.jenvman.2015.12.026",
+    "type": "journal-article",
+    "title": "Maintenance measures for preservation and recovery of permeable pavement surface infiltration rate – The effects of street sweeping, vacuum cleaning, high pressure washing, and milling",
+    "authors": [
+      "Ryan J. Winston",
+      "Ahmed M. Al-Rubaei",
+      "Godecke T. Blecken",
+      "Maria Viklander",
+      "William F. Hunt"
+    ],
+    "year": 2016,
+    "journal": "Journal of Environmental Management",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.jenvman.2015.12.026",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0301479715304412?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0301479715304412?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.3390/w6072018",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "doi": "10.1016/j.landurbplan.2012.01.012",
+    "type": "journal-article",
+    "title": "Evaluation of land-use planning in greenbelts based on intrinsic characteristics and stakeholder values",
+    "authors": [
+      "John Fitzsimons",
+      "Craig J. Pearson",
+      "Christopher Lawson",
+      "Michael J. Hill"
+    ],
+    "year": 2012,
+    "journal": "Landscape and Urban Planning",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.landurbplan.2012.01.012",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S016920461200028X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S016920461200028X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1080/1573062X.2014.916314",
+    "type": "journal-article",
+    "title": "SUDS, LID, BMPs, WSUD and more – The evolution and application of terminology surrounding urban drainage",
+    "authors": [
+      "Tim D. Fletcher",
+      "William Shuster",
+      "William F. Hunt",
+      "Richard Ashley",
+      "David Butler",
+      "Scott Arthur",
+      "Sam Trowsdale",
+      "Sylvie Barraud",
+      "Annette Semadeni-Davies",
+      "Jean-Luc Bertrand-Krajewski",
+      "Peter Steen Mikkelsen",
+      "Gilles Rivard",
+      "Mathias Uhl",
+      "Danielle Dagenais",
+      "Maria Viklander"
+    ],
+    "year": 2014,
+    "journal": "Urban Water Journal",
+    "abstract": null,
+    "url": "https://doi.org/10.1080/1573062x.2014.916314",
+    "links": [
+      {
+        "URL": "http://www.tandfonline.com/doi/pdf/10.1080/1573062X.2014.916314",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.2166/wst.2011.239",
+    "type": "journal-article",
+    "title": "Comparison of four methods to assess biofilm development",
+    "authors": [
+      "M. Alnnasouri",
+      "C. Dagot",
+      "M. -N. Pons"
+    ],
+    "year": 2011,
+    "journal": "Water Science and Technology",
+    "abstract": "<jats:p>Two nondestructive methods of biofilm quantification (optical density via a flatbed scanner and biofilm thickness) have been evaluated and compared to two destructive methods (Crystal Violet staining after biofilm disintegration and dry weight). The methods were tested on biofilms that developed on a modified rotating biological contactor (RBC) that was inoculated with urban wastewater and fed with a synthetic medium that mimicked slaughterhouse wastewater. The results of the different methods were highly correlated (coefficient of correlation greater than 0.8). This validation experiment confirms the ability of the scanning method to easily monitor the biofilm’s development over large surfaces without destruction of the biofilm.</jats:p>",
+    "url": "https://doi.org/10.2166/wst.2011.239",
+    "links": [
+      {
+        "URL": "http://iwaponline.com/wst/article-pdf/63/3/432/445163/432.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://iwaponline.com/wst/article-pdf/63/3/432/445163/432.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/(ASCE)HE.1943-5584.0000006",
+    "type": "journal-article",
+    "title": "Temporal Trends in Estimates of Reference Evapotranspiration over India",
+    "authors": [
+      "A. Bandyopadhyay",
+      "A. Bhadra",
+      "N. S. Raghuwanshi",
+      "R. Singh"
+    ],
+    "year": 2009,
+    "journal": "Journal of Hydrologic Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/(asce)he.1943-5584.0000006",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%29HE.1943-5584.0000006",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/S1618-8667(02)00049-X",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "doi": "10.1016/j.landurbplan.2017.02.017",
+    "type": "journal-article",
+    "title": "The role of trees in urban stormwater management",
+    "authors": [
+      "Adam Berland",
+      "Sheri A. Shiflett",
+      "William D. Shuster",
+      "Ahjond S. Garmestani",
+      "Haynes C. Goddard",
+      "Dustin L. Herrmann",
+      "Matthew E. Hopton"
+    ],
+    "year": 2017,
+    "journal": "Landscape and Urban Planning",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.landurbplan.2017.02.017",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169204617300464?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169204617300464?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.jenvman.2013.08.026",
+    "type": "journal-article",
+    "title": "The effects of low impact development on urban flooding under different rainfall characteristics",
+    "authors": [
+      "Hua-peng Qin",
+      "Zhuo-xi Li",
+      "Guangtao Fu"
+    ],
+    "year": 2013,
+    "journal": "Journal of Environmental Management",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.jenvman.2013.08.026",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0301479713005495?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0301479713005495?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.3390/w9080577",
+    "type": "journal-article",
+    "title": "Effectiveness of ABC Waters Design Features for Runoff Quantity Control in Urban Singapore",
+    "authors": [
+      "Wing Yau",
+      "Mohanasundar Radhakrishnan",
+      "Shie-Yui Liong",
+      "Chris Zevenbergen",
+      "Assela Pathirana"
+    ],
+    "year": 2017,
+    "journal": "Water",
+    "abstract": "<jats:p>Active, Beautiful, Clean Waters (ABC Waters) design features—natural systems consisting of plants and soil that detain and treat rainwater runoff—comprise a major part of Sustainable urban Drainage Systems (SuDS) in Singapore. Although it is generally accepted that ABC Waters design features are able to detain runoff and reduce peak flow, their effectiveness in doing so has not been studied or documented locally. This research aims to determine their effectiveness in reducing peak flow based on a newly constructed pilot precinct named Waterway Ridges. Four types of ABC Waters features have been integrated holistically within the development, and designed innovatively to allow the precinct to achieve an effective C-value of 0.55 for the 10-year design storm; the precinct-wide integration and implemented design with the aim of substantially reducing peak flow are firsts in Singapore. The study is based on results from an uncalibrated 1D hydraulic model developed using the Storm Water Management Model (SWMM). Identification of key design elements and performance enhancement of the features via optimisation were also studied. Results show that the features are effective in reducing peak flow for the 10-year design storm, by 33%, and allowed the precinct to achieve an effective C-value of 0.60.</jats:p>",
+    "url": "https://doi.org/10.3390/w9080577",
+    "links": [
+      {
+        "URL": "https://www.mdpi.com/2073-4441/9/8/577/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.ecoleng.2017.02.059",
+    "type": "journal-article",
+    "title": "Influence of fire regime on forest structure and restoration of a native forest type in the southern Andean Range",
+    "authors": [
+      "Juan Ramón Molina",
+      "Norman Moreno",
+      "Roberto Moreno"
+    ],
+    "year": 2017,
+    "journal": "Ecological Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.ecoleng.2017.02.059",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S092585741730126X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S092585741730126X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  }
+]

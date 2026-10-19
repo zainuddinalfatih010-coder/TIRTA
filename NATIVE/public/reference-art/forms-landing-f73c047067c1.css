@@ -1,0 +1,120 @@
+/* Screen presentation only. Existing native controls, values and actions remain owners. */
+@media screen {
+  .direction-app.bidang-air #workspace.view-project .landing-hero {
+    background:linear-gradient(170deg,#fafdff 0%,#edfaff 68%,#e4f6fc 100%);
+  }
+  .direction-app.bidang-air #workspace.view-project .landing-contours {
+    top:auto; bottom:0; height:160px; opacity:.14;
+  }
+  .direction-app.bidang-air #workspace.view-project .landing-hero::before {
+    content:""; position:absolute; left:0; bottom:0; width:min(60vw,760px); aspect-ratio:227/58;
+    z-index:-1; pointer-events:none; opacity:.58; background-repeat:no-repeat;
+    background-image:url("/reference-art/reference-rain-v2.webp");
+    background-size:676.651982% 1765.517241%; background-position:13.368984% 100%;
+    mask-image:linear-gradient(to bottom,transparent,#000 30%),linear-gradient(to right,#000 55%,transparent);
+    mask-composite:intersect;
+  }
+  .direction-app.bidang-air #workspace .landing-intro h2 { color:#0a2d50; }
+  .direction-app.bidang-air #workspace .landing-intro > p { color:#426783; }
+  .direction-app.bidang-air #workspace .landing-example {
+    padding:24px; border:1px solid #fff; border-radius:26px; background:#ffffffdb;
+    box-shadow:0 8px 30px #126d9410;
+  }
+  .direction-app.bidang-air #workspace .landing-example-header h3 { font-size:22px; line-height:1.3; color:#0a2d50; }
+  .direction-app.bidang-air #workspace .landing-rain-switch { border-color:#b5def0; background:#f0faff; }
+  .direction-app.bidang-air #workspace .landing-parcel svg { filter:drop-shadow(0 5px 6px #1e668512); }
+  .direction-app.bidang-air #workspace .landing-water-result { background:#effaff; border-radius:18px; border:1px solid #daeff8; }
+  .direction-app.bidang-air #workspace .landing-name-field { border-color:#d4eaf5; background:#ffffffa6; box-shadow:none; }
+  .direction-app.bidang-air #workspace .landing-name-input { background:#fff; }
+  .direction-app.bidang-air #workspace .orientation-actions button { border-radius:14px; min-height:50px; }
+  .direction-app.bidang-air #workspace .landing-journey { background:#0c3b5d; }
+
+  .direction-app.bidang-air #workspace .guided-composer:is([data-flow="guided"],[data-flow="review"]) .guided-task-surface {
+    padding-top:8px; padding-bottom:8px; gap:18px;
+  }
+  .direction-app.bidang-air #workspace .guided-composer:is([data-flow="guided"],[data-flow="review"]) .guided-task-surface > h3 {
+    font-size:clamp(28px,2.5vw,38px); line-height:1.2; letter-spacing:-.025em; font-weight:750; color:#092a50;
+  }
+  .direction-app.bidang-air #workspace .guided-composer:not([data-flow="intake"]) .guided-fields {
+    padding:22px; gap:18px; border:1px solid #c5e5f4; border-radius:20px;
+    background:linear-gradient(145deg,#fff,#f1fbff); box-shadow:0 3px 14px #187bac06;
+  }
+  .direction-app.bidang-air #workspace .guided-fields label { gap:9px; font-size:14px; font-weight:600; color:#2c5472; }
+  .direction-app.bidang-air #workspace .guided-fields :is(input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),select,textarea),
+  .direction-app.bidang-air #workspace .guided-fields .rupiah-input > input:not([type="hidden"]) {
+    min-height:52px; border:1px solid #b5d8eb; border-radius:12px; padding:12px 15px;
+    background-color:#fff; color:#123956; font-family:inherit; font-size:16px; font-weight:500;
+    box-shadow:inset 0 1px 2px #19557405;
+  }
+  .direction-app.bidang-air #workspace .guided-fields .rupiah-input > input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]) {
+    padding-left:48px;
+  }
+  .direction-app.bidang-air #workspace .guided-fields input::placeholder,
+  .direction-app.bidang-air #workspace .guided-fields textarea::placeholder { color:#6c8495; font-weight:400; opacity:1; }
+  .direction-app.bidang-air #workspace .guided-fields select {
+    appearance:none; padding-right:46px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7 10 5 5 5-5' fill='none' stroke='%23007bad' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position:right 14px center; background-size:22px; background-repeat:no-repeat;
+  }
+  .direction-app.bidang-air #workspace .guided-fields :is(input,select,textarea):focus-visible {
+    outline:3px solid #087caf; outline-offset:3px; border-color:#4bacd3;
+  }
+  .direction-app.bidang-air #workspace .guided-fields :is(input,select,textarea)[aria-invalid="true"] { border-color:#bc4b55; }
+  .direction-app.bidang-air #workspace .guided-fields .check-line { align-items:flex-start; gap:12px; line-height:1.55; }
+  .direction-app.bidang-air #workspace .guided-fields .check-line input { flex:0 0 auto; margin-top:2px; accent-color:#008ac2; }
+  .direction-app.bidang-air #workspace .guided-fields small { font-size:13px; line-height:1.55; color:#466c85; }
+  .direction-app.bidang-air #workspace .guided-fields .field-error { color:#a72d42; }
+  .direction-app.bidang-air #workspace .guided-fields .role-choice {
+    min-height:64px; padding:12px 16px; gap:12px; justify-content:flex-start; border:1px solid #abd9ed;
+    border-radius:14px; background:linear-gradient(115deg,#e8f8ff,#f8fdff); color:#08608b; font-size:16px; font-weight:650;
+  }
+  .direction-app.bidang-air #workspace .guided-fields .role-choice > svg { width:34px; height:34px; padding:8px; border-radius:50%; background:#fff; color:#0088c1; }
+  .direction-app.bidang-air #workspace .guided-fields .role-choice::after { content:""; flex:0 0 20px; height:20px; margin-left:auto; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m9 6 6 6-6 6' fill='none' stroke='%23007bad' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat; }
+  .direction-app.bidang-air #workspace .guided-fields .role-choice:hover { border-color:#4cafd6; background:#e2f6ff; }
+  .direction-app.bidang-air #workspace .treatment-source-chips { gap:8px; }
+  .direction-app.bidang-air #workspace .treatment-source-chips > span { padding:6px 8px 6px 12px; border:1px solid #b2daed; border-radius:12px; background:#e9f8ff; font-size:14px; }
+  .direction-app.bidang-air #workspace .treatment-source-chips button { min-width:32px; min-height:32px; border-radius:8px; }
+  .direction-app.bidang-air #workspace .guided-fields .number-source { margin-top:12px; padding-top:12px; border-top:1px solid #dbeef6; }
+  .direction-app.bidang-air #workspace .guided-fields .number-source > summary,
+  .direction-app.bidang-air #workspace .guided-fields .source-choice details > summary { padding:5px 0; font-size:13px; color:#246583; }
+  .direction-app.bidang-air #workspace .guided-fields .source-choice { padding-top:14px; }
+  .direction-app.bidang-air #workspace .guided-why { padding:12px 0; }
+  .direction-app.bidang-air #workspace .guided-why > summary { font-size:14px; }
+  .direction-app.bidang-air #workspace .guided-why p { line-height:1.65; }
+  .direction-app.bidang-air #workspace .guided-composer:not([data-flow="intake"]) .composer-command-main { padding-block:12px; gap:10px; }
+  .direction-app.bidang-air #workspace .guided-composer:not([data-flow="intake"]) .composer-command-main > button { min-height:48px; border-radius:13px; }
+  .direction-app.bidang-air #workspace .guided-composer:not([data-flow="intake"]) .composer-command-utilities { padding-block:10px; gap:12px; }
+
+  .direction-app.bidang-air .zone-role-dialog { width:min(560px,calc(100vw - 28px)); padding:0; border:1px solid #c3e5f4; border-radius:24px; background:#fbfeff; box-shadow:0 24px 80px #092e5433; }
+  .direction-app.bidang-air .zone-role-dialog > header { padding:22px 24px 16px; gap:16px; border-bottom:1px solid #e0f0f7; }
+  .direction-app.bidang-air .zone-role-dialog > header h2 { color:#092a50; font-size:25px; line-height:1.25; }
+  .direction-app.bidang-air .zone-role-dialog .context-dialog-body { padding:20px 24px 24px; }
+  .direction-app.bidang-air .zone-role-dialog .role-search { position:relative; gap:10px; color:#365e79; }
+  .direction-app.bidang-air .zone-role-dialog .role-search > svg { position:absolute; left:14px; bottom:15px; pointer-events:none; }
+  .direction-app.bidang-air .zone-role-dialog .role-search input { min-height:48px; border:1px solid #b7dbea; border-radius:12px; padding:12px 14px 12px 44px; background:#fff; font-size:16px; }
+  .direction-app.bidang-air .zone-role-dialog .role-zone-list { gap:8px; padding:4px 3px; margin-block:16px; }
+  .direction-app.bidang-air .zone-role-dialog .role-zone-list button { min-height:56px; padding:12px 14px; border:1px solid #d3e9f3; border-radius:13px; background:#f4fbff; color:#113751; font-size:15px; }
+  .direction-app.bidang-air .zone-role-dialog .role-zone-list button:hover { border-color:#73bfdf; background:#e5f6ff; }
+  .direction-app.bidang-air .zone-role-dialog .role-zone-list small { color:#47708a; }
+  .direction-app.bidang-air .zone-role-dialog .text-button { min-height:44px; padding:8px 4px; gap:9px; }
+  .direction-app.bidang-air .zone-role-dialog :is(button,input):focus-visible { outline:3px solid #087caf; outline-offset:2px; }
+
+  .direction-app.bidang-air #workspace .guided-fields select option { background:#fff; color:#123956; font-family:inherit; font-size:15px; }
+  @media (max-width:760px) {
+    .direction-app.bidang-air #workspace.view-project .landing-hero::before { width:100%; opacity:.45; }
+    .direction-app.bidang-air #workspace .landing-example { padding:18px; border-radius:22px; }
+    .direction-app.bidang-air #workspace .landing-example-header { gap:10px; flex-wrap:wrap; }
+    .direction-app.bidang-air #workspace .landing-example-header h3 { font-size:21px; }
+    .direction-app.bidang-air #workspace .landing-mode-switch { gap:4px; }
+    .direction-app.bidang-air #workspace .landing-mode-switch button { padding-inline:10px; font-size:12px; }
+    .direction-app.bidang-air #workspace .landing-water-result dd { font-size:30px; }
+    .direction-app.bidang-air #workspace .guided-composer:is([data-flow="guided"],[data-flow="review"]) .guided-task-surface > h3 { font-size:27px; }
+    .direction-app.bidang-air #workspace .guided-composer:not([data-flow="intake"]) .guided-fields { padding:18px; }
+    .direction-app.bidang-air #workspace .guided-composer:not([data-flow="intake"]) .composer-command-utilities { gap:8px; }
+    .direction-app.bidang-air .zone-role-dialog > header { padding:18px; }
+    .direction-app.bidang-air .zone-role-dialog .context-dialog-body { padding:18px; }
+  }
+  @media (forced-colors:active) {
+    .direction-app.bidang-air #workspace .guided-fields select { appearance:auto; background-image:none; }
+  }
+}

@@ -1,0 +1,234 @@
+/* APK-only mobile guided-question compaction.
+   Keep the active task, input, navigation and a short result status visible;
+   move water path/readiness/support detail back behind existing on-demand controls. */
+@media screen and (max-width:700px) {
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-water-path,
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] > .composer-details.support-rail {
+    display:none !important;
+  }
+
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-status {
+    display:block !important;
+    padding:10px 13px 11px !important;
+    border-radius:0 0 16px 16px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-status > :not(.guided-mini-result) {
+    display:none !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-mini-result {
+    padding-bottom:0 !important;
+    border-bottom:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-mini-result h3 {
+    margin-bottom:4px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-mini-result > small {
+    margin-top:4px !important;
+  }
+}
+
+/* APK-only mobile Studio top-action alignment.
+   Keep readiness and Navigator return on one baseline; beginner area action follows on the next rhythm row. */
+@media screen and (max-width:760px) {
+  .direction-app.bidang-air #workspace.view-studio > .page-heading:has(.navigator-return) {
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) auto !important;
+    column-gap:10px !important;
+    row-gap:8px !important;
+    align-items:center !important;
+  }
+  .direction-app.bidang-air #workspace.view-studio > .page-heading:has(.navigator-return) > div:first-child {
+    grid-column:1 / -1 !important;
+    grid-row:1 !important;
+    width:100% !important;
+  }
+  .direction-app.bidang-air #workspace.view-studio > .page-heading:has(.navigator-return) > .current-result {
+    grid-column:1 !important;
+    grid-row:2 !important;
+    justify-self:start !important;
+    align-self:center !important;
+    margin:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-studio > .page-heading:has(.navigator-return) > .navigator-return {
+    grid-column:2 !important;
+    grid-row:2 !important;
+    justify-self:end !important;
+    align-self:center !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-studio > .studio-beginner-action {
+    margin-top:2px !important;
+    margin-bottom:12px !important;
+  }
+}
+/* APK-only mobile Intervensi spacing repair.
+   Empty state must not reserve preview/editor space; guided questions use content-height spacing. */
+@media screen and (max-width:760px) {
+  .direction-app.bidang-air #workspace.view-interventions .intervention-top-composition[data-empty="true"] .intervention-preview,
+  .direction-app.bidang-air #workspace.view-interventions .intervention-top-composition[data-empty="true"] > .active-intervention-editor {
+    display:none !important;
+  }
+}
+@media screen and (max-width:700px) {
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-layout > form {
+    padding:12px 12px 0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-task-surface {
+    gap:8px !important;
+    min-height:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-fields {
+    padding:10px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-why {
+    padding-top:7px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-dock {
+    gap:4px !important;
+    margin-top:5px !important;
+    padding:6px 0 4px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main {
+    gap:6px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main .btn-back,
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main .btn-primary {
+    height:44px !important;
+    min-height:44px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-utilities {
+    padding-top:4px !important;
+    gap:3px !important;
+  }
+}
+
+/* APK-only mobile Intervensi vertical-rhythm repair.
+   Tighten spacing only; preserve controls, content, and logic. */
+@media screen and (max-width:760px) {
+  .direction-app.bidang-air #workspace.view-interventions .intervention-ledger-region {
+    gap:12px !important;
+    padding:14px 16px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-before {
+    margin-top:6px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-arrow {
+    margin-top:2px !important;
+    margin-bottom:2px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-notes {
+    margin-top:4px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-sources-inline {
+    margin-top:4px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .intervention-limit-summary {
+    padding-top:12px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .intervention-limit-summary .constraint-meters {
+    margin-top:10px !important;
+    gap:10px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-next {
+    margin-top:10px !important;
+    gap:6px !important;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-layout > form {
+    padding:10px 12px 0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-task-surface {
+    gap:7px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-why {
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-dock {
+    gap:3px !important;
+    margin-top:2px !important;
+    padding:4px 0 3px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main {
+    padding:0 !important;
+    gap:5px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main .btn-back,
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main .btn-primary {
+    height:44px !important;
+    min-height:44px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-main .command-unknown {
+    min-height:30px !important;
+    padding:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .composer-command-utilities {
+    padding:3px 0 0 !important;
+    gap:3px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-status {
+    padding:8px 12px 9px !important;
+  }
+}
+
+/* APK-only mobile Intervensi micro-spacing repair.
+   Remove inherited vertical padding from the three disclosures reported in QA.
+   No visibility, logic, Studio, or desktop changes. */
+@media screen and (max-width:700px) {
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-fields .sourced-control {
+    padding-block:0 !important;
+    border-top:0 !important;
+    gap:6px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-fields .number-source {
+    margin:2px 0 0 !important;
+    padding:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-fields .number-source > summary {
+    min-height:28px !important;
+    padding:2px 0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-why {
+    margin:0 !important;
+    padding:3px 0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .guided-composer[data-flow="guided"] .guided-why > summary {
+    display:flex !important;
+    align-items:center !important;
+    min-height:30px !important;
+    padding:0 !important;
+  }
+
+  .direction-app.bidang-air #workspace.view-interventions .intervention-water-ledger .composition-legend {
+    margin:3px 0 0 !important;
+    gap:2px 8px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .intervention-water-ledger .composition-legend button {
+    padding:4px 7px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-notes {
+    margin-top:0 !important;
+    min-height:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-notes .calculation-source {
+    margin:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-notes .calculation-source > summary {
+    min-height:34px !important;
+    padding-block:4px !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-sources-inline {
+    margin-top:0 !important;
+    min-height:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-sources-inline .source-note {
+    margin:0 !important;
+  }
+  .direction-app.bidang-air #workspace.view-interventions .ledger-sources-inline .source-note > summary {
+    min-height:36px !important;
+    padding-block:4px !important;
+  }
+}

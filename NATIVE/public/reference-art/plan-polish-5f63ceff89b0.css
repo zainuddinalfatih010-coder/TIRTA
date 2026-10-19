@@ -1,0 +1,126 @@
+/* Presentation only: no changes to panel visibility, chart geometry or actions. */
+@media screen {
+  .direction-app.bidang-air .reference-intake-highlight { color:#008dcc; }
+  @supports (background-clip:text) or (-webkit-background-clip:text) {
+    .direction-app.bidang-air .reference-intake-highlight {
+      background:linear-gradient(100deg,#075c91 0%,#008fca 65%,#0094c9 100%);
+      background-clip:text; -webkit-background-clip:text; color:transparent; -webkit-text-fill-color:transparent;
+    }
+  }
+  .direction-app.bidang-air .app-body #workspace.view-impact {
+    padding:28px 32px 32px;
+    background-image:linear-gradient(#e8f9ff99,#e8f9ff99),var(--page-art);
+  }
+  .direction-app.bidang-air #workspace.view-impact > .page-heading h1 { font-size:34px!important; line-height:1.15; color:#092a50; }
+  .direction-app.bidang-air #workspace.view-impact > .page-heading p { font-size:15px; line-height:1.5; }
+  .direction-app.bidang-air #workspace.view-impact .plan-masthead {
+    padding:22px 24px!important; border:1px solid #fff; border-radius:24px!important;
+    background:linear-gradient(120deg,#ffffffed,#f5fcffed)!important; box-shadow:0 4px 18px #1685af08!important;
+  }
+  .direction-app.bidang-air #workspace .plan-masthead .plan-mast-cell strong { color:#092a50; font-size:20px; }
+  .direction-app.bidang-air #workspace .plan-masthead .plan-mast-runoff strong { font-size:23px; }
+  .direction-app.bidang-air #workspace .plan-masthead .plan-mast-cell span,
+  .direction-app.bidang-air #workspace .plan-mast-status span { font-size:13px; }
+  .direction-app.bidang-air #workspace .plan-masthead .plan-mast-cell small { font-size:12px; line-height:1.45; }
+  .direction-app.bidang-air #workspace .plan-view-tabs {
+    width:fit-content; max-width:100%; gap:4px!important; padding:5px!important; margin:8px 0 18px!important;
+    border:1px solid #c8eafa; border-radius:17px; background:#f5fcffcf;
+  }
+  .direction-app.bidang-air #workspace .plan-view-tabs button,
+  .direction-app.bidang-air #workspace .plan-view-tabs button:last-child {
+    min-height:44px!important; padding:10px 22px!important; border:0!important; border-radius:12px!important;
+    font-size:15px!important; font-weight:600!important; outline-offset:3px;
+  }
+  .direction-app.bidang-air #workspace .plan-view-tabs button[aria-selected="true"] {
+    background:linear-gradient(120deg,#c6f1ff,#e9faff)!important; color:#00669b!important;
+    box-shadow:0 2px 8px #0080b518!important;
+  }
+  .direction-app.bidang-air #workspace .plan-view-tabs button:last-child::after { border:0; }
+  .direction-app.bidang-air #workspace .plan-view-tabs button:focus-visible { outline:3px solid #0076a8; }
+  .direction-app.bidang-air #workspace.view-impact .plan-summary { gap:18px!important; }
+  .direction-app.bidang-air #workspace .plan-result-visual,
+  .direction-app.bidang-air #workspace .plan-summary .plan-composition {
+    padding:24px; border:1px solid #fff; border-radius:24px; background:#fbfefff5;
+  }
+  .direction-app.bidang-air #workspace .plan-water-flow h3,
+  .direction-app.bidang-air #workspace .plan-composition h3 { font-size:25px; line-height:1.25; color:#092a50; }
+  .direction-app.bidang-air #workspace .plan-composition > header { gap:12px; flex-wrap:wrap; }
+  .direction-app.bidang-air #workspace .plan-composition > header .text-button { min-height:44px; padding:6px 0; }
+  .direction-app.bidang-air #workspace .plan-flow-labels button { padding:12px; border-radius:16px; }
+  .direction-app.bidang-air #workspace .plan-flow-labels button > span > span { font-size:14px; }
+  .direction-app.bidang-air #workspace .plan-flow-labels strong { font-size:25px; color:#092a50; }
+  .direction-app.bidang-air #workspace .plan-flow-origin { border-radius:12px; background:linear-gradient(125deg,#0877b5,#07558a); }
+  .direction-app.bidang-air #workspace .plan-water-flow .calculation-source { font-size:13px; }
+  .direction-app.bidang-air #workspace .plan-flow-insight { padding:18px 20px; border-radius:16px; background:#eefaff; }
+  .direction-app.bidang-air #workspace .plan-flow-insight p { font-size:14px; line-height:1.65; }
+  .direction-app.bidang-air #workspace .plan-declared-paths { padding:12px 14px; border-radius:12px; font-size:13px; }
+  .direction-app.bidang-air #workspace .plan-declared-paths small { font-size:12px; line-height:1.5; }
+  .direction-app.bidang-air #workspace .plan-option { padding:12px 14px; border-radius:12px; border:1px solid #d8eef8; }
+  .direction-app.bidang-air #workspace .plan-summary-bottom { gap:18px!important; }
+  .direction-app.bidang-air #workspace .plan-summary-bottom > section,
+  .direction-app.bidang-air #workspace .plan-summary-bottom > section+section {
+    padding:20px!important; border:1px solid #fff; border-radius:20px!important; background:#fbfefff5!important;
+  }
+  .direction-app.bidang-air #workspace .plan-summary-bottom h3 { font-size:18px; margin-bottom:14px; color:#092a50; }
+  .direction-app.bidang-air #workspace .plan-summary-bottom .meter-track { border-radius:8px; }
+  .direction-app.bidang-air #workspace .plan-meaning-metrics { margin-bottom:16px; }
+  .direction-app.bidang-air #workspace .plan-meaning-metrics strong { font-size:28px; color:#092a50; }
+  .direction-app.bidang-air #workspace .plan-reason-row { flex-wrap:wrap; padding-top:12px; }
+  .direction-app.bidang-air #workspace .plan-reason-row .btn-secondary { min-height:40px; border-radius:12px; }
+  .direction-app.bidang-air #workspace .plan-scenario-compact button { padding:9px 8px; border-radius:10px; }
+  .direction-app.bidang-air #workspace .plan-scenario-compact button > small { font-size:12px; }
+  .direction-app.bidang-air #workspace .plan-action-strip { padding:20px; gap:8px; border:1px solid #fff; border-radius:20px; background:#fbfefff5; }
+  .direction-app.bidang-air #workspace .plan-action-item { padding:10px 12px; border-radius:12px; }
+  .direction-app.bidang-air #workspace .plan-action-item strong { font-size:13px; line-height:1.4; }
+  .direction-app.bidang-air #workspace .plan-action-item small { font-size:11px; line-height:1.4; }
+  .direction-app.bidang-air #workspace .plan-action-primary { min-height:48px; border-radius:14px; margin-left:0; }
+  .direction-app.bidang-air #workspace .plan-explanation-topics { padding:8px; gap:8px; border:1px solid #fff; border-radius:18px; }
+  .direction-app.bidang-air #workspace .plan-explanation-topics button { border-radius:12px; }
+  .direction-app.bidang-air #workspace .plan-detail-body[data-view="evidence"] > :is(.plan-explanation-flow,.decision-meaning,.scenario-chart,.plan-package-visual,.decision-conclusion,.decision-provenance,.decision-footnotes,.plan-feasibility-review,.plan-field-work) {
+    border-radius:22px; padding:24px; border:1px solid #fff;
+  }
+  .direction-app.bidang-air #workspace .plan-recommendation-hero { padding:28px 30px; border-radius:24px; background:linear-gradient(115deg,#fff,#eefaff); }
+  .direction-app.bidang-air #workspace .plan-recommendation-hero > span { font-size:12px; letter-spacing:.1em; }
+  .direction-app.bidang-air #workspace .plan-recommendation-hero h3 { font-size:32px; line-height:1.25; color:#092a50; }
+  .direction-app.bidang-air #workspace .plan-recommendation-grid { gap:18px; }
+  .direction-app.bidang-air #workspace .plan-recommendation-grid > section { padding:24px; border-radius:22px; background:#fbfefff5; }
+  .direction-app.bidang-air #workspace .plan-recommendation-grid h4 { font-size:20px; color:#092a50; }
+  .direction-app.bidang-air #workspace .plan-recommendation-grid h4 svg { width:36px; height:36px; padding:7px; background:#e3f7ff; border-radius:50%; }
+  .direction-app.bidang-air #workspace .plan-recommendation-grid li { line-height:1.65; }
+  @media (min-width:1101px) and (max-width:1390px) {
+    .direction-app.bidang-air #workspace .plan-action-strip { grid-template-columns:repeat(4,minmax(0,1fr)); }
+    .direction-app.bidang-air #workspace .plan-action-intro { grid-column:1/-1; padding:0 0 10px; }
+    .direction-app.bidang-air #workspace .plan-action-primary { white-space:normal; }
+  }
+  @media (max-width:1100px) {
+    .direction-app.bidang-air #workspace .plan-summary-bottom { grid-template-columns:minmax(0,1fr)!important; }
+  }
+  @media (max-width:760px) {
+    .direction-app.bidang-air .app-body #workspace.view-impact { padding:18px 12px 24px; }
+    .direction-app.bidang-air #workspace.view-impact > .page-heading h1 { font-size:28px!important; }
+    .direction-app.bidang-air #workspace.view-impact .plan-masthead { padding:16px 18px!important; }
+    .direction-app.bidang-air #workspace .plan-view-tabs { width:100%; }
+    .direction-app.bidang-air #workspace .plan-view-tabs button,
+    .direction-app.bidang-air #workspace .plan-view-tabs button:last-child { padding:8px 5px!important; font-size:12px!important; }
+    .direction-app.bidang-air #workspace .plan-result-visual,
+    .direction-app.bidang-air #workspace .plan-summary .plan-composition { padding:18px; }
+    .direction-app.bidang-air #workspace .plan-water-flow h3,
+    .direction-app.bidang-air #workspace .plan-composition h3 { font-size:21px; }
+    .direction-app.bidang-air #workspace .plan-flow-labels button { padding:10px 4px; }
+    .direction-app.bidang-air #workspace .plan-flow-art { min-height:140px; }
+    .direction-app.bidang-air #workspace .plan-flow-labels strong { font-size:23px; }
+    .direction-app.bidang-air #workspace .plan-flow-labels button > span > span { font-size:12px; }
+    .direction-app.bidang-air #workspace .plan-flow-insight { padding:16px; }
+    .direction-app.bidang-air #workspace .plan-meaning-metrics strong { font-size:25px; }
+    .direction-app.bidang-air #workspace .plan-action-strip { padding:18px; }
+    .direction-app.bidang-air #workspace .plan-action-item { padding:12px 8px; }
+    .direction-app.bidang-air #workspace .plan-recommendation-hero { padding:22px; }
+    .direction-app.bidang-air #workspace .plan-recommendation-hero h3 { font-size:25px; }
+    .direction-app.bidang-air #workspace .plan-recommendation-grid > section { padding:20px; }
+    .direction-app.bidang-air #workspace .plan-recommendation-grid h4 { font-size:18px; }
+    .direction-app.bidang-air #workspace .plan-detail-body[data-view="evidence"] > :is(.plan-explanation-flow,.decision-meaning,.scenario-chart,.plan-package-visual,.decision-conclusion,.decision-provenance,.decision-footnotes,.plan-feasibility-review,.plan-field-work) { padding:18px; }
+  }
+}
+@media screen and (forced-colors:active) {
+  .direction-app.bidang-air .reference-intake-highlight { background:none; color:CanvasText; -webkit-text-fill-color:CanvasText; }
+}

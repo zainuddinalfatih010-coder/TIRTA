@@ -1,0 +1,29 @@
+.tirta-logo {
+  display: block;
+  width: 52px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 5px 7px;
+  border: 1px solid #e1e5e5;
+  border-radius: 12px;
+  background: #edf0f0;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+.wordmark { gap: 4px; padding-inline: 4px; min-height: 48px; align-items: center; line-height: 1; }
+.mobile-brand { display: none; }
+@media (max-width: 1023px) {
+  .mobile-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 56px;
+    width: 56px;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  .mobile-brand .tirta-logo { width: 44px; height: 42px; padding: 4px 5px; border-radius: 10px; }
+  .project-identity .project-symbol { display: none; }
+}

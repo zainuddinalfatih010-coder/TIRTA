@@ -1,0 +1,58 @@
+.parcel-frame:has(.roof-controls){position:relative}.roof-controls{position:absolute;z-index:8;left:clamp(84px,var(--roof-left),calc(100% - 92px));top:var(--roof-top);transform:translate(-50%,-50%);color:#14394e;font:inherit;pointer-events:none}.roof-controls button,.roof-controls select,.roof-controls input,.roof-panel{pointer-events:auto}.roof-fan{display:flex;align-items:center;gap:8px;transform:translateY(-55px)}.roof-context-tool{width:48px;height:48px;min-width:48px;border-radius:50%;padding:0;display:grid;place-items:center;background:#fbfeff;border:1px solid #91bac9;box-shadow:0 3px 12px #28566b20;position:relative;animation:roof-fan-in .22s ease-out}.roof-context-tool:nth-child(2){transform:translateY(-20px)}.roof-context-tool[aria-pressed=true]{color:#fff;background:#007d9e;border-color:#007d9e}.roof-context-tool span{position:absolute;top:calc(100% + 7px);left:50%;translate:-50% 4px;white-space:nowrap;background:#fbfeff;color:#14394e;font-size:11px;line-height:1.2;padding:5px 7px;border-radius:6px;box-shadow:0 2px 8px #28566b26;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .12s ease,translate .12s ease}.roof-context-tool:not([aria-pressed=true]):hover span,.roof-context-tool:not([aria-pressed=true]):focus-visible span{opacity:1;visibility:visible;translate:-50% 0}.roof-controls.is-editing .roof-context-tool:not([aria-pressed=true]){background:#e4f0f4;box-shadow:none}.roof-controls.is-editing .roof-context-tool:not([aria-pressed=true]) svg{opacity:.65}.roof-panel{position:absolute;left:var(--roof-panel-left,180px);top:-58px;width:292px;background:#fbfeff;border:1px solid #a5cbd9;border-radius:16px;box-shadow:0 10px 30px #20485826;padding:14px;max-height:min(440px,calc(100vh - 180px));overflow:auto;box-sizing:border-box;transform:translate(var(--roof-panel-dx,0px),var(--roof-panel-dy,0px))}.roof-panel header,.roof-panel footer{display:flex;align-items:center;justify-content:space-between;gap:6px}.roof-panel header{cursor:grab;user-select:none;touch-action:none}.roof-panel header:active{cursor:grabbing}.roof-panel header button{border:0;background:transparent;min-width:44px;min-height:44px;padding:8px}.roof-panel label{display:grid;gap:5px;margin:10px 0;font-size:14px}.roof-panel input,.roof-panel select{min-height:44px;width:100%;box-sizing:border-box}.roof-panel p{font-size:13px;line-height:1.5;margin:10px 0}.roof-panel button{min-height:44px}.roof-panel output{display:block;font-size:13px;line-height:1.5;background:#e6f5f8;padding:10px;border-radius:10px}.roof-panel .roof-precision{display:flex;align-items:center;gap:8px;font-size:12px}.roof-panel .roof-precision input{width:18px;min-height:18px}.roof-edges{display:flex;flex-wrap:wrap;gap:5px}.roof-edges button{padding:5px 12px}.roof-panel footer{padding-top:10px;border-top:1px solid #d0e6ec}.roof-panel footer button{padding:8px 10px}.roof-handle{touch-action:none;cursor:grab}.roof-receipt{display:block;background:#fbfeff;border-radius:8px;padding:8px;white-space:nowrap}.roof-reopen{white-space:nowrap;border-radius:20px;min-height:44px}.roof-controls.is-collapsed{z-index:7}@keyframes roof-fan-in{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}@media(max-width:1000px){.roof-panel{left:-70px;top:15px;width:280px;max-height:390px}.roof-controls{left:clamp(110px,var(--roof-left),calc(100% - 180px))}}@media(max-width:600px){.roof-controls.is-editing{position:static;transform:none}.roof-controls.is-editing .roof-fan{position:absolute;left:50%;top:30px;transform:translateX(-50%)}.roof-controls.is-editing .roof-panel{position:relative;left:auto;top:auto;width:100%;max-height:none;margin-top:8px;box-shadow:none}.roof-controls:not(.is-editing){left:clamp(100px,var(--roof-left),calc(100% - 100px))}.roof-context-tool span{font-size:10px}.roof-panel{padding:14px}}@media(prefers-reduced-motion:reduce){.roof-context-tool{animation:none}}
+
+.bidang-air .roof-panel label.roof-precision{display:flex;align-items:center;gap:8px}.bidang-air .roof-panel label.roof-precision input{width:18px;height:18px;min-height:18px}.roof-controls .roof-context-tool span{color:#14394e;background:#fbfeff}
+
+.bidang-air .roof-panel label.roof-precision{flex-direction:row}.bidang-air .roof-panel label.roof-precision input{flex:0 0 18px}@media(max-width:600px){.roof-controls.is-editing .roof-fan{left:clamp(100px,var(--roof-left),calc(100% - 100px));top:calc(var(--roof-top) - 55px)}}
+
+/* Keep the collapsed roof-flow CTA away from the zone label anchored at the same centroid. */
+.roof-controls.is-collapsed{
+  transform:translate(-50%,calc(-50% - 58px));
+}
+.roof-controls.is-collapsed .roof-reopen{
+  min-height:38px;
+  padding:7px 13px;
+  font-size:13px;
+  border-radius:999px;
+  background:rgba(251,254,255,.94);
+  box-shadow:0 4px 14px rgba(32,72,88,.14);
+}
+@media(max-width:600px){
+  .roof-controls.is-collapsed{
+    transform:translate(-50%,calc(-50% - 52px));
+  }
+}
+
+/* Roof routing v2: selecting a roof exposes the three tools immediately.
+   The tools burst from one shared origin instead of fading upward. */
+.roof-context-tool{
+  --roof-burst-start-x:0px;
+  --roof-burst-final-y:0px;
+  transform:translate(0,var(--roof-burst-final-y)) scale(1);
+  animation:roof-fan-burst .30s cubic-bezier(.2,.82,.2,1) both;
+}
+.roof-context-tool:nth-child(1){--roof-burst-start-x:56px;animation-delay:0ms;}
+.roof-context-tool:nth-child(2){--roof-burst-start-x:0px;--roof-burst-final-y:-20px;animation-delay:35ms;}
+.roof-context-tool:nth-child(3){--roof-burst-start-x:-56px;animation-delay:70ms;}
+@keyframes roof-fan-burst{
+  0%{opacity:.12;transform:translate(var(--roof-burst-start-x),0) scale(.32);}
+  68%{opacity:1;transform:translate(0,var(--roof-burst-final-y)) scale(1.07);}
+  100%{opacity:1;transform:translate(0,var(--roof-burst-final-y)) scale(1);}
+}
+@media(prefers-reduced-motion:reduce){
+  .roof-context-tool{animation:none;transform:translate(0,var(--roof-burst-final-y)) scale(1);}
+}
+
+/* Roof editor polish: roomier sheet, calmer choices, compact command footer. */
+.bidang-air .roof-panel{width:340px;padding:18px;border-radius:22px;border-color:#b7d9e6;background:#fbfeff;box-shadow:0 18px 46px rgba(22,69,88,.18);scrollbar-gutter:stable;max-height:min(520px,calc(100vh - 116px))}
+.bidang-air .roof-panel header{min-height:40px;margin-bottom:8px}.bidang-air .roof-panel header strong,.bidang-air .roof-panel header h3{font-size:17px;letter-spacing:-.15px}
+.bidang-air .roof-panel label{gap:7px;margin:13px 0;font-size:13.5px}.bidang-air .roof-panel input,.bidang-air .roof-panel select{min-height:46px;border-radius:11px;padding-inline:12px}
+.bidang-air .roof-panel p{margin:11px 0;line-height:1.55;color:#365e72}
+.bidang-air .roof-panel output{padding:11px 12px;border-radius:12px;background:#eaf7fb;color:#315d72}
+.bidang-air .roof-edges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.bidang-air .roof-edges button{min-width:0;min-height:48px;padding:8px 5px;border-radius:11px;font-weight:600;background:#f9fcfe}
+.bidang-air .roof-edges button[aria-pressed=true]{background:#d9f1fb;border-color:#008dc1;color:#006b95;box-shadow:0 4px 12px rgba(0,115,158,.08)}
+.bidang-air .roof-panel footer{position:sticky;bottom:-18px;margin:12px -18px -18px;padding:12px 18px 14px;border-top:1px solid #d4e7ee;background:rgba(251,254,255,.97);backdrop-filter:blur(4px);justify-content:flex-end}
+.bidang-air .roof-panel footer button{min-height:44px;padding:8px 12px;border-radius:11px;flex:0 0 auto}
+.bidang-air .roof-panel footer .primary{width:auto;min-width:138px;max-width:154px;padding-inline:16px}
+@media(max-width:1000px) and (min-width:601px){.bidang-air .roof-panel{width:320px}}
+@media(max-width:600px){.bidang-air .roof-panel{width:100%;padding:15px;border-radius:18px}.bidang-air .roof-panel footer{bottom:-15px;margin:10px -15px -15px;padding:10px 15px 12px}.bidang-air .roof-edges{grid-template-columns:repeat(3,minmax(0,1fr))}.bidang-air .roof-panel footer .primary{min-width:132px;max-width:148px}}

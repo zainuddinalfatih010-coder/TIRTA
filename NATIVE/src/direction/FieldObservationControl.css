@@ -1,0 +1,7 @@
+.field-observation-control { margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--line, #c2dfeb); }
+.field-observation-control label { display: grid; gap: .45rem; }
+.field-observation-control label span { font-size: .85em; font-weight: 400; }
+.field-observation-control p { font-size: .88rem; line-height: 1.45; margin: .6rem 0; }
+.field-observation-control select, .field-observation-control textarea { width: 100%; min-width: 0; }
+.field-observation-control textarea { resize: vertical; }
+.field-observation-control .text-button { margin-top: .45rem; }

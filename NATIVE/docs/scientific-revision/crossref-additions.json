@@ -1,0 +1,369 @@
+[
+  {
+    "doi": "10.1016/j.envc.2026.101525",
+    "type": "journal-article",
+    "title": "Field-informed adaptation of infiltration wells for stormwater management under shallow groundwater and low-permeability soils: a Jakarta case study",
+    "authors": [
+      "Abdul Halim Hamdany",
+      "Evi Anggraheni",
+      "Glenn Adriel Adiguna",
+      "Fransiskus Sean Tanlie",
+      "Erly Bahsan",
+      "Ika Agustin Ningrum",
+      "Nelson Simanjuntak",
+      "Elisabeth Tarigan",
+      "Dina Kamila",
+      "Hasnaa Faadhilah",
+      "Wiwik Rahayu",
+      "Fathiyah Hakim Sagitaningrum",
+      "Martin Wijaya",
+      "Widjojo Adi Prakoso",
+      "Alfrendo Satyanaga"
+    ],
+    "year": 2026,
+    "journal": "Environmental Challenges",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.envc.2026.101525",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2667010026001198?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2667010026001198?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1080/00224561.2006.12435870",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "doi": "10.1061/(ASCE)0733-9437(2008)134:5(652)",
+    "type": "journal-article",
+    "title": "Compaction’s Impacts on Urban Storm-Water Infiltration",
+    "authors": [
+      "Robert Pitt",
+      "Shen-En Chen",
+      "Shirley E. Clark",
+      "Janice Swenson",
+      "Choo Keong Ong"
+    ],
+    "year": 2008,
+    "journal": "Journal of Irrigation and Drainage Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/(asce)0733-9437(2008)134:5(652)",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%290733-9437%282008%29134%3A5%28652%29",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/(ASCE)0733-9437(2007)133:3(249)",
+    "type": "journal-article",
+    "title": "Field Survey of Permeable Pavement Surface Infiltration Rates",
+    "authors": [
+      "Eban Z. Bean",
+      "William F. Hunt",
+      "David A. Bidelspach"
+    ],
+    "year": 2007,
+    "journal": "Journal of Irrigation and Drainage Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/(asce)0733-9437(2007)133:3(249)",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%290733-9437%282007%29133%3A3%28249%29",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.jhydrol.2011.10.022",
+    "type": "journal-article",
+    "title": "The hydrological performance of a green roof test bed under UK climatic conditions",
+    "authors": [
+      "Virginia Stovin",
+      "Gianni Vesuviano",
+      "Hartini Kasmin"
+    ],
+    "year": 2012,
+    "journal": "Journal of Hydrology",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.jhydrol.2011.10.022",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022169411007347?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0022169411007347?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.3390/w10030337",
+    "type": "journal-article",
+    "title": "A Review of Permeable Pavement Clogging Investigations and Recommended Maintenance Regimes",
+    "authors": [
+      "Mostafa Razzaghmanesh",
+      "Simon Beecham"
+    ],
+    "year": 2018,
+    "journal": "Water",
+    "abstract": "<jats:p>Understanding clogging mechanisms in permeable pavements can help optimize the required maintenance regime. In this review paper, methods for investigating clogging mechanisms are described. These include surface infiltration methods, the use of embedded sensors, and the development of modelling tools. Previously conducted surface infiltration tests indicate the importance of the age of a permeable pavement system and also local climatic conditions, including rainfall intensity. The results indicate that porous concrete generally has the highest infiltration capacity and this is followed by permeable interlocking concrete pavement and then porous asphalt. The measured infiltration rates decreased significantly even within two years of installation. There was an indirect relationship between surface infiltration rates and the age of the pavements. It was also found that the rainfall characteristics are important in selecting the type of pavement. Sensor technologies have been used mainly in the United States and there has been a reluctance to use such technologies in other parts of the world. Few studies have been conducted into modelling the changing performance of permeable pavement systems over time and there is a need to develop more general models. Various methods and machinery have been developed for cleaning and maintaining permeable pavements and there is no universally preferred approach currently available. Indeed, several of the commonly used maintenance methods have been shown to be relatively ineffective.</jats:p>",
+    "url": "https://doi.org/10.3390/w10030337",
+    "links": [
+      {
+        "URL": "https://www.mdpi.com/2073-4441/10/3/337/pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1002/clen.201300118",
+    "type": "journal-article",
+    "title": "Practical Review of Pervious Pavement Designs",
+    "authors": [
+      "Jennifer Mullaney",
+      "Terry Lucke"
+    ],
+    "year": 2013,
+    "journal": "CLEAN – Soil, Air, Water",
+    "abstract": "<jats:sec>\n                    <jats:label/>\n                    <jats:p>An international literature review was undertaken to identify the most appropriate design for a pervious paving system. The literature review revealed that information contained in design guidelines is often unclear and occasionally conflicting and this can be confusing for designers and other stormwater professionals. This literature review was to form the basis of a design for a new research study on the benefits of using pervious pavements to promote street tree health has recently commenced at the University of the Sunshine Coast in Australia. The review identified four typical pervious paving surfaces porous concrete porous asphalt, permeable inter locking concrete pavers, and concrete and plastic grid pavers. All four pavement surfaces were found to have high stormwater pollutant removal performance in a variety of conditions, with a wide range of designs. Maintenance procedures can have a significant impact on the rate of clogging of pervious pavements which can impact on the effective life span and there is conflicting and unreliable evidence to support the inclusion of a geofabric layer within pervious paving systems. This paper summarises the literature review findings and is intended as a practical resource for designers and researchers of pervious pavement systems.</jats:p>\n                  </jats:sec>",
+    "url": "https://doi.org/10.1002/clen.201300118",
+    "links": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fclen.201300118",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/clen.201300118",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.landurbplan.2011.12.012",
+    "type": "journal-article",
+    "title": "Hydrologic shortcomings of conventional urban stormwater management and opportunities for reform",
+    "authors": [
+      "Matthew J. Burns",
+      "Tim D. Fletcher",
+      "Christopher J. Walsh",
+      "Anthony R. Ladson",
+      "Belinda E. Hatt"
+    ],
+    "year": 2012,
+    "journal": "Landscape and Urban Planning",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.landurbplan.2011.12.012",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S016920461100363X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S016920461100363X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.jclepro.2018.11.134",
+    "type": "journal-article",
+    "title": "Permeable concrete pavements: A review of environmental benefits and durability",
+    "authors": [
+      "Ning Xie",
+      "Michelle Akin",
+      "Xianming Shi"
+    ],
+    "year": 2019,
+    "journal": "Journal of Cleaner Production",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.jclepro.2018.11.134",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0959652618335376?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0959652618335376?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.advwatres.2012.09.001",
+    "type": "journal-article",
+    "title": "Understanding, management and modelling of urban hydrology and its consequences for receiving waters: A state of the art",
+    "authors": [
+      "T.D. Fletcher",
+      "H. Andrieu",
+      "P. Hamel"
+    ],
+    "year": 2013,
+    "journal": "Advances in Water Resources",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.advwatres.2012.09.001",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0309170812002412?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0309170812002412?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/(ASCE)HE.1943-5584.0000467",
+    "type": "journal-article",
+    "title": "Hydrologic Performance of Bioretention Storm-Water Control Measures",
+    "authors": [
+      "Allen P. Davis",
+      "Robert G. Traver",
+      "William F. Hunt",
+      "Ryan Lee",
+      "Robert A. Brown",
+      "Jennifer M. Olszewski"
+    ],
+    "year": 2012,
+    "journal": "Journal of Hydrologic Engineering",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/(asce)he.1943-5584.0000467",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%29HE.1943-5584.0000467",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1061/JSWBAY.0000925",
+    "type": "journal-article",
+    "title": "Field Assessment of the Hydrologic Mitigation Performance of Three Aging Bioretention Cells",
+    "authors": [
+      "Jeffrey P. Johnson",
+      "William F. Hunt"
+    ],
+    "year": 2020,
+    "journal": "Journal of Sustainable Water in the Built Environment",
+    "abstract": null,
+    "url": "https://doi.org/10.1061/jswbay.0000925",
+    "links": [
+      {
+        "URL": "https://ascelibrary.org/doi/pdf/10.1061/JSWBAY.0000925",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1080/00380768.2015.1035622",
+    "type": "journal-article",
+    "title": "Formation, characteristics and eco-environmental implications of urban soils – A review",
+    "authors": [
+      "Jin-Ling Yang",
+      "Gan-Lin Zhang"
+    ],
+    "year": 2015,
+    "journal": "Soil Science and Plant Nutrition",
+    "abstract": null,
+    "url": "https://doi.org/10.1080/00380768.2015.1035622",
+    "links": [
+      {
+        "URL": "http://www.tandfonline.com/doi/pdf/10.1080/00380768.2015.1035622",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  },
+  {
+    "doi": "10.1016/j.watres.2012.05.029",
+    "type": "journal-article",
+    "title": "Key issues for sustainable urban stormwater management",
+    "authors": [
+      "A.E. Barbosa",
+      "J.N. Fernandes",
+      "L.M. David"
+    ],
+    "year": 2012,
+    "journal": "Water Research",
+    "abstract": null,
+    "url": "https://doi.org/10.1016/j.watres.2012.05.029",
+    "links": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0043135412003569?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0043135412003569?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ]
+  },
+  {
+    "doi": "10.1089/ees.2006.0190",
+    "type": "journal-article",
+    "title": "Field Performance of Bioretention: Water Quality",
+    "authors": [
+      "Allen P. Davis"
+    ],
+    "year": 2007,
+    "journal": "Environmental Engineering Science",
+    "abstract": null,
+    "url": "https://doi.org/10.1089/ees.2006.0190",
+    "links": [
+      {
+        "URL": "http://www.liebertpub.com/doi/pdf/10.1089/ees.2006.0190",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ]
+  }
+]

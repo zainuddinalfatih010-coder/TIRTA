@@ -1,0 +1,750 @@
+/* Reference visual layer. Screen-only artwork, no event handlers or chart geometry.
+   Existing backgrounds, printed reports and scientific data retain their owners. */
+@media screen {
+  .direction-app.bidang-air .workspace {
+    font-family: "Roboto", Arial, sans-serif;
+  }
+
+  .direction-app.bidang-air .app-body .workspace:is(.view-studio,.view-rain,.view-interventions,.view-alternatives,.view-compare,.view-impact) {
+    background-color: #e5f8fe;
+    background-image: var(--page-art);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .direction-app.bidang-air .workspace.view-studio {
+    --page-art: url("/reference-art/parcel-page.webp");
+  }
+  .direction-app.bidang-air .workspace.view-rain {
+    --page-art: url("/reference-art/rain-water-page.webp");
+    background-position: left bottom;
+  }
+  .direction-app.bidang-air .workspace.view-interventions {
+    --page-art: url("/reference-art/water-landscape.webp");
+  }
+  .direction-app.bidang-air .workspace:is(.view-alternatives,.view-compare) {
+    --page-art: url("/reference-art/compare-page.webp");
+  }
+  .direction-app.bidang-air .workspace.view-impact {
+    --page-art: url("/reference-art/plan-page.webp");
+  }
+  .direction-app.bidang-air .view-project .landing-hero {
+    background: #e7faff url("/reference-art/water-landscape.webp") center bottom / cover no-repeat;
+  }
+  .direction-app.bidang-air .view-project .landing-contours {
+    opacity: .15;
+  }
+  .direction-app.bidang-air .app-rail {
+    background: linear-gradient(110deg,#e4f8fe,#d5f3fb 55%,#ebfbff);
+  }
+
+  /* Decoration inside the existing chart panel stays below all real marks. */
+  .direction-app.bidang-air .comparison-top .scenario-chart {
+    background: #f8fdff url("/reference-art/compare-page.webp") right bottom / 560px auto no-repeat;
+  }
+  .direction-app.bidang-air .rain-parcel-context {
+    background: #effbff url("/reference-art/rain-water-page.webp") center bottom / cover no-repeat;
+    overflow: hidden;
+  }
+  .direction-app.bidang-air .rain-parcel-context .parcel-svg {
+    background: rgba(230,248,254,.48);
+    overflow: hidden;
+  }
+  .direction-app.bidang-air #workspace .compare-candidate small {
+    color: #3b5c72;
+  }
+  .direction-app.bidang-air .rain-equation h2 {
+    font-size: clamp(30px,2.8vw,42px);
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    margin-bottom: 4px;
+  }
+  .direction-app.bidang-air .rain-analysis .rain-volume-diagram {
+    background: #f8fdff;
+    padding: 18px;
+    border-radius: 22px;
+  }
+  .direction-app.bidang-air .rain-volume-diagram .volume-plot {
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  .direction-app.bidang-air .compare-navigator > header {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 12px;
+  }
+  .direction-app.bidang-air .compare-navigator > header .compare-search {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .direction-app.bidang-air .comparison-top .analysis-heading h2 {
+    font-size: clamp(25px,2.2vw,32px);
+  }
+
+  @media (min-width: 1200px) {
+    .direction-app.bidang-air .app-rail.is-project-workspace {
+      min-height: 72px;
+      padding-block: 8px;
+    }
+    .direction-app.bidang-air #workspace.view-studio > .page-heading {
+      display: flex !important;
+      margin: 18px 0;
+    }
+    .direction-app.bidang-air #workspace.view-studio > .studio-beginner-action {
+      position: static !important;
+      left: auto;
+      top: auto;
+      height: auto;
+      margin: 0 0 12px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout {
+      grid-template-columns: 76px clamp(290px,25vw,364px) minmax(0,1fr) clamp(250px,21vw,300px);
+      gap: 16px;
+    }
+    .direction-app.bidang-air #workspace.view-studio > .studio-beginner-action {
+      position: absolute !important;
+      top: 108px;
+      left: 129px;
+      width: 180px;
+      height: 0;
+      margin: 0;
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-inspector {
+      grid-column: 2;
+      grid-row: 1;
+      margin-top: 42px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .property-bench {
+      padding: 22px;
+      border: 1px solid #e0f1f8;
+      border-radius: 24px;
+      background: rgba(249,253,255,.97);
+      box-shadow: 0 6px 16px #1a6a8510;
+    }
+    .direction-app.bidang-air #workspace.view-studio {
+      padding-inline: 28px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .empty-zone-bench .selected-object {
+      display: block;
+      padding-block: 4px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .empty-zone-bench .selected-object > .material-swatch {
+      float: right;
+      width: 46px;
+      height: 46px;
+      margin-left: 8px;
+      color: transparent;
+      border: 0;
+      background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M9 6 38 26l-14 2-5 14Z' fill='%238bdbff' stroke='%230072d3' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+    }
+    .direction-app.bidang-air #workspace.view-studio .empty-zone-bench .selected-object small {
+      display: inline-block;
+      margin-bottom: 15px;
+      border-radius: 999px;
+      padding: 5px 10px;
+      background: #d4f3ff;
+      color: #00628d;
+      font-size: 12px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .empty-zone-bench h2 {
+      font-size: 26px;
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .empty-zone-bench .selected-object span:not(.material-swatch) {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .direction-app.bidang-air #workspace.view-studio .parcel-frame {
+      grid-column: 3;
+      grid-row: 1;
+      padding: 12px;
+      border-radius: 24px;
+      background: rgba(249,253,255,.87);
+    }
+    .direction-app.bidang-air #workspace.view-studio .parcel-svg {
+      height: clamp(390px,52dvh,620px);
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout .zone-register {
+      grid-column: 4;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      margin-top: 42px !important;
+      padding: 22px 16px;
+      border-radius: 24px;
+      background: rgba(249,253,255,.97);
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-register .register-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 0;
+      font-size: 13px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-register .zone-navigator-list {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 auto;
+      gap: 5px;
+      max-height: 470px;
+      overflow-y: auto;
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-register .zone-row {
+      width: 100%;
+      max-width: none;
+      flex: 0 0 auto;
+      padding: 10px 8px;
+      min-height: 88px;
+      border-radius: 12px;
+      text-align: left;
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-register .register-total {
+      width: 100%;
+      padding: 12px 0 0;
+      margin: 0;
+      border-left: 0;
+      border-top: 1px solid #d8edf6;
+      font-size: 13px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-row small {
+      font-size: 13px;
+    }
+  }
+
+  /* The intervention artwork is selected from the existing rendered icon,
+     with no new state, defaults or interpretation of the user's inputs. */
+  .direction-app.bidang-air .guided-composer:has(.treatment-heading .tank) {
+    --treatment-art: url("/reference-art/tank.webp");
+  }
+  .direction-app.bidang-air .guided-composer:has(.treatment-heading .soak) {
+    --treatment-art: url("/reference-art/soak.webp");
+  }
+  .direction-app.bidang-air .guided-composer:has(.treatment-heading .garden) {
+    --treatment-art: url("/reference-art/garden.webp");
+  }
+  .direction-app.bidang-air .guided-composer:has(.treatment-heading .biopori) {
+    --treatment-art: url("/reference-art/biopori.webp");
+  }
+  .direction-app.bidang-air .guided-composer[data-flow="intake"] .guided-task-surface {
+    background-image: var(--treatment-art);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: min(56%,370px) auto;
+  }
+  .direction-app.bidang-air .guided-composer[data-flow="intake"] .guided-task-surface > h3 {
+    max-width: 65%;
+  }
+
+  /* Reference intervention composition: reuse the same form, buttons and
+     status content in a palette / question / status arrangement. */
+  @media (min-width: 1200px) {
+    .direction-app.bidang-air #workspace .intervention-top-composition {
+      grid-template-columns: 216px minmax(0,1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .direction-app.bidang-air #workspace .intervention-left-stack {
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+      background: rgba(249,253,255,.95);
+      border: 1px solid rgba(255,255,255,.85);
+      border-radius: 24px;
+      overflow: visible;
+      gap: 8px;
+    }
+    .direction-app.bidang-air .intervention-dock {
+      padding: 20px 16px 8px;
+      background: transparent;
+    }
+    .direction-app.bidang-air .intervention-dock h2 {
+      font-size: 20px;
+    }
+    .direction-app.bidang-air .intervention-dock > p {
+      font-size: 14px;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .direction-app.bidang-air #workspace .intervention-dock .planning-empty {
+      min-height: 0;
+      margin: 10px 0;
+      padding: 0;
+      line-height: 1.3;
+    }
+    .direction-app.bidang-air .intervention-palette {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .direction-app.bidang-air .intervention-palette button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      width: 100%;
+      min-height: 48px;
+      height: auto;
+      padding: 5px 10px;
+      border: 1px solid #d0e8f4;
+      border-radius: 12px;
+      background: #f8fcff;
+      text-align: left;
+    }
+    .direction-app.bidang-air .intervention-palette button[aria-pressed="true"] {
+      background: #d9f2fc;
+      border-color: #b4e4f5;
+    }
+    .direction-app.bidang-air .intervention-palette .intervention-illustration {
+      width: 38px;
+      height: 38px;
+      padding: 0;
+      border: 0;
+      background: none;
+      flex: 0 0 38px;
+    }
+    .direction-app.bidang-air .intervention-palette strong {
+      width: auto;
+      min-height: 0;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0;
+      font-size: 14px;
+    }
+    .direction-app.bidang-air .intervention-dock .placed-heading {
+      flex-direction: column;
+      gap: 2px;
+      padding-top: 12px;
+      margin: 8px 0 4px;
+    }
+    .direction-app.bidang-air .intervention-dock .placed-heading h3 {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    .direction-app.bidang-air .intervention-dock .placed-heading > span {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+    .direction-app.bidang-air #workspace .intervention-left-stack .intervention-preview {
+      position: static;
+      padding: 8px 14px 14px;
+      background: transparent;
+      min-height: 0;
+    }
+    .direction-app.bidang-air #workspace .intervention-left-stack .intervention-preview .parcel-svg {
+      height: 120px;
+      background: #e9f8fc;
+      border-radius: 14px;
+    }
+    .direction-app.bidang-air #workspace .active-intervention-editor,
+    .direction-app.bidang-air #workspace .active-intervention-editor > div:not([hidden]) {
+      padding: 0;
+      background: transparent;
+      overflow: visible;
+      min-height: 0;
+    }
+    .direction-app.bidang-air .guided-composer {
+      display: grid;
+      grid-template-columns: minmax(0,1fr) 290px;
+      gap: 0 16px;
+      border-radius: 0;
+      background: transparent;
+    }
+    .direction-app.bidang-air .guided-composer > .treatment-heading {
+      grid-column: 1;
+      grid-row: 1;
+      padding: 24px 26px 14px;
+      background: #f8fdff;
+      border-radius: 24px 24px 0 0;
+    }
+    .direction-app.bidang-air .guided-composer > .guided-progress {
+      grid-column: 1;
+      grid-row: 2;
+      gap: 26px;
+      padding: 0 26px 14px;
+      background: #f8fdff;
+      border-bottom: 1px solid #d6edf5;
+    }
+    .direction-app.bidang-air .guided-composer > .guided-progress b {
+      font-size: 14px;
+    }
+    .direction-app.bidang-air .guided-composer > .guided-layout {
+      display: contents;
+    }
+    .direction-app.bidang-air .guided-composer .guided-layout > form {
+      grid-column: 1;
+      grid-row: 3;
+      padding: 22px 26px 0;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air .guided-composer > .support-rail {
+      grid-column: 1;
+      grid-row: 4;
+      border-radius: 0 0 24px 24px;
+      padding: 10px 26px 14px;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air .guided-composer .guided-layout > .guided-status {
+      grid-column: 2;
+      grid-row: 1 / 5;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+    .direction-app.bidang-air .guided-status .guided-mini-result {
+      padding: 20px 22px 12px;
+      margin-bottom: -12px;
+      border: 0;
+      border-radius: 20px 20px 0 0;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air .guided-status .guided-known-values {
+      padding: 0 22px 12px;
+      border-radius: 0 0 20px 20px;
+      background: #f8fdff;
+      font-size: 12px;
+    }
+    .direction-app.bidang-air .guided-status .resource-draft {
+      margin: 0;
+      padding: 20px 22px;
+      border-radius: 20px;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air .guided-status .guided-map-summary {
+      padding: 18px 22px !important;
+      border-radius: 20px;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air .guided-status .guided-mini-result h3,
+    .direction-app.bidang-air .guided-status .resource-draft h3 {
+      font-size: 20px;
+    }
+    .direction-app.bidang-air .guided-status .guided-mini-result p {
+      font-size: 13px;
+    }
+    .direction-app.bidang-air .guided-status .guided-readiness-summary button span {
+      font-size: 13px;
+    }
+    .direction-app.bidang-air .guided-status .guided-readiness-summary button b {
+      font-size: 12px;
+    }
+    .direction-app.bidang-air .guided-status .guided-readiness-summary button {
+      min-height: 32px;
+      padding-block: 6px;
+    }
+    .direction-app.bidang-air .guided-status .guided-all-needs {
+      font-size: 13px;
+    }
+    .direction-app.bidang-air .guided-composer[data-flow="intake"] .guided-task-surface {
+      min-height: 395px;
+      gap: 12px;
+      padding: 14px 0 0;
+      background-position: right top;
+      background-size: min(72%,580px) auto;
+      background-image: var(--treatment-art), linear-gradient(160deg,#e5f8ff,#f8fdff 75%);
+      border-radius: 18px;
+      padding: 22px 20px;
+    }
+    .direction-app.bidang-air .guided-composer[data-flow="intake"] .guided-task-surface > h3 {
+      max-width: min(62%,400px);
+      font-size: clamp(36px,3.3vw,48px);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+      font-weight: 750;
+      color: #082b51;
+    }
+    .direction-app.bidang-air .guided-purpose {
+      font-size: 12px;
+      border-radius: 999px;
+      padding: 7px 12px;
+    }
+    .direction-app.bidang-air .guided-intake > p {
+      font-size: 21px;
+      color: #285876;
+    }
+    .direction-app.bidang-air .guided-intake {
+      gap: 14px;
+    }
+    .direction-app.bidang-air .intake-choices {
+      flex-wrap: nowrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+    .direction-app.bidang-air .intake-choices button {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 124px;
+      padding: 16px 8px;
+      border: 1px solid #bae1f5;
+      border-radius: 18px;
+      background: rgba(249,253,255,.94);
+      color: #082b51;
+      font-size: 20px;
+    }
+    .direction-app.bidang-air .intake-choices button::before {
+      content: "";
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #ddf4ff;
+      color: #008fc3;
+      font-size: 32px;
+      font-weight: 650;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='m6 16 7 7L27 8' fill='none' stroke='%23008fc3' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-position: center;
+      background-size: 28px;
+      background-repeat: no-repeat;
+    }
+    .direction-app.bidang-air .intake-choices button:nth-child(2)::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 18c5-15 14 10 24-4' fill='none' stroke='%23269ac4' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+    .direction-app.bidang-air .intake-choices button:nth-child(3)::before {
+      background-color: #f0e5ff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23b685ce'/%3E%3Cpath d='M12 11c0-6 12-6 9 1-1 2-5 2-5 6' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='24' r='1.6' fill='white'/%3E%3C/svg%3E");
+      color: #9a68be;
+    }
+    .direction-app.bidang-air .intake-choices button:nth-child(3) {
+      border-color: #dcd8f6;
+    }
+    .direction-app.bidang-air .guided-intake > small {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .direction-app.bidang-air .rain-atlas .rain-contribution-region {
+      width: 100%;
+      margin-inline: 0;
+    }
+    .direction-app.bidang-air .app-body .workspace:is(.view-studio,.view-rain,.view-interventions,.view-alternatives,.view-compare,.view-impact) {
+      background-size: 100% auto;
+      background-position: center bottom;
+    }
+    .direction-app.bidang-air .workspace.view-rain {
+      background-size: auto 650px;
+      background-position: left bottom;
+    }
+    .direction-app.bidang-air .comparison-top .scenario-chart {
+      background-size: 360px auto;
+    }
+    .direction-app.bidang-air .guided-composer[data-flow="intake"] .guided-task-surface {
+      background-size: min(50%,230px) auto;
+    }
+  }
+
+  /* Final reference alignment. Keep the real form in the DOM while arranging
+     its existing presentation into the reference board. Supporting water-path
+     facts remain visible after the impact ledger instead of enlarging the hero. */
+  .direction-app.bidang-air #workspace.view-studio {
+    --page-art: none;
+    background-color: #eaf9ff;
+    background-image: linear-gradient(180deg,#f8fdff,#e9f9ff 55%,#def5ff);
+  }
+  @media (min-width: 1200px) {
+    .direction-app.bidang-air #workspace.view-studio .studio-layout {
+      grid-template-rows: auto auto auto;
+      gap: 16px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .parcel-frame {
+      display: contents;
+    }
+    .direction-app.bidang-air #workspace.view-studio .map-topline {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      min-height: 50px;
+      padding: 0 0 0 286px;
+      gap: 10px 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .direction-app.bidang-air #workspace.view-studio .map-layer-controls {
+      margin-left: auto;
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-inspector {
+      grid-row: 2;
+      margin-top: 0;
+      outline: none;
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-inspector:focus-visible {
+      outline: 2px solid #8bc9e4;
+      border-radius: 24px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .parcel-svg {
+      grid-column: 3;
+      grid-row: 2;
+      height: 460px;
+      padding: 10px;
+      border-radius: 22px;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout .zone-register {
+      grid-row: 2 / 4;
+      margin-top: 0 !important;
+      align-self: start;
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-register .register-total {
+      flex: 0 0 auto;
+      min-height: 0;
+    }
+    .direction-app.bidang-air #workspace.view-studio .zone-register .zone-row {
+      min-height: 76px;
+      padding: 8px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .map-toolstrip {
+      top: 66px;
+    }
+    .direction-app.bidang-air #workspace.view-studio .map-bottomline {
+      grid-column: 3;
+      grid-row: 3;
+      margin: 0;
+      padding: 0;
+    }
+    .direction-app.bidang-air #workspace.view-studio :is(.drawing-actions,.drawing-error,.map-access,.parcel-context-actions,.map-message) {
+      grid-column: 3;
+    }
+    .direction-app.bidang-air #workspace.view-studio .parcel-start {
+      grid-column: 3;
+      grid-row: 2;
+      width: 100%;
+    }
+    .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) {
+      min-height: 0;
+    }
+    .direction-app.bidang-air #workspace.view-studio .studio-layout:has(.parcel-start) :is(.parcel-svg,.map-bottomline),
+    .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) .screen-footer.studio-next {
+      display: none;
+    }
+
+    .direction-app.bidang-air #workspace .intervention-atlas:has(.guided-composer[data-flow="intake"]) {
+      display: grid;
+      grid-template-columns: 216px minmax(0,1fr) 290px;
+      gap: 0 16px;
+      align-items: start;
+    }
+    .direction-app.bidang-air #workspace .intervention-atlas:has(.guided-composer[data-flow="intake"]) .intervention-top-composition,
+    .direction-app.bidang-air #workspace .intervention-atlas:has(.guided-composer[data-flow="intake"]) .active-intervention-editor,
+    .direction-app.bidang-air #workspace .intervention-atlas:has(.guided-composer[data-flow="intake"]) .active-intervention-editor > div:not([hidden]),
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"],
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-layout > form {
+      display: contents;
+    }
+    .direction-app.bidang-air #workspace .intervention-atlas:has(.guided-composer[data-flow="intake"]) .intervention-left-stack {
+      grid-column: 1;
+      grid-row: 1 / 5;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] > .treatment-heading {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: stretch;
+      padding-left: 30px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] > .guided-progress {
+      grid-column: 2;
+      grid-row: 2;
+      align-self: stretch;
+      padding-left: 36px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-task-surface {
+      position: relative;
+      grid-column: 2;
+      grid-row: 3;
+      min-height: 420px;
+      align-self: stretch;
+      padding: 37px 42px 24px 54px;
+      gap: 10px;
+      border-radius: 0 0 20px 20px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-task-surface > h3 {
+      margin-left: 5px;
+      font-size: clamp(36px,3.45vw,50px);
+      line-height: 1.06;
+      letter-spacing: -.025em;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-intake > p {
+      padding-left: 8px;
+      margin-top: -4px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-intake > .text-button {
+      position: absolute;
+      left: 24px;
+      bottom: -58px;
+      z-index: 1;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .composer-command-dock {
+      grid-column: 2;
+      grid-row: 4;
+      align-self: stretch;
+      margin: 0;
+      padding: 14px 24px 8px;
+      border: 0;
+      background: #f8fdff;
+      border-radius: 0 0 24px 24px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .composer-command-main > .btn-back {
+      margin-left: 160px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] > .support-rail {
+      grid-column: 1 / -1;
+      grid-row: 8;
+      align-self: stretch;
+      margin-top: 12px;
+      border-radius: 18px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-status {
+      grid-column: 3;
+      grid-row: 1 / 5;
+    }
+    .direction-app.bidang-air #workspace .intervention-atlas:has(.guided-composer[data-flow="intake"]) .intervention-ledger-region {
+      grid-column: 1 / -1;
+      grid-row: 6;
+      margin-top: 16px;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] .guided-water-path {
+      grid-column: 1 / -1;
+      grid-row: 7;
+      margin: 16px 0 0;
+      padding: 14px 20px;
+      border: 1px solid #d5ebf4;
+      border-radius: 18px;
+      background: #f8fdff;
+    }
+    .direction-app.bidang-air #workspace .guided-composer[data-flow="intake"] > .composer-saved {
+      grid-column: 2;
+    }
+  }
+}
+
+
+/* Desktop/native scaled viewport: before a parcel exists, Studio ends at the setup card.
+   Keep the real canvas/footer mounted but out of layout until parcel creation. */
+@media screen and (min-width:961px) {
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) {
+    min-height:0;
+  }
+  .direction-app.bidang-air #workspace.view-studio .studio-layout:has(.parcel-start) :is(.parcel-svg,.map-bottomline),
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) .screen-footer.studio-next {
+    display:none;
+  }
+}
+
+/* APK/mobile parcel gate: before parcel creation, keep only the setup UI.
+   The canvas, map controls, zone register and lower source/footer return automatically after parcel creation. */
+@media screen and (max-width:960px) {
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) {
+    min-height:0;
+  }
+  .direction-app.bidang-air #workspace.view-studio .studio-layout:has(.parcel-start) :is(.parcel-svg,.map-bottomline,.zone-register),
+  .direction-app.bidang-air #workspace.view-studio:has(.parcel-start) .screen-footer.studio-next {
+    display:none !important;
+  }
+}

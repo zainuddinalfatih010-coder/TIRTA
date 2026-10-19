@@ -1,0 +1,9 @@
+# Validation plan
+
+Baseline evidence:168 unit tests, lint/build; Golden browser gate46 initial passes plus three stale-harness cases corrected and individually passing, two existing skips. Browser fixture screenshots local/live and frozen arithmetic fixture retained. These are baseline checks, not scientific certification.
+
+Targeted acceptance: deterministic metadata migration and roundtrip; blank≠0; measured method/date; unit mismatch; duration average only; graph missing endpoints/duplicates/cycles; explicit source connection; oversized tank; soil/groundwater unknown/unsuitable; impermeable conversion/area bounds; stale numerical/context evidence; all four feasibility states; incomplete options individually excluded; constraint equality; finite deterministic search/Pareto; conservative water debit; field descriptive boundaries; report evidence references; archive backup before migration writes.
+
+Browser: new empty project to15×10 parcel, Atap/C,60mm assumption, optional120minute duration, declared tank, finite alternatives, compare/choose, field records, save/reload and report download. Separate missing-soil recovery, complete evidence library/search, unknown/zero duration boundary. Desktop1440×900,1366×768/mobile390×844: no horizontal overflow, sticky native dialog actions, keyboard Escape/focus and automated axe baseline. Existing Golden regression gate also checks geometry, drag icon, persistence/offline and related approved interactions; no geometry rewrite.
+
+Review layers: typecheck/lint/build/unit and browser evidence are engineering verification. Accessible publisher metadata/abstracts are not full-paper review. Scientific signoff requires a human reader to review claims, local conditions and actual applicability. Normative SNI content is licensed and unreviewed; no numerical SNI thresholds or compliance claims are implemented. Physical mobile hardware and school-site field performance are not proven by desktop emulation.

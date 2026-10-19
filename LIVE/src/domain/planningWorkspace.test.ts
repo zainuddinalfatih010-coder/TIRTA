@@ -1,0 +1,61 @@
+import { describe, it, expect } from "vitest";
+import { deleteParcel, deleteZone, reference } from "./authoring";
+import { demoProject } from "../direction/productionBridge";
+import { restoreParcelGeometry } from "../direction/parcelTransactions";
+import { savePlanningLimits } from "./planningWorkspace";
+import { readInput } from "./planningAuthoring";
+import { projectV2Schema } from "./projectV2";
+import { containsPoint } from "./geometry";
+const estimate = (text: string) => ({ text, source: "Asumsi pribadi", evidence: "ASSUMPTION" as const });
+describe("planning workspace recovery", () => {
+  it("preserves an imported specific installation site when saving a shared allowance", () => {
+    const p = demoProject();
+    p.installationSites[0]!.polygon = structuredClone(p.parcel!.polygon);
+    p.installationSites[0]!.name = "Lokasi survei tersimpan";
+    const oldSite = structuredClone(p.installationSites[0]);
+    const next = savePlanningLimits(p, estimate("1000000"), estimate("8"));
+    expect(next.installationSites[0]).toEqual(oldSite);
+    expect(next.installationSites[1]!.availableArea).toEqual(next.constraints.usableArea);
+    expect(savePlanningLimits(next, estimate("2000000"), estimate("9")).installationSites).toHaveLength(2);
+  });
+  it("saves budget independently of unknown land and binds the shared allowance without a second declaration", () => {
+    const p = savePlanningLimits(demoProject(), estimate("12500000"), estimate(""));
+    expect(readInput(p, p.constraints.budget).text).toBe("12500000");
+    expect(readInput(p, p.constraints.usableArea).text).toBe("");
+    expect(p.installationSites.find(s => s.id === "site-main")!.availableArea).toEqual(p.constraints.usableArea);
+    const next = savePlanningLimits(p, estimate("0"), estimate("12"));
+    expect(readInput(next, next.constraints.budget).text).toBe("0");
+    expect(readInput(next, next.installationSites.find(s => s.id === "site-main")!.availableArea).text).toBe("12");
+    expect(() => savePlanningLimits(next, estimate("-1"), estimate("12"))).toThrow();
+    expect(readInput(next, next.constraints.budget).text).toBe("0");
+  });
+  it("deletes parcel and zones, retaining rain, budget and dependent plan records; undo/redo stays valid", () => {
+    const p = demoProject();
+    const z = p.zones[0]!;
+    const parameter = p.parameters.find(v => v.id === z.coefficient.id)!;
+    const replacement = { ...parameter, id: "deletion-override" };
+    p.parameters.push(replacement);
+    p.scenarios[0]!.overrides.push({ baseParameterId: parameter.id, replacement: reference(replacement) });
+    projectV2Schema.parse(p);
+    const withoutZone = deleteZone(p, z.id);
+    expect(withoutZone.zones.some(zone => zone.id === z.id)).toBe(false);
+    expect(withoutZone.components[0]!.targets).toEqual(p.components[0]!.targets);
+    const restored = restoreParcelGeometry(withoutZone, p);
+    expect(restored.scenarios[0]!.overrides).toEqual(p.scenarios[0]!.overrides);
+    const empty = deleteParcel(p);
+    expect(empty.parcel).toBeNull(); expect(empty.zones).toEqual([]); expect(empty.drawingScale).toBeUndefined();
+    expect(empty.scenarios.map(s => s.rainfall)).toEqual(p.scenarios.map(s => s.rainfall));
+    expect(empty.constraints).toEqual(p.constraints); expect(empty.components).toEqual(p.components);
+    const undo = restoreParcelGeometry(empty, p);
+    expect(undo.zones.length).toBe(p.zones.length);
+    expect(undo.scenarios[0]!.overrides).toEqual(p.scenarios[0]!.overrides);
+    expect(restoreParcelGeometry(undo, empty).zones).toEqual([]);
+  });
+  it("accepts only finite placement points within actual parcel boundaries", () => {
+    const polygon = [{x:0,y:0},{x:10,y:0},{x:10,y:4},{x:4,y:4},{x:4,y:10},{x:0,y:10}];
+    expect(containsPoint(polygon,{x:0,y:0})).toBe(true);
+    expect(containsPoint(polygon,{x:3,y:8})).toBe(true);
+    expect(containsPoint(polygon,{x:8,y:8})).toBe(false);
+    expect(containsPoint(polygon,{x:NaN,y:1})).toBe(false);
+  });
+});

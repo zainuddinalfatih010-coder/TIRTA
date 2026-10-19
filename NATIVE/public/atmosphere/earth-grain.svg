@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 195" preserveAspectRatio="none" fill="none">
+  <defs>
+    <radialGradient id="sand"><stop stop-color="#eadbc5" stop-opacity=".66"/><stop offset="1" stop-color="#f4eee4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="sage" x1="570" y1="0" x2="815" y2="139" gradientUnits="userSpaceOnUse"><stop stop-color="#d9e5cd" stop-opacity=".75"/><stop offset="1" stop-color="#edf2e7" stop-opacity="0"/></linearGradient>
+    <pattern id="grain" width="23" height="19" patternUnits="userSpaceOnUse"><circle cx="5" cy="6" r="1.2" fill="#aa9979" fill-opacity=".2"/><circle cx="17" cy="15" r=".8" fill="#aa9979" fill-opacity=".2"/></pattern>
+  </defs>
+  <ellipse cx="440" cy="17" rx="380" ry="170" fill="url(#sand)"/>
+  <path d="M471 0H998C970 68 893 110 778 96C637 79 603 36 471 0Z" fill="url(#sage)"/>
+  <path d="M488 0H680C661 43 625 68 566 59C525 53 502 29 488 0Z" fill="url(#grain)"/>
+  <path d="M237 0C274 47 322 70 377 58" stroke="#c4ad8b" stroke-opacity=".22" stroke-width="2"/>
+</svg>

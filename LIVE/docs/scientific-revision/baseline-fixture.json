@@ -1,0 +1,1113 @@
+{
+  "project": {
+    "schemaVersion": 2,
+    "id": "friday-demo",
+    "name": "Sekolah Taman Sari",
+    "mode": "demo",
+    "revision": 1,
+    "createdAt": "2026-10-03T00:00:00.000Z",
+    "updatedAt": "2026-10-03T00:00:00.000Z",
+    "importedFrom": null,
+    "drawingScale": {
+      "metersPerUnit": 1,
+      "source": "Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+      "initialLength": 20,
+      "initialWidth": 10
+    },
+    "parcel": {
+      "id": "parcel",
+      "polygon": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 10
+        },
+        {
+          "x": 0,
+          "y": 10
+        }
+      ],
+      "area": {
+        "id": "parcel-area",
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED"
+      },
+      "areaMethod": {
+        "kind": "direct"
+      },
+      "geometryContext": "schematic"
+    },
+    "parameters": [
+      {
+        "id": "budget",
+        "revision": 2,
+        "value": 12000000,
+        "unit": "IDR",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "usable-area",
+        "revision": 2,
+        "value": 24,
+        "unit": "m2",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "parcel-area",
+        "revision": 3,
+        "value": 200,
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED",
+        "source": "Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+        "note": "Luas demo cocok dengan geometri contoh berskala meter.",
+        "applicability": ""
+      },
+      {
+        "id": "z0-area",
+        "revision": 3,
+        "value": 60,
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED",
+        "source": "Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+        "note": "Luas demo cocok dengan geometri contoh berskala meter.",
+        "applicability": ""
+      },
+      {
+        "id": "z0-c",
+        "revision": 2,
+        "value": 0.85,
+        "unit": "ratio",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "Koefisien demo; bukan autofill kelas.",
+        "applicability": ""
+      },
+      {
+        "id": "z1-area",
+        "revision": 3,
+        "value": 68,
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED",
+        "source": "Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+        "note": "Luas demo cocok dengan geometri contoh berskala meter.",
+        "applicability": ""
+      },
+      {
+        "id": "z1-c",
+        "revision": 2,
+        "value": 0.9,
+        "unit": "ratio",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "Koefisien demo; bukan autofill kelas.",
+        "applicability": ""
+      },
+      {
+        "id": "z2-area",
+        "revision": 3,
+        "value": 30,
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED",
+        "source": "Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+        "note": "Luas demo cocok dengan geometri contoh berskala meter.",
+        "applicability": ""
+      },
+      {
+        "id": "z2-c",
+        "revision": 2,
+        "value": 0.2,
+        "unit": "ratio",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "Koefisien demo; bukan autofill kelas.",
+        "applicability": ""
+      },
+      {
+        "id": "z3-area",
+        "revision": 3,
+        "value": 30,
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED",
+        "source": "Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+        "note": "Luas demo cocok dengan geometri contoh berskala meter.",
+        "applicability": ""
+      },
+      {
+        "id": "z3-c",
+        "revision": 2,
+        "value": 0.12,
+        "unit": "ratio",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "Koefisien demo; bukan autofill kelas.",
+        "applicability": ""
+      },
+      {
+        "id": "z4-area",
+        "revision": 3,
+        "value": 12,
+        "unit": "m2",
+        "evidence": "SOURCE_DERIVED",
+        "source": "Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.",
+        "note": "Luas demo cocok dengan geometri contoh berskala meter.",
+        "applicability": ""
+      },
+      {
+        "id": "z4-c",
+        "revision": 2,
+        "value": 0.3,
+        "unit": "ratio",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "Koefisien demo; bukan autofill kelas.",
+        "applicability": ""
+      },
+      {
+        "id": "r50-depth",
+        "revision": 1,
+        "value": 50,
+        "unit": "mm",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "r100-depth",
+        "revision": 1,
+        "value": 100,
+        "unit": "mm",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "site-main-area",
+        "revision": 1,
+        "value": 24,
+        "unit": "m2",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "tank-cost",
+        "revision": 2,
+        "value": 3000000,
+        "unit": "IDR",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "tank-area",
+        "revision": 2,
+        "value": 2,
+        "unit": "m2",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "tank-r50-capacity",
+        "revision": 1,
+        "value": 3.5,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "tank-r100-capacity",
+        "revision": 1,
+        "value": 3.5,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "soak-cost",
+        "revision": 2,
+        "value": 2500000,
+        "unit": "IDR",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "soak-area",
+        "revision": 2,
+        "value": 4,
+        "unit": "m2",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "soak-r50-capacity",
+        "revision": 1,
+        "value": 2.5,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "soak-r100-capacity",
+        "revision": 1,
+        "value": 2.5,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "garden-cost",
+        "revision": 2,
+        "value": 3000000,
+        "unit": "IDR",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "garden-area",
+        "revision": 2,
+        "value": 6,
+        "unit": "m2",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "garden-r50-capacity",
+        "revision": 1,
+        "value": 3,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "garden-r100-capacity",
+        "revision": 1,
+        "value": 3,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "porous-cost",
+        "revision": 2,
+        "value": 2000000,
+        "unit": "IDR",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "porous-area",
+        "revision": 2,
+        "value": 8,
+        "unit": "m2",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "porous-r50-capacity",
+        "revision": 1,
+        "value": 2,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      },
+      {
+        "id": "porous-r100-capacity",
+        "revision": 1,
+        "value": 2,
+        "unit": "m3/event",
+        "evidence": "DEMO",
+        "source": "Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.",
+        "note": "",
+        "applicability": ""
+      }
+    ],
+    "zones": [
+      {
+        "id": "z0",
+        "name": "Gedung belajar",
+        "revision": 3,
+        "polygon": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 10,
+            "y": 0
+          },
+          {
+            "x": 10,
+            "y": 3
+          },
+          {
+            "x": 6,
+            "y": 3
+          },
+          {
+            "x": 6,
+            "y": 8
+          },
+          {
+            "x": 0,
+            "y": 8
+          }
+        ],
+        "surface": "roof",
+        "classificationRecordId": "d2b3562b-e1dd-4916-bf55-4fec15d5eab8",
+        "area": {
+          "id": "z0-area",
+          "unit": "m2",
+          "evidence": "SOURCE_DERIVED"
+        },
+        "areaMethod": {
+          "kind": "direct"
+        },
+        "coefficient": {
+          "id": "z0-c",
+          "unit": "ratio",
+          "evidence": "DEMO"
+        }
+      },
+      {
+        "id": "z1",
+        "name": "Halaman kegiatan",
+        "revision": 3,
+        "polygon": [
+          {
+            "x": 6,
+            "y": 3
+          },
+          {
+            "x": 14,
+            "y": 3
+          },
+          {
+            "x": 14,
+            "y": 8
+          },
+          {
+            "x": 20,
+            "y": 8
+          },
+          {
+            "x": 20,
+            "y": 10
+          },
+          {
+            "x": 6,
+            "y": 10
+          }
+        ],
+        "surface": "paved",
+        "classificationRecordId": "729f190b-461e-4f26-9921-de3e50733132",
+        "area": {
+          "id": "z1-area",
+          "unit": "m2",
+          "evidence": "SOURCE_DERIVED"
+        },
+        "areaMethod": {
+          "kind": "direct"
+        },
+        "coefficient": {
+          "id": "z1-c",
+          "unit": "ratio",
+          "evidence": "DEMO"
+        }
+      },
+      {
+        "id": "z2",
+        "name": "Tanah timur",
+        "revision": 3,
+        "polygon": [
+          {
+            "x": 14,
+            "y": 3
+          },
+          {
+            "x": 20,
+            "y": 3
+          },
+          {
+            "x": 20,
+            "y": 8
+          },
+          {
+            "x": 14,
+            "y": 8
+          }
+        ],
+        "surface": "soil",
+        "classificationRecordId": "48a7b1a0-15e3-41a3-8c3f-a45ee53874f1",
+        "area": {
+          "id": "z2-area",
+          "unit": "m2",
+          "evidence": "SOURCE_DERIVED"
+        },
+        "areaMethod": {
+          "kind": "direct"
+        },
+        "coefficient": {
+          "id": "z2-c",
+          "unit": "ratio",
+          "evidence": "DEMO"
+        }
+      },
+      {
+        "id": "z3",
+        "name": "Taman",
+        "revision": 3,
+        "polygon": [
+          {
+            "x": 10,
+            "y": 0
+          },
+          {
+            "x": 20,
+            "y": 0
+          },
+          {
+            "x": 20,
+            "y": 3
+          },
+          {
+            "x": 10,
+            "y": 3
+          }
+        ],
+        "surface": "vegetation",
+        "classificationRecordId": "8796314f-a42d-4a84-b9dd-e8c3d4f2eb15",
+        "area": {
+          "id": "z3-area",
+          "unit": "m2",
+          "evidence": "SOURCE_DERIVED"
+        },
+        "areaMethod": {
+          "kind": "direct"
+        },
+        "coefficient": {
+          "id": "z3-c",
+          "unit": "ratio",
+          "evidence": "DEMO"
+        }
+      },
+      {
+        "id": "z4",
+        "name": "Paving berpori",
+        "revision": 3,
+        "polygon": [
+          {
+            "x": 0,
+            "y": 8
+          },
+          {
+            "x": 6,
+            "y": 8
+          },
+          {
+            "x": 6,
+            "y": 10
+          },
+          {
+            "x": 0,
+            "y": 10
+          }
+        ],
+        "surface": "porous",
+        "classificationRecordId": "670dbc96-1e9d-4435-95e1-03b906db7988",
+        "area": {
+          "id": "z4-area",
+          "unit": "m2",
+          "evidence": "SOURCE_DERIVED"
+        },
+        "areaMethod": {
+          "kind": "direct"
+        },
+        "coefficient": {
+          "id": "z4-c",
+          "unit": "ratio",
+          "evidence": "DEMO"
+        }
+      }
+    ],
+    "scenarios": [
+      {
+        "id": "r50",
+        "name": "Hujan 50 mm",
+        "revision": 1,
+        "rainfall": {
+          "id": "r50-depth",
+          "unit": "mm",
+          "evidence": "DEMO"
+        },
+        "eventWindowNote": "Satu kejadian demo.",
+        "overrides": []
+      },
+      {
+        "id": "r100",
+        "name": "Hujan 100 mm",
+        "revision": 1,
+        "rainfall": {
+          "id": "r100-depth",
+          "unit": "mm",
+          "evidence": "DEMO"
+        },
+        "eventWindowNote": "Satu kejadian demo pembanding.",
+        "overrides": []
+      }
+    ],
+    "installationSites": [
+      {
+        "id": "site-main",
+        "name": "Ruang intervensi yang dialokasikan",
+        "availableArea": {
+          "id": "site-main-area",
+          "unit": "m2",
+          "evidence": "DEMO"
+        },
+        "suitability": "Asumsi demo yang dinyatakan pengguna; bukan kajian geoteknik.",
+        "evidence": "DEMO",
+        "polygon": null
+      }
+    ],
+    "components": [
+      {
+        "id": "tank",
+        "name": "Tangki atap",
+        "revision": 2,
+        "enabled": true,
+        "targets": [
+          "z0"
+        ],
+        "connectionNote": "Target dipilih pengguna pada zona yang dinyatakan.",
+        "installationSiteId": "site-main",
+        "occupiedArea": {
+          "id": "tank-area",
+          "unit": "m2",
+          "evidence": "DEMO"
+        },
+        "totalCost": {
+          "id": "tank-cost",
+          "unit": "IDR",
+          "evidence": "DEMO"
+        },
+        "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+        "excludes": [],
+        "placement": null,
+        "family": "storage",
+        "performanceByScenario": {
+          "r50": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 50,
+            "availableStorage": {
+              "id": "tank-r50-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            },
+            "reuse": {
+              "mode": "off"
+            }
+          },
+          "r100": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 100,
+            "availableStorage": {
+              "id": "tank-r100-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            },
+            "reuse": {
+              "mode": "off"
+            }
+          }
+        }
+      },
+      {
+        "id": "soak",
+        "name": "Sumur / area resapan",
+        "revision": 2,
+        "enabled": true,
+        "targets": [
+          "z2"
+        ],
+        "connectionNote": "Target dipilih pengguna pada zona yang dinyatakan.",
+        "installationSiteId": "site-main",
+        "occupiedArea": {
+          "id": "soak-area",
+          "unit": "m2",
+          "evidence": "DEMO"
+        },
+        "totalCost": {
+          "id": "soak-cost",
+          "unit": "IDR",
+          "evidence": "DEMO"
+        },
+        "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+        "excludes": [],
+        "placement": null,
+        "family": "infiltration",
+        "performanceByScenario": {
+          "r50": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 50,
+            "infiltrationCapacity": {
+              "id": "soak-r50-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            }
+          },
+          "r100": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 100,
+            "infiltrationCapacity": {
+              "id": "soak-r100-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            }
+          }
+        }
+      },
+      {
+        "id": "garden",
+        "name": "Rain garden halaman",
+        "revision": 2,
+        "enabled": true,
+        "targets": [
+          "z1"
+        ],
+        "connectionNote": "Target dipilih pengguna pada zona yang dinyatakan.",
+        "installationSiteId": "site-main",
+        "occupiedArea": {
+          "id": "garden-area",
+          "unit": "m2",
+          "evidence": "DEMO"
+        },
+        "totalCost": {
+          "id": "garden-cost",
+          "unit": "IDR",
+          "evidence": "DEMO"
+        },
+        "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+        "excludes": [],
+        "placement": null,
+        "family": "rain-garden",
+        "performanceByScenario": {
+          "r50": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 50,
+            "infiltrationCapacity": {
+              "id": "garden-r50-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            }
+          },
+          "r100": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 100,
+            "infiltrationCapacity": {
+              "id": "garden-r100-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            }
+          }
+        }
+      },
+      {
+        "id": "porous",
+        "name": "Permukaan berpori",
+        "revision": 2,
+        "enabled": true,
+        "targets": [
+          "z1"
+        ],
+        "connectionNote": "Target dipilih pengguna pada zona yang dinyatakan.",
+        "installationSiteId": "site-main",
+        "occupiedArea": {
+          "id": "porous-area",
+          "unit": "m2",
+          "evidence": "DEMO"
+        },
+        "totalCost": {
+          "id": "porous-cost",
+          "unit": "IDR",
+          "evidence": "DEMO"
+        },
+        "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+        "excludes": [],
+        "placement": null,
+        "family": "permeable",
+        "treatedArea": {
+          "id": "porous-area",
+          "unit": "m2",
+          "evidence": "DEMO"
+        },
+        "performanceByScenario": {
+          "r50": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 50,
+            "additionalInfiltrationCapacity": {
+              "id": "porous-r50-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            }
+          },
+          "r100": {
+            "applicability": "Kapasitas demo per kejadian; perlu verifikasi teknis sebelum desain.",
+            "reviewedRainfallMm": 100,
+            "additionalInfiltrationCapacity": {
+              "id": "porous-r100-capacity",
+              "unit": "m3/event",
+              "evidence": "DEMO"
+            }
+          }
+        }
+      }
+    ],
+    "optionGroups": [
+      {
+        "id": "choice-tank",
+        "name": "Tangki atap",
+        "enabled": true,
+        "choices": [
+          {
+            "id": "off",
+            "name": "Tidak dipakai",
+            "enabled": true,
+            "componentIds": []
+          },
+          {
+            "id": "on",
+            "name": "Tangki atap",
+            "enabled": true,
+            "componentIds": [
+              "tank"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "choice-soak",
+        "name": "Sumur / area resapan",
+        "enabled": true,
+        "choices": [
+          {
+            "id": "off",
+            "name": "Tidak dipakai",
+            "enabled": true,
+            "componentIds": []
+          },
+          {
+            "id": "on",
+            "name": "Sumur / area resapan",
+            "enabled": true,
+            "componentIds": [
+              "soak"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "choice-garden",
+        "name": "Rain garden halaman",
+        "enabled": true,
+        "choices": [
+          {
+            "id": "off",
+            "name": "Tidak dipakai",
+            "enabled": true,
+            "componentIds": []
+          },
+          {
+            "id": "on",
+            "name": "Rain garden halaman",
+            "enabled": true,
+            "componentIds": [
+              "garden"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "choice-porous",
+        "name": "Permukaan berpori",
+        "enabled": true,
+        "choices": [
+          {
+            "id": "off",
+            "name": "Tidak dipakai",
+            "enabled": true,
+            "componentIds": []
+          },
+          {
+            "id": "on",
+            "name": "Permukaan berpori",
+            "enabled": true,
+            "componentIds": [
+              "porous"
+            ]
+          }
+        ]
+      }
+    ],
+    "manualPlans": [],
+    "selectedPlan": null,
+    "classificationRecords": [
+      {
+        "id": "d2b3562b-e1dd-4916-bf55-4fec15d5eab8",
+        "zoneId": "z0",
+        "revision": 1,
+        "predecessorId": null,
+        "origin": "manual",
+        "evidenceClass": "USER_INPUT",
+        "state": "confirmed",
+        "confirmedClass": "roof",
+        "correctedClass": null,
+        "prediction": null,
+        "note": ""
+      },
+      {
+        "id": "729f190b-461e-4f26-9921-de3e50733132",
+        "zoneId": "z1",
+        "revision": 1,
+        "predecessorId": null,
+        "origin": "manual",
+        "evidenceClass": "USER_INPUT",
+        "state": "confirmed",
+        "confirmedClass": "paved",
+        "correctedClass": null,
+        "prediction": null,
+        "note": ""
+      },
+      {
+        "id": "48a7b1a0-15e3-41a3-8c3f-a45ee53874f1",
+        "zoneId": "z2",
+        "revision": 1,
+        "predecessorId": null,
+        "origin": "manual",
+        "evidenceClass": "USER_INPUT",
+        "state": "confirmed",
+        "confirmedClass": "soil",
+        "correctedClass": null,
+        "prediction": null,
+        "note": ""
+      },
+      {
+        "id": "8796314f-a42d-4a84-b9dd-e8c3d4f2eb15",
+        "zoneId": "z3",
+        "revision": 1,
+        "predecessorId": null,
+        "origin": "manual",
+        "evidenceClass": "USER_INPUT",
+        "state": "confirmed",
+        "confirmedClass": "vegetation",
+        "correctedClass": null,
+        "prediction": null,
+        "note": ""
+      },
+      {
+        "id": "670dbc96-1e9d-4435-95e1-03b906db7988",
+        "zoneId": "z4",
+        "revision": 1,
+        "predecessorId": null,
+        "origin": "manual",
+        "evidenceClass": "USER_INPUT",
+        "state": "confirmed",
+        "confirmedClass": "porous",
+        "correctedClass": null,
+        "prediction": null,
+        "note": ""
+      }
+    ],
+    "attachments": [],
+    "underlay": null,
+    "constraints": {
+      "budget": {
+        "id": "budget",
+        "unit": "IDR",
+        "evidence": "DEMO"
+      },
+      "usableArea": {
+        "id": "usable-area",
+        "unit": "m2",
+        "evidence": "DEMO"
+      },
+      "minInstallations": 0,
+      "requiredScenarioIds": []
+    },
+    "planningGoal": {
+      "note": "",
+      "viewFocus": "all"
+    },
+    "shortlist": []
+  },
+  "results": [
+    {
+      "ok": true,
+      "value": {
+        "calculationVersion": 1,
+        "inputKey": "{\"engine\":\"baseline-v1/adapter-v2\",\"mode\":\"demo\",\"overrides\":[],\"parameters\":[{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"parcel-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":200},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"r50-depth\",\"note\":\"\",\"revision\":1,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"mm\",\"value\":50},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z0-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":60},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z0-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.85},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z1-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":68},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z1-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.9},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z2-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":30},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z2-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.2},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z3-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":30},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z3-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.12},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z4-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":12},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z4-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.3}],\"parcelArea\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"parcel-area\",\"unit\":\"m2\"},\"parcelAreaMethod\":{\"kind\":\"direct\"},\"projectId\":\"friday-demo\",\"rainfall\":{\"evidence\":\"DEMO\",\"id\":\"r50-depth\",\"unit\":\"mm\"},\"refs\":[{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"parcel-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"r50-depth\",\"unit\":\"mm\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z0-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z0-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z1-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z1-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z2-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z2-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z3-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z3-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z4-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z4-c\",\"unit\":\"ratio\"}],\"scenarioId\":\"r50\",\"zones\":[{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z0-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"roof\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"d2b3562b-e1dd-4916-bf55-4fec15d5eab8\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z0\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z0-c\",\"unit\":\"ratio\"},\"id\":\"z0\",\"surface\":\"roof\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z1-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"paved\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"729f190b-461e-4f26-9921-de3e50733132\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z1\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z1-c\",\"unit\":\"ratio\"},\"id\":\"z1\",\"surface\":\"paved\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z2-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"soil\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"48a7b1a0-15e3-41a3-8c3f-a45ee53874f1\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z2\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z2-c\",\"unit\":\"ratio\"},\"id\":\"z2\",\"surface\":\"soil\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z3-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"vegetation\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"8796314f-a42d-4a84-b9dd-e8c3d4f2eb15\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z3\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z3-c\",\"unit\":\"ratio\"},\"id\":\"z3\",\"surface\":\"vegetation\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z4-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"porous\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"670dbc96-1e9d-4435-95e1-03b906db7988\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z4\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z4-c\",\"unit\":\"ratio\"},\"id\":\"z4\",\"surface\":\"porous\"}]}",
+        "scenarioId": "r50",
+        "rainfallMm": 50,
+        "rainfallSourceId": "r50-depth",
+        "areaM2": 200,
+        "rainfallM3": 10,
+        "runoffM3": 6.27,
+        "nonRunoffM3": 3.7300000000000004,
+        "unit": "m3/event",
+        "zones": [
+          {
+            "id": "z0",
+            "areaM2": 60,
+            "coefficient": 0.85,
+            "rainfallM3": 3,
+            "runoffM3": 2.55,
+            "areaSourceId": "z0-area",
+            "coefficientSourceId": "z0-c"
+          },
+          {
+            "id": "z1",
+            "areaM2": 68,
+            "coefficient": 0.9,
+            "rainfallM3": 3.4000000000000004,
+            "runoffM3": 3.0600000000000005,
+            "areaSourceId": "z1-area",
+            "coefficientSourceId": "z1-c"
+          },
+          {
+            "id": "z2",
+            "areaM2": 30,
+            "coefficient": 0.2,
+            "rainfallM3": 1.5,
+            "runoffM3": 0.30000000000000004,
+            "areaSourceId": "z2-area",
+            "coefficientSourceId": "z2-c"
+          },
+          {
+            "id": "z3",
+            "areaM2": 30,
+            "coefficient": 0.12,
+            "rainfallM3": 1.5,
+            "runoffM3": 0.18,
+            "areaSourceId": "z3-area",
+            "coefficientSourceId": "z3-c"
+          },
+          {
+            "id": "z4",
+            "areaM2": 12,
+            "coefficient": 0.3,
+            "rainfallM3": 0.6000000000000001,
+            "runoffM3": 0.18000000000000002,
+            "areaSourceId": "z4-area",
+            "coefficientSourceId": "z4-c"
+          }
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "value": {
+        "calculationVersion": 1,
+        "inputKey": "{\"engine\":\"baseline-v1/adapter-v2\",\"mode\":\"demo\",\"overrides\":[],\"parameters\":[{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"parcel-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":200},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"r100-depth\",\"note\":\"\",\"revision\":1,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"mm\",\"value\":100},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z0-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":60},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z0-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.85},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z1-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":68},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z1-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.9},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z2-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":30},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z2-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.2},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z3-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":30},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z3-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.12},{\"applicability\":\"\",\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z4-area\",\"note\":\"Luas demo cocok dengan geometri contoh berskala meter.\",\"revision\":3,\"source\":\"Luas polygon pada skala lokal 1 unit = 1 m. Dimensi sintetis contoh 20 × 10 m, bukan survei.\",\"unit\":\"m2\",\"value\":12},{\"applicability\":\"\",\"evidence\":\"DEMO\",\"id\":\"z4-c\",\"note\":\"Koefisien demo; bukan autofill kelas.\",\"revision\":2,\"source\":\"Data demo sintetis untuk eksplorasi; bukan pengukuran sekolah nyata.\",\"unit\":\"ratio\",\"value\":0.3}],\"parcelArea\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"parcel-area\",\"unit\":\"m2\"},\"parcelAreaMethod\":{\"kind\":\"direct\"},\"projectId\":\"friday-demo\",\"rainfall\":{\"evidence\":\"DEMO\",\"id\":\"r100-depth\",\"unit\":\"mm\"},\"refs\":[{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"parcel-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"r100-depth\",\"unit\":\"mm\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z0-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z0-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z1-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z1-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z2-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z2-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z3-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z3-c\",\"unit\":\"ratio\"},{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z4-area\",\"unit\":\"m2\"},{\"evidence\":\"DEMO\",\"id\":\"z4-c\",\"unit\":\"ratio\"}],\"scenarioId\":\"r100\",\"zones\":[{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z0-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"roof\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"d2b3562b-e1dd-4916-bf55-4fec15d5eab8\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z0\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z0-c\",\"unit\":\"ratio\"},\"id\":\"z0\",\"surface\":\"roof\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z1-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"paved\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"729f190b-461e-4f26-9921-de3e50733132\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z1\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z1-c\",\"unit\":\"ratio\"},\"id\":\"z1\",\"surface\":\"paved\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z2-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"soil\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"48a7b1a0-15e3-41a3-8c3f-a45ee53874f1\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z2\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z2-c\",\"unit\":\"ratio\"},\"id\":\"z2\",\"surface\":\"soil\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z3-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"vegetation\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"8796314f-a42d-4a84-b9dd-e8c3d4f2eb15\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z3\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z3-c\",\"unit\":\"ratio\"},\"id\":\"z3\",\"surface\":\"vegetation\"},{\"area\":{\"evidence\":\"SOURCE_DERIVED\",\"id\":\"z4-area\",\"unit\":\"m2\"},\"areaMethod\":{\"kind\":\"direct\"},\"classification\":{\"confirmedClass\":\"porous\",\"correctedClass\":null,\"evidenceClass\":\"USER_INPUT\",\"id\":\"670dbc96-1e9d-4435-95e1-03b906db7988\",\"note\":\"\",\"origin\":\"manual\",\"predecessorId\":null,\"prediction\":null,\"revision\":1,\"state\":\"confirmed\",\"zoneId\":\"z4\"},\"coefficient\":{\"evidence\":\"DEMO\",\"id\":\"z4-c\",\"unit\":\"ratio\"},\"id\":\"z4\",\"surface\":\"porous\"}]}",
+        "scenarioId": "r100",
+        "rainfallMm": 100,
+        "rainfallSourceId": "r100-depth",
+        "areaM2": 200,
+        "rainfallM3": 20,
+        "runoffM3": 12.54,
+        "nonRunoffM3": 7.460000000000001,
+        "unit": "m3/event",
+        "zones": [
+          {
+            "id": "z0",
+            "areaM2": 60,
+            "coefficient": 0.85,
+            "rainfallM3": 6,
+            "runoffM3": 5.1,
+            "areaSourceId": "z0-area",
+            "coefficientSourceId": "z0-c"
+          },
+          {
+            "id": "z1",
+            "areaM2": 68,
+            "coefficient": 0.9,
+            "rainfallM3": 6.800000000000001,
+            "runoffM3": 6.120000000000001,
+            "areaSourceId": "z1-area",
+            "coefficientSourceId": "z1-c"
+          },
+          {
+            "id": "z2",
+            "areaM2": 30,
+            "coefficient": 0.2,
+            "rainfallM3": 3,
+            "runoffM3": 0.6000000000000001,
+            "areaSourceId": "z2-area",
+            "coefficientSourceId": "z2-c"
+          },
+          {
+            "id": "z3",
+            "areaM2": 30,
+            "coefficient": 0.12,
+            "rainfallM3": 3,
+            "runoffM3": 0.36,
+            "areaSourceId": "z3-area",
+            "coefficientSourceId": "z3-c"
+          },
+          {
+            "id": "z4",
+            "areaM2": 12,
+            "coefficient": 0.3,
+            "rainfallM3": 1.2000000000000002,
+            "runoffM3": 0.36000000000000004,
+            "areaSourceId": "z4-area",
+            "coefficientSourceId": "z4-c"
+          }
+        ]
+      }
+    }
+  ]
+}

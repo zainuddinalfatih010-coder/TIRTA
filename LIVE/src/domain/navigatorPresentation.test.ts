@@ -1,0 +1,10 @@
+import {it,expect} from 'vitest';
+import {navigatorReadinessSummary} from './navigatorPresentation';
+import {navigatorProjectFacts} from '../direction/navigatorActions';
+import {demoProject,setActiveComponents} from '../direction/productionBridge';
+import {emptySurfaceContext} from './scientificContract';
+import {commitRoofRouting,emptyRoofRouting} from './roofRouting';
+const facts=(p= setActiveComponents(demoProject(),[]))=>navigatorProjectFacts(p,'r50',undefined,'roof-runoff').filter(f=>f.key.startsWith('roof'));
+it('counts missing actionable roof facts once, not all eight registry facts',()=>{const f=facts(),s=navigatorReadinessSummary(f);expect(s.remaining).toBe(f.filter(x=>!x.optional&&x.key!=='roofDrainage'&&x.status!=='known').length);expect(s.remaining).toBeLessThan(8);expect(s.label).toBe(`${s.remaining} hal perlu dilengkapi`);});
+it('completed roof with optional pitch unknown has no actionable debt',()=>{let p=setActiveComponents(demoProject(),[]);p=commitRoofRouting(p,'z0',{...emptySurfaceContext().roof,form:'single-slope',outlet:'edge',routing:{...emptyRoofRouting(p.zones[0]!.polygon),fall:[{from:{x:3,y:1},to:{x:3,y:7}}],outletPoint:{x:3,y:8},outletEdge:2,destinationZoneId:'z2'}});const s=navigatorReadinessSummary(facts(p));expect(s.remaining).toBe(0);expect(s.label).toBe('Data utama sudah cukup');expect(s.optional).toBeGreaterThan(0);});
+it('not-applicable is satisfied, stale optional is actionable, and presentation never rewrites facts',()=>{const original=facts().slice(0,2),f=[{...original[0]!,status:'not-applicable' as const},{...original[1]!,status:'stale' as const,optional:true}],before=structuredClone(f);expect(navigatorReadinessSummary(f)).toMatchObject({remaining:1,stale:true,label:'Perlu ditinjau ulang'});expect(f).toEqual(before);});

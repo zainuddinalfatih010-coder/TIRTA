@@ -1,0 +1,22 @@
+import {ArrowRight,Check,MapPin,NotebookPen} from 'lucide-react';
+import type {ProjectV2} from '../domain/projectV2';
+import type {NavigatorFact,NavigatorDestination} from '../domain/navigatorFacts';
+import {navigatorFactRegistry} from '../domain/navigatorFacts';
+import {fieldDecisionReadiness} from '../domain/fieldDecisionReadiness';
+import {productionBaseline} from '../domain/productionBaseline';
+import {evaluateEventPlan,snapshotPlan} from '../domain/planningEngine';
+import {alternativeSearch,fmt} from './productionBridge';
+import {factIsAvailable} from '../domain/navigatorPlanner';
+import type {TirtaNavigatorState} from './useTirtaNavigator';
+export function NavigatorDataPlan({project,scenario,navigator,onNavigate,onRevisit,onTool}:{project:ProjectV2;scenario:string;navigator:TirtaNavigatorState;onNavigate:(destination:NavigatorDestination)=>void;onRevisit:(fact:NavigatorFact)=>void;onTool:(fact:NavigatorFact)=>void}){
+ const baseline=productionBaseline(project,scenario),readiness=fieldDecisionReadiness(project,scenario),alternatives=alternativeSearch(project,scenario);
+ const balance=readiness.activePackage.calculationReady?evaluateEventPlan(project,snapshotPlan(project,project.components.filter(c=>c.enabled&&c.family!=='permeable').map(c=>c.id),'nav-preview','Pratinjau'),scenario):null;
+ const pending=navigator.facts.filter(f=>!factIsAvailable(f));
+ const groups=[...new Set(pending.map(f=>`${f.scope}:${f.objectId}`))].map(id=>{const f=pending.filter(f=>`${f.scope}:${f.objectId}`===id);const first=f[0]!;return {id,facts:f,name:first.scope==='treatment'?project.components.find(c=>c.id===first.objectId)?.name:first.scope==='zone'?project.zones.find(z=>z.id===first.objectId)?.name:'Persil dan hujan'};});
+ return <div className="navigator-data-plan"><div className="navigator-current-output"><h3>Yang dapat dihitung sekarang</h3>{baseline.ok?<><div className="navigator-baseline-value"><strong>{fmt(baseline.value.runoffM3)}</strong><span>m³ limpasan awal</span><Check size={19}/></div>{balance?.ok?<p>Sisa limpasan paket aktif <strong>{fmt(balance.value.residual)} m³</strong>.</p>:<p>Dampak penanganan belum dapat dihitung. Data yang sudah ada tetap tersedia.</p>}</>:<p>Belum dapat dihitung. Lengkapi data persil dan hujan terlebih dahulu.</p>}</div>
+ {alternatives.rows.length>0&&<div className="navigator-output-actions"><button className="primary" onClick={()=>onNavigate('alternatives')}>Bandingkan pilihan yang siap<ArrowRight size={18}/></button><span>{alternatives.rows.length} alternatif dari perhitungan TIRTA.</span></div>}
+ {readiness.selected.ready&&<button className="navigator-plan-link" onClick={()=>onNavigate('impact')}>Buka rencana pilihan<ArrowRight size={18}/></button>}
+ <h3>Yang perlu dilengkapi</h3>{!pending.length?<p>Isian yang ditinjau sudah lengkap. Pilih rencana melalui Bandingkan.</p>:groups.map(g=><details className="navigator-gap-group" key={g.id} open={groups.length===1||undefined}><summary><NotebookPen size={17}/><strong>{g.name}</strong><span>{g.facts.some(f=>f.key.startsWith('roof'))?'Aliran atap':`${g.facts.length} isian`}</span></summary><ul>{(g.facts.some(f=>f.key.startsWith('roof'))?[...g.facts.filter(f=>!f.key.startsWith('roof')),g.facts.find(f=>f.key==='roofDrainage')??g.facts.find(f=>f.key.startsWith('roof'))!]:g.facts).map(f=><li key={f.id} data-status={f.status}><div><strong>{f.key.startsWith('roof')?`Atur aliran ${g.name}`:f.label??navigatorFactRegistry[f.key].label}</strong><span>{f.optional?'Tambahan':f.status==='invalid'?'Perlu diperbaiki':f.status==='stale'?'Perlu ditinjau ulang':navigator.journey.deferredFactIds.includes(f.id)?'Perlu dicari':'Belum diisi'} · {f.consequence==='water'?'Untuk perhitungan air':f.consequence==='comparison'?'Untuk perbandingan':'Pemeriksaan sebelum penerapan'}</span><p>{f.why}</p></div><button onClick={()=>f.key.startsWith('roof')?onTool(f):onRevisit(f)}>Lanjutkan isian<ArrowRight size={16}/></button></li>)}</ul></details>)}
+ {pending.some(f=>['soil','groundwater','field','standard','condition','maintenance'].includes(f.key))&&<div className="navigator-field-plan"><MapPin size={20}/><div><h3>Pemeriksaan lapangan</h3><p>Kumpulkan kondisi instalasi dan catatan pemeliharaan pada lokasi yang sama. Untuk infiltrasi tanah dan air tanah, catat hasil pemeriksaan yang tersedia; jangan menggantinya dengan perkiraan dari foto.</p><button onClick={()=>navigator.mode('field')}>Gunakan mode Lapangan<ArrowRight size={16}/></button></div></div>}
+ </div>;
+}
